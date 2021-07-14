@@ -1,0 +1,136 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target x86_64-apple-macos10.13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MeetingSDK_macOS
+import AppKit
+import Foundation
+@_exported import MeetingSDK_macOS
+import Swift
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class VideoView : AppKit.NSView {
+  public var frameView: AppKit.NSImageView?
+  @objc deinit
+}
+public struct Participant {
+  public let isLocal: Swift.Bool
+  public let displayName: Swift.String
+  public var userUUID: Swift.String {
+    get
+  }
+  public var audioInfo: MeetingSDK_macOS.AudioInfo? {
+    get
+  }
+  public var videoInfo: [MeetingSDK_macOS.VideoInfo] {
+    get
+  }
+}
+public struct AudioInfo {
+  public var streamId: Swift.String {
+    get
+  }
+  public var site: Swift.String {
+    get
+  }
+}
+public struct VideoInfo {
+  public var streamId: Swift.String {
+    get
+  }
+  public var site: Swift.String {
+    get
+  }
+  public var deviceName: Swift.String {
+    get
+  }
+  public var active: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var codecName: Swift.String {
+    get
+  }
+  public var local: Swift.String {
+    get
+  }
+  public var layout: Swift.String {
+    get
+  }
+  public var width: Swift.String {
+    get
+  }
+  public var height: Swift.String {
+    get
+  }
+  public var videoView: MeetingSDK_macOS.VideoView? {
+    get
+  }
+}
+public enum iOSCamera : Swift.String {
+  case front
+  case back
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CameraMode : Swift.String {
+  case cif
+  case vga
+  case hd1
+  case hd3
+  case fourK
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class MeetingSDK {
+  public static var shared: MeetingSDK_macOS.MeetingSDK
+  weak public var delegate: MeetingSDK_macOS.MeetingSDKDelegate?
+  public var participants: [MeetingSDK_macOS.Participant] {
+    get
+  }
+  public func initializeMeeting(meetingUUID: Swift.String, server: Swift.String, completion: @escaping (Swift.Bool) -> ())
+  public func joinMeeting(name: Swift.String, completion: @escaping (Swift.Bool) -> ())
+  public func enableAudioInput(device: Swift.String)
+  public func disableAudioInput(device: Swift.String)
+  public func enableAudioOutput(device: Swift.String)
+  public func disableAudioOutput(device: Swift.String)
+  public func setAudioStreamVolume(streamId: Swift.String, volume: Swift.Int32)
+  public func setAudioInputVolume(_ volume: Swift.Int32) -> Swift.Bool
+  public func setAudioOutputVolume(_ volume: Swift.Int32) -> Swift.Bool
+  public func enableVideoCapture(camera: Swift.String, withMode: Swift.String, completion: @escaping (Swift.Bool) -> ())
+  public func initializeScreenCaptureExtension(bundleId: Swift.String, appGroupId: Swift.String)
+  public func disableVideoCapture(camera: Swift.String)
+  public func enableNetworkVideo(url: Swift.String, mode: Swift.String, name: Swift.String, completion: @escaping (Swift.Bool) -> ())
+  public func disableNetworkVideo(url: Swift.String)
+  public func disableVideoStream(streamId: Swift.String)
+  public func enableVideoStream(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
+  public func exitMeeting()
+  public func findVideoInfo(streamId: Swift.String) -> MeetingSDK_macOS.VideoInfo?
+  public func findParticipant(withVideoStreamId: Swift.String) -> MeetingSDK_macOS.Participant?
+  public func findParticipant(withAudioStreamId: Swift.String) -> MeetingSDK_macOS.Participant?
+  public func getVideoDevices() -> [Swift.String]
+  public func getAudioInputDevices() -> [Swift.String]
+  public func getAudioOutputDevices() -> [Swift.String]
+  public func getSupportedVideoSendResolutions(deviceId: Swift.String) -> [Swift.String]
+  public func getLocalParticipant() -> MeetingSDK_macOS.Participant?
+  @objc deinit
+}
+public protocol MeetingSDKDelegate : AnyObject {
+  func participantAdded(participant: MeetingSDK_macOS.Participant)
+  func participantVideoAdded(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
+  func participantVideoUpdated(participant: MeetingSDK_macOS.Participant, streamId: Swift.String, videoView: MeetingSDK_macOS.VideoView)
+  func participantVideoViewCreated(participant: MeetingSDK_macOS.Participant, videoView: MeetingSDK_macOS.VideoView, local: Swift.Bool)
+  func participantVideoViewRetrieved(participant: MeetingSDK_macOS.Participant, videoView: MeetingSDK_macOS.VideoView)
+  func participantVideoRemoved(participant: MeetingSDK_macOS.Participant, streamId: Swift.String, videoView: MeetingSDK_macOS.VideoView?)
+  func particpantVideoRemoteLayoutChanged(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
+  func participantRemoved(participant: MeetingSDK_macOS.Participant)
+  func participantDidMute(participant: MeetingSDK_macOS.Participant)
+  func participantDidUnmute(participant: MeetingSDK_macOS.Participant)
+  func inputMeterChanged(meter: Swift.String)
+  func outputMeterChanged(meter: Swift.String)
+  func amplitude(participant: MeetingSDK_macOS.Participant, amplitude: Swift.String)
+}

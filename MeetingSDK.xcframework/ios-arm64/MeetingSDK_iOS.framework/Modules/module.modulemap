@@ -1,0 +1,11 @@
+framework module MeetingSDK_iOS {
+  umbrella header "MeetingSDK_iOS.h"
+
+  export *
+  module * { export * }
+}
+
+module MeetingSDK_iOS.Swift {
+    header "MeetingSDK_iOS-Swift.h"
+    requires objc
+}
