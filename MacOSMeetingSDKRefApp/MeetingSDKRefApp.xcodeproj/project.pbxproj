@@ -11,24 +11,24 @@
 		E41526B6262F64050054FA38 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41526B5262F64050054FA38 /* ConfigurationViewController.swift */; };
 		E41526B8262F670A0054FA38 /* ParticipantTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41526B7262F670A0054FA38 /* ParticipantTableCellView.swift */; };
 		E41526BA2630538F0054FA38 /* VideoStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41526B92630538F0054FA38 /* VideoStreamViewController.swift */; };
+		E41C7DC627316D4C0053B723 /* MeetingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41C7DC527316D4C0053B723 /* MeetingSDK.xcframework */; };
+		E41C7DC727316D4C0053B723 /* MeetingSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E41C7DC527316D4C0053B723 /* MeetingSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4CC179C2629B4A80018FA9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC179B2629B4A80018FA9D /* AppDelegate.swift */; };
 		E4CC179E2629B4A80018FA9D /* JoinMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC179D2629B4A80018FA9D /* JoinMeetingViewController.swift */; };
 		E4CC17A02629B4B80018FA9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4CC179F2629B4B80018FA9D /* Assets.xcassets */; };
 		E4CC17A32629B4B80018FA9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4CC17A12629B4B80018FA9D /* Main.storyboard */; };
-		E4CC17B12629BF440018FA9D /* MeetingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CC17B02629BF440018FA9D /* MeetingSDK.xcframework */; };
-		E4CC17B22629BF440018FA9D /* MeetingSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4CC17B02629BF440018FA9D /* MeetingSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4CC17B52629C3250018FA9D /* MeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC17B42629C3250018FA9D /* MeetingViewController.swift */; };
 		E4CC17B72629E96B0018FA9D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CC17B62629E96B0018FA9D /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E4CC17B32629BF440018FA9D /* Embed Frameworks */ = {
+		E41C7DC827316D4C0053B723 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E4CC17B22629BF440018FA9D /* MeetingSDK.xcframework in Embed Frameworks */,
+				E41C7DC727316D4C0053B723 /* MeetingSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,6 +40,7 @@
 		E41526B5262F64050054FA38 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		E41526B7262F670A0054FA38 /* ParticipantTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantTableCellView.swift; sourceTree = "<group>"; };
 		E41526B92630538F0054FA38 /* VideoStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamViewController.swift; sourceTree = "<group>"; };
+		E41C7DC527316D4C0053B723 /* MeetingSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MeetingSDK.xcframework; path = ../MeetingSDK.xcframework; sourceTree = "<group>"; };
 		E4CC17982629B4A80018FA9D /* MeetingSDKRefApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingSDKRefApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CC179B2629B4A80018FA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4CC179D2629B4A80018FA9D /* JoinMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinMeetingViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4CC17B12629BF440018FA9D /* MeetingSDK.xcframework in Frameworks */,
+				E41C7DC627316D4C0053B723 /* MeetingSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +104,7 @@
 		E4CC17AF2629BF440018FA9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E41C7DC527316D4C0053B723 /* MeetingSDK.xcframework */,
 				E4CC17B02629BF440018FA9D /* MeetingSDK.xcframework */,
 			);
 			name = Frameworks;
@@ -118,7 +120,7 @@
 				E4CC17942629B4A80018FA9D /* Sources */,
 				E4CC17952629B4A80018FA9D /* Frameworks */,
 				E4CC17962629B4A80018FA9D /* Resources */,
-				E4CC17B32629BF440018FA9D /* Embed Frameworks */,
+				E41C7DC827316D4C0053B723 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -138,13 +138,13 @@ class SettingsTableViewController: UITableViewController, UITextFieldDelegate {
     
     // NSNotification observer used to take action if the user taps the "flip camera" button
     @objc func flipDeviceCamera(notification: NSNotification) {
-        // All we do here is cycle through the videoDevicesUsed and if we find " iOS Front Camera" we disable it
-        // and enable "iOS Back Camera" and vice versa.
+        // All we do here is cycle through the videoDevicesUsed and if we find "Front" in the device name we disable it
+        // and enable "Back Camera" and vice versa.
         for (device, codec) in MeetingState.shared.videoDevicesUsed {
-            if device == " iOS Front Camera" {
+            if device.contains("Front") {
                 MeetingSDK.shared.disableVideoCapture(camera: device)
-                MeetingState.shared.videoDevicesUsed.removeValue(forKey: " iOS Front Camera")
-                let supportedCodecs = MeetingSDK.shared.getSupportedVideoSendResolutions(deviceId: "iOS Back Camera")
+                MeetingState.shared.videoDevicesUsed.removeValue(forKey: device)
+                let supportedCodecs = MeetingSDK.shared.getSupportedVideoSendResolutions(deviceId: "Back Camera")
                 var useCodec:String? = nil
                 
                 if supportedCodecs.contains(codec) {
@@ -154,16 +154,16 @@ class SettingsTableViewController: UITableViewController, UITextFieldDelegate {
                 }
                 
                 if let useCodec = useCodec {
-                    MeetingSDK.shared.enableVideoCapture(camera: "iOS Back Camera", withMode: useCodec) { success in
+                    MeetingSDK.shared.enableVideoCapture(camera: "Back Camera", withMode: useCodec) { success in
                         print("flip to back camera success: \(success)")
                     }
                     
-                    MeetingState.shared.videoDevicesUsed["iOS Back Camera"] = useCodec
+                    MeetingState.shared.videoDevicesUsed["Back Camera"] = useCodec
                 }
-            } else if device == "iOS Back Camera" {
+            } else if device.contains("Back") {
                 MeetingSDK.shared.disableVideoCapture(camera: device)
-                MeetingState.shared.videoDevicesUsed.removeValue(forKey: "iOS Back Camera")
-                let supportedCodecs = MeetingSDK.shared.getSupportedVideoSendResolutions(deviceId: " iOS Front Camera")
+                MeetingState.shared.videoDevicesUsed.removeValue(forKey: device)
+                let supportedCodecs = MeetingSDK.shared.getSupportedVideoSendResolutions(deviceId: "Front Camera")
                 var useCodec:String? = nil
                 
                 if supportedCodecs.contains(codec) {
@@ -173,11 +173,11 @@ class SettingsTableViewController: UITableViewController, UITextFieldDelegate {
                 }
                 
                 if let useCodec = useCodec {
-                    MeetingSDK.shared.enableVideoCapture(camera: " iOS Front Camera", withMode: useCodec) { success in
+                    MeetingSDK.shared.enableVideoCapture(camera: "Front Camera", withMode: useCodec) { success in
                         print("flip to front camera success: \(success)")
                     }
                     
-                    MeetingState.shared.videoDevicesUsed[" iOS Front Camera"] = useCodec
+                    MeetingState.shared.videoDevicesUsed["Front Camera"] = useCodec
                 }
             }
         }

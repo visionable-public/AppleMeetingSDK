@@ -11,6 +11,7 @@ import MeetingSDK_macOS
 class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDelegate, NSTableViewDataSource {
     var myParticipantName = ""
     var participantArray:[Participant] = []
+    var mutedStreamIDs:[String:Bool] = [:]
     
     @IBOutlet weak var participantTableView: NSTableView!
     
@@ -244,14 +245,6 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
         }
     }
     
-    func participantDidMute(participant: Participant) {
-        print("MeetingSDKDelegate:  participantDidMute")
-    }
-    
-    func participantDidUnmute(participant: Participant) {
-        print("MeetingSDKDelegate:  participantDidUnmute")
-    }
-    
     func inputMeterChanged(meter: String) {
         print("MeetingSDKDelegate:  inputMeterChanged")
     }
@@ -260,7 +253,19 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
         print("MeetingSDKDelegate:  outputMeterChanged")
     }
     
-    func amplitude(participant: Participant, amplitude: String) {
+    func participantAmplitudeChanged(participant: Participant, amplitude: String, muted: Bool) {
+        if let streamId = participant.audioInfo?.streamId {
+            if muted {
+                self.mutedStreamIDs[streamId] = true
+            } else {
+                self.mutedStreamIDs.removeValue(forKey: streamId)
+            }
+            
+            DispatchQueue.main.async {
+                self.participantTableView.reloadData()
+            }
+
+        }
         print("MeetingSDKDelegate:  amplitude")
     }
     
@@ -285,6 +290,7 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
         var name2 = ""
         
         participantArray.sort { (first:Participant, second:Participant) -> Bool in
+            /*
             if first.videoInfo.count == 0 {
                 guard let audioSite = first.audioInfo?.site else {
                     return false
@@ -302,15 +308,26 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
             } else {
                 name2 = second.videoInfo[0].site
             }
+ */
             
-            return name1 < name2
+            return first.displayName < second.displayName
         }
         
         let name = participantArray[row].displayName
     
         if let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "ParticipantCell"), owner: nil) as? ParticipantTableCellView {
           cell.participant = participantArray[row]
-          cell.textField?.stringValue = name
+        
+            cell.textField?.stringValue = name
+            
+            // Now check to see if it's muted and change accordingly
+            if let audioInfo = cell.participant?.audioInfo {
+                if let muted = self.mutedStreamIDs[audioInfo.streamId] {
+                    if muted {
+                        cell.textField?.stringValue = "(M) \(name)"
+                    }
+                }
+            }
           return cell
         }
         return nil

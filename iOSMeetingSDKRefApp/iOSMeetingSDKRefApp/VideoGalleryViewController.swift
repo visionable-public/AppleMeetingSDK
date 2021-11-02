@@ -358,16 +358,6 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
     }
     
     // Not used in the reference app
-    func participantDidMute(participant: Participant) {
-        print("iOSReferenceApp::participantDidMute")
-    }
-    
-    // Not used in the reference app
-    func participantDidUnmute(participant: Participant) {
-        print("iOSReferenceApp::participantDidUnmute")
-    }
-    
-    // Not used in the reference app
     func inputMeterChanged(meter: String) {
         print("iOSReferenceApp::inputMeterChanged")
     }
@@ -378,7 +368,14 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
     }
     
     // Not used in the reference app
-    func amplitude(participant: Participant, amplitude: String) {
+    func participantAmplitudeChanged(participant: Participant, amplitude: String, muted: Bool) {
+        if let streamId = participant.audioInfo?.streamId {
+            if muted {
+                MeetingState.shared.mutedStreamIDs[streamId] = true
+            } else {
+                MeetingState.shared.mutedStreamIDs.removeValue(forKey: streamId)
+            }
+        }
         print("iOSReferenceApp::amplitude")
     }
     

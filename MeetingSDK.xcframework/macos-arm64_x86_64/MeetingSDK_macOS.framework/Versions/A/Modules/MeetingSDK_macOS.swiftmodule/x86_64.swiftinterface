@@ -1,12 +1,18 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target x86_64-apple-macos10.13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MeetingSDK_macOS
 import AppKit
 import Foundation
 @_exported import MeetingSDK_macOS
 import Swift
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class VideoView : AppKit.NSView {
-  public var frameView: AppKit.NSImageView?
+import _Concurrency
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class VideoView : AppKit.NSView {
+  @objc @_Concurrency.MainActor(unsafe) public var frameView: AppKit.NSImageView?
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var imageData: Foundation.Data?
+  @_Concurrency.MainActor(unsafe) public var isEnabled: Swift.Bool {
+    get
+    set(newValue)
+  }
   @objc deinit
 }
 public struct Participant {
@@ -35,9 +41,6 @@ public struct VideoInfo {
     get
   }
   public var site: Swift.String {
-    get
-  }
-  public var deviceName: Swift.String {
     get
   }
   public var active: Swift.String {
@@ -92,6 +95,8 @@ public enum CameraMode : Swift.String {
   public var participants: [MeetingSDK_macOS.Participant] {
     get
   }
+  public func pauseVideoFrameProcessing(streamId: Swift.String)
+  public func resumeVideoFrameProcessing(streamId: Swift.String)
   public func initializeMeeting(meetingUUID: Swift.String, server: Swift.String, completion: @escaping (Swift.Bool) -> ())
   public func joinMeeting(name: Swift.String, completion: @escaping (Swift.Bool) -> ())
   public func enableAudioInput(device: Swift.String)
@@ -107,7 +112,7 @@ public enum CameraMode : Swift.String {
   public func enableNetworkVideo(url: Swift.String, mode: Swift.String, name: Swift.String, completion: @escaping (Swift.Bool) -> ())
   public func disableNetworkVideo(url: Swift.String)
   public func disableVideoStream(streamId: Swift.String)
-  public func enableVideoStream(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
+  public func enableVideoStream(participant: MeetingSDK_macOS.Participant, streamId: Swift.String, lowLevel: Swift.Bool = false)
   public func exitMeeting()
   public func findVideoInfo(streamId: Swift.String) -> MeetingSDK_macOS.VideoInfo?
   public func findParticipant(withVideoStreamId: Swift.String) -> MeetingSDK_macOS.Participant?
@@ -128,9 +133,227 @@ public protocol MeetingSDKDelegate : AnyObject {
   func participantVideoRemoved(participant: MeetingSDK_macOS.Participant, streamId: Swift.String, videoView: MeetingSDK_macOS.VideoView?)
   func particpantVideoRemoteLayoutChanged(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   func participantRemoved(participant: MeetingSDK_macOS.Participant)
-  func participantDidMute(participant: MeetingSDK_macOS.Participant)
-  func participantDidUnmute(participant: MeetingSDK_macOS.Participant)
   func inputMeterChanged(meter: Swift.String)
   func outputMeterChanged(meter: Swift.String)
-  func amplitude(participant: MeetingSDK_macOS.Participant, amplitude: Swift.String)
+  func participantAmplitudeChanged(participant: MeetingSDK_macOS.Participant, amplitude: Swift.String, muted: Swift.Bool)
+}
+public enum XMLSubscriptKey {
+  case index(Swift.Int)
+  case key(Swift.String)
+  case attribute(Swift.String)
+}
+public enum XMLError : Swift.Error {
+  case subscriptFailue(Swift.String)
+  case initFailue(Swift.String)
+  case wrongChain(Swift.String)
+}
+@dynamicMemberLookup public enum XMLSubscriptResult {
+  case null(Swift.String)
+  case xml(MeetingSDK_macOS.XML, Swift.String)
+  case array([MeetingSDK_macOS.XML], Swift.String)
+  case string(Swift.String, Swift.String)
+  public subscript(dynamicMember member: Swift.String) -> MeetingSDK_macOS.XMLSubscriptResult {
+    get
+  }
+  public subscript(key: MeetingSDK_macOS.XMLSubscriptKey) -> MeetingSDK_macOS.XMLSubscriptResult {
+    get
+  }
+  public var xml: MeetingSDK_macOS.XML? {
+    get
+  }
+  public func getXML() throws -> MeetingSDK_macOS.XML
+  public var xmlList: [MeetingSDK_macOS.XML]? {
+    get
+  }
+  public func getXMLList() throws -> [MeetingSDK_macOS.XML]
+  public var error: Swift.String {
+    get
+  }
+}
+@dynamicMemberLookup open class XML {
+  public var xmlName: Swift.String {
+    get
+    set(newValue)
+  }
+  public var xmlAttributes: [Swift.String : Swift.String] {
+    get
+    set(newValue)
+  }
+  public var xmlValue: Swift.String? {
+    get
+    set(newValue)
+  }
+  public var xmlChildren: [MeetingSDK_macOS.XML] {
+    get
+  }
+  public init(name: Swift.String, attributes: [Swift.String : Any] = [:], value: Any? = nil)
+  public convenience init!(data: Foundation.Data)
+  public convenience init!(url: Foundation.URL)
+  public convenience init(named name: Swift.String)
+  public convenience init(string: Swift.String, encoding: Swift.String.Encoding = .utf8)
+  public subscript(dynamicMember member: Swift.String) -> MeetingSDK_macOS.XMLSubscriptResult {
+    get
+  }
+  public subscript(key: MeetingSDK_macOS.XMLSubscriptKey) -> MeetingSDK_macOS.XMLSubscriptResult {
+    get
+  }
+  @discardableResult
+  public func addAttribute(name: Swift.String, value: Any) -> MeetingSDK_macOS.XML
+  @discardableResult
+  public func addAttributes(_ attributes: [Swift.String : Any]) -> MeetingSDK_macOS.XML
+  @discardableResult
+  public func addChild(_ xml: MeetingSDK_macOS.XML) -> MeetingSDK_macOS.XML
+  @discardableResult
+  public func addChildren(_ xmls: [MeetingSDK_macOS.XML]) -> MeetingSDK_macOS.XML
+  @objc deinit
+}
+public class XMLSubscriptResultIterator : Swift.IteratorProtocol {
+  public init(result: MeetingSDK_macOS.XMLSubscriptResult)
+  public func next() -> MeetingSDK_macOS.XML?
+  public typealias Element = MeetingSDK_macOS.XML
+  @objc deinit
+}
+extension MeetingSDK_macOS.XMLSubscriptResult : Swift.Sequence {
+  public typealias Iterator = MeetingSDK_macOS.XMLSubscriptResultIterator
+  public func makeIterator() -> MeetingSDK_macOS.XMLSubscriptResult.Iterator
+  public typealias Element = MeetingSDK_macOS.XML
+}
+public protocol StringProvider {
+  var string: Swift.String? { get }
+}
+extension MeetingSDK_macOS.XML : MeetingSDK_macOS.StringProvider {
+  public var string: Swift.String? {
+    get
+  }
+}
+extension MeetingSDK_macOS.XMLSubscriptResult : MeetingSDK_macOS.StringProvider {
+  public var string: Swift.String? {
+    get
+  }
+}
+extension MeetingSDK_macOS.StringProvider {
+  public func `enum`<T>() -> T? where T : Swift.RawRepresentable, T.RawValue == Swift.String
+  public func `enum`<T>() -> T? where T : Swift.RawRepresentable, T.RawValue == Swift.UInt8
+  public func `enum`<T>() -> T? where T : Swift.RawRepresentable, T.RawValue == Swift.UInt16
+  public func `enum`<T>() -> T? where T : Swift.RawRepresentable, T.RawValue == Swift.UInt32
+  public func `enum`<T>() -> T? where T : Swift.RawRepresentable, T.RawValue == Swift.UInt64
+  public func `enum`<T>() -> T? where T : Swift.RawRepresentable, T.RawValue == Swift.UInt
+  public func `enum`<T>() -> T? where T : Swift.RawRepresentable, T.RawValue == Swift.Int8
+  public func `enum`<T>() -> T? where T : Swift.RawRepresentable, T.RawValue == Swift.Int16
+  public func `enum`<T>() -> T? where T : Swift.RawRepresentable, T.RawValue == Swift.Int32
+  public func `enum`<T>() -> T? where T : Swift.RawRepresentable, T.RawValue == Swift.Int64
+  public func `enum`<T>() -> T? where T : Swift.RawRepresentable, T.RawValue == Swift.Int
+  public func getEnum<T>() throws -> T where T : Swift.RawRepresentable, T.RawValue == Swift.String
+  public func getEnum<T>() throws -> T where T : Swift.RawRepresentable, T.RawValue == Swift.UInt8
+  public func getEnum<T>() throws -> T where T : Swift.RawRepresentable, T.RawValue == Swift.UInt16
+  public func getEnum<T>() throws -> T where T : Swift.RawRepresentable, T.RawValue == Swift.UInt32
+  public func getEnum<T>() throws -> T where T : Swift.RawRepresentable, T.RawValue == Swift.UInt64
+  public func getEnum<T>() throws -> T where T : Swift.RawRepresentable, T.RawValue == Swift.UInt
+  public func getEnum<T>() throws -> T where T : Swift.RawRepresentable, T.RawValue == Swift.Int8
+  public func getEnum<T>() throws -> T where T : Swift.RawRepresentable, T.RawValue == Swift.Int16
+  public func getEnum<T>() throws -> T where T : Swift.RawRepresentable, T.RawValue == Swift.Int32
+  public func getEnum<T>() throws -> T where T : Swift.RawRepresentable, T.RawValue == Swift.Int64
+  public func getEnum<T>() throws -> T where T : Swift.RawRepresentable, T.RawValue == Swift.Int
+}
+extension MeetingSDK_macOS.StringProvider {
+  public var bool: Swift.Bool? {
+    get
+  }
+  public var uInt8: Swift.UInt8? {
+    get
+  }
+  public var uInt16: Swift.UInt16? {
+    get
+  }
+  public var uInt32: Swift.UInt32? {
+    get
+  }
+  public var uInt64: Swift.UInt64? {
+    get
+  }
+  public var uInt: Swift.UInt? {
+    get
+  }
+  public var int8: Swift.Int8? {
+    get
+  }
+  public var int16: Swift.Int16? {
+    get
+  }
+  public var int32: Swift.Int32? {
+    get
+  }
+  public var int64: Swift.Int64? {
+    get
+  }
+  public var int: Swift.Int? {
+    get
+  }
+  public var float: Swift.Float? {
+    get
+  }
+  public var double: Swift.Double? {
+    get
+  }
+}
+extension MeetingSDK_macOS.StringProvider {
+  public var boolValue: Swift.Bool {
+    get
+  }
+  public var uInt8Value: Swift.UInt8 {
+    get
+  }
+  public var uInt16Value: Swift.UInt16 {
+    get
+  }
+  public var uInt32Value: Swift.UInt32 {
+    get
+  }
+  public var uInt64Value: Swift.UInt64 {
+    get
+  }
+  public var uIntValue: Swift.UInt {
+    get
+  }
+  public var int8Value: Swift.Int8 {
+    get
+  }
+  public var int16Value: Swift.Int16 {
+    get
+  }
+  public var int32Value: Swift.Int32 {
+    get
+  }
+  public var int64Value: Swift.Int64 {
+    get
+  }
+  public var intValue: Swift.Int {
+    get
+  }
+  public var floatValue: Swift.Float {
+    get
+  }
+  public var doubleValue: Swift.Double {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+}
+extension MeetingSDK_macOS.XML {
+  public var description: Swift.String {
+    get
+  }
+  public func toXMLString() -> Swift.String
+}
+@objc public class SimpleXMLParser : ObjectiveC.NSObject, Foundation.XMLParserDelegate {
+  public var root: MeetingSDK_macOS.XML?
+  final public let data: Foundation.Data
+  @objc deinit
+  public init(data: Foundation.Data)
+  public func parse() throws
+  @objc public func parser(_ parser: Foundation.XMLParser, didStartElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?, attributes attributeDict: [Swift.String : Swift.String])
+  @objc public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
+  @objc public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
+  @objc public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
 }

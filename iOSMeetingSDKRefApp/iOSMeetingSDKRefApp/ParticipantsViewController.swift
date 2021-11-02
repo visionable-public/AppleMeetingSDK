@@ -57,9 +57,19 @@ class ParticipantsViewController: UIViewController, UITableViewDelegate, UITable
                     audioStreams[audioInfo.streamId] = 50
             }
             
+            // We only store boolean values in this array, so if there is a value
+            // present the stream is muted
+            if MeetingState.shared.mutedStreamIDs[audioInfo.streamId] != nil {
+                cell.volumeSlider.isEnabled = false
+                cell.audioInfoSiteLabel.text = "Site: " + (participant.audioInfo?.site ?? "") + " (muted)"
+            } else {
+                cell.volumeSlider.isEnabled = true
+            }
+            
             // Store the Stream ID in the slider's tag field.   Need to convert to an integer first.
             cell.volumeSlider.tag = Int(audioInfo.streamId) ?? 0
             cell.volumeSlider.addTarget(self, action: #selector(sliderValueChanged(sender:event:)), for: .valueChanged)
+            cell.volumeSlider.setNeedsDisplay()
         }
         else
         {

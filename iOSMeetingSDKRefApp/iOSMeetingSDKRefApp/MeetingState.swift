@@ -18,6 +18,7 @@ class MeetingState: NSObject {
     
     var videoDevicesUsed: [String: String] = [:]
     var audioStreamVolumes: [String: Int]=[:]
+    var mutedStreamIDs: [String: Bool]=[:]
     
     // Set to true when we have successfully joined a meeting
     var meetingIsActive = false

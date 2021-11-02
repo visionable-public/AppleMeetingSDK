@@ -14,7 +14,9 @@
 		E40AA6D42642ADCC004EA9A4 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E40AA6A22641E50F004EA9A4 /* ReplayKit.framework */; };
 		E40AA6D82642ADCD004EA9A4 /* SampleHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = E40AA6D72642ADCD004EA9A4 /* SampleHandler.mm */; };
 		E40AA6DC2642ADCD004EA9A4 /* ScreenShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E40AA6D32642ADCC004EA9A4 /* ScreenShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E4216637266EB1A200B13956 /* MeetingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D45330263C34B5006AEBAA /* MeetingSDK.xcframework */; };
+		E41C7DBF27316CC90053B723 /* MeetingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41C7DBE27316CC90053B723 /* MeetingSDK.xcframework */; };
+		E41C7DC027316CC90053B723 /* MeetingSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E41C7DBE27316CC90053B723 /* MeetingSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E41C7DC227316CED0053B723 /* MeetingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41C7DBE27316CC90053B723 /* MeetingSDK.xcframework */; };
 		E44456D0263B904A00F94140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44456CF263B904A00F94140 /* AppDelegate.swift */; };
 		E44456D2263B904A00F94140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44456D1263B904A00F94140 /* SceneDelegate.swift */; };
 		E44456D7263B904A00F94140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44456D5263B904A00F94140 /* Main.storyboard */; };
@@ -25,8 +27,6 @@
 		E4650B75263F953A000197CB /* SubtitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4650B74263F953A000197CB /* SubtitleTableViewCell.swift */; };
 		E4650B77263F9966000197CB /* MeetingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4650B76263F9966000197CB /* MeetingState.swift */; };
 		E4D4532B263BA4A9006AEBAA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4532A263BA4A9006AEBAA /* SettingsTableViewController.swift */; };
-		E4D45331263C34B5006AEBAA /* MeetingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D45330263C34B5006AEBAA /* MeetingSDK.xcframework */; };
-		E4D45332263C34B5006AEBAA /* MeetingSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4D45330263C34B5006AEBAA /* MeetingSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4F87F9B268CB591004531E7 /* VideoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F87F9A268CB591004531E7 /* VideoGalleryViewController.swift */; };
 		E4F87F9F268CBD47004531E7 /* ParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F87F9E268CBD47004531E7 /* ParticipantView.swift */; };
 /* End PBXBuildFile section */
@@ -53,13 +53,13 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4D45333263C34B5006AEBAA /* Embed Frameworks */ = {
+		E41C7DC127316CC90053B723 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E4D45332263C34B5006AEBAA /* MeetingSDK.xcframework in Embed Frameworks */,
+				E41C7DC027316CC90053B723 /* MeetingSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +81,7 @@
 		E40AA6E12642ADFF004EA9A4 /* ScreenShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenShareExtension.entitlements; sourceTree = "<group>"; };
 		E40AA6E52642B687004EA9A4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		E40AA6E82642B6C1004EA9A4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E41C7DBE27316CC90053B723 /* MeetingSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MeetingSDK.xcframework; path = ../MeetingSDK.xcframework; sourceTree = "<group>"; };
 		E44456CC263B904A00F94140 /* iOSMeetingSDKRefApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMeetingSDKRefApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44456CF263B904A00F94140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E44456D1263B904A00F94140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4216637266EB1A200B13956 /* MeetingSDK.xcframework in Frameworks */,
+				E41C7DC227316CED0053B723 /* MeetingSDK.xcframework in Frameworks */,
 				E40AA6D42642ADCC004EA9A4 /* ReplayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4D45331263C34B5006AEBAA /* MeetingSDK.xcframework in Frameworks */,
+				E41C7DBF27316CC90053B723 /* MeetingSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +182,7 @@
 		E4D4532F263C34B5006AEBAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E41C7DBE27316CC90053B723 /* MeetingSDK.xcframework */,
 				E4A445D22655F46800D4A051 /* CoreImage.framework */,
 				E455F0C12649DAB000A23E4C /* CoreGraphics.framework */,
 				E455F0BF2649DA8A00A23E4C /* AVFoundation.framework */,
@@ -221,8 +223,8 @@
 				E44456C8263B904A00F94140 /* Sources */,
 				E44456C9263B904A00F94140 /* Frameworks */,
 				E44456CA263B904A00F94140 /* Resources */,
-				E4D45333263C34B5006AEBAA /* Embed Frameworks */,
 				E40AA6BA2641E510004EA9A4 /* Embed App Extensions */,
+				E41C7DC127316CC90053B723 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -512,7 +514,6 @@
 		E44456E1263B905700F94140 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iOSMeetingSDKRefApp/iOSMeetingSDKRefApp.entitlements;
@@ -535,7 +536,6 @@
 		E44456E2263B905700F94140 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iOSMeetingSDKRefApp/iOSMeetingSDKRefApp.entitlements;

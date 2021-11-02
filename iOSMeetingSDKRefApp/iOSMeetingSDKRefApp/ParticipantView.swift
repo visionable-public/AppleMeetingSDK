@@ -76,7 +76,11 @@ class ParticipantView: UIView {
 
             
         }
-
+        
+        // Set up a UILongPressGestureRecognizer to enable/disable frames
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(gestureReconizer:)))
+        self.addGestureRecognizer(longPressGesture)
+        
         // Hide the view until we get the first image and can adjust the size accordingly
         self.isHidden = true
         
@@ -104,5 +108,22 @@ class ParticipantView: UIView {
     
     required init?(coder: NSCoder) {
         super.init(coder:coder)
+    }
+    
+    @objc func handleLongPress(gestureReconizer: UILongPressGestureRecognizer) {
+        if gestureReconizer.state != .ended {
+            return
+        }
+
+        // Enable or disable VideoView from processing events
+        if let videoView = self.videoView {
+            if videoView.isEnabled {
+                self.videoView?.isEnabled = false
+                self.alpha = 0.3
+            } else {
+                self.videoView?.isEnabled = true
+                self.alpha = 1.0
+            }
+        }
     }
 }
