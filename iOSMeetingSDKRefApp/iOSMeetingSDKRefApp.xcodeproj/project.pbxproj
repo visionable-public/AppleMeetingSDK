@@ -14,8 +14,6 @@
 		E40AA6D42642ADCC004EA9A4 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E40AA6A22641E50F004EA9A4 /* ReplayKit.framework */; };
 		E40AA6D82642ADCD004EA9A4 /* SampleHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = E40AA6D72642ADCD004EA9A4 /* SampleHandler.mm */; };
 		E40AA6DC2642ADCD004EA9A4 /* ScreenShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E40AA6D32642ADCC004EA9A4 /* ScreenShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E41C7DBF27316CC90053B723 /* MeetingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41C7DBE27316CC90053B723 /* MeetingSDK.xcframework */; };
-		E41C7DC027316CC90053B723 /* MeetingSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E41C7DBE27316CC90053B723 /* MeetingSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E41C7DC227316CED0053B723 /* MeetingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41C7DBE27316CC90053B723 /* MeetingSDK.xcframework */; };
 		E44456D0263B904A00F94140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44456CF263B904A00F94140 /* AppDelegate.swift */; };
 		E44456D2263B904A00F94140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44456D1263B904A00F94140 /* SceneDelegate.swift */; };
@@ -27,6 +25,8 @@
 		E4650B75263F953A000197CB /* SubtitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4650B74263F953A000197CB /* SubtitleTableViewCell.swift */; };
 		E4650B77263F9966000197CB /* MeetingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4650B76263F9966000197CB /* MeetingState.swift */; };
 		E4D4532B263BA4A9006AEBAA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4532A263BA4A9006AEBAA /* SettingsTableViewController.swift */; };
+		E4EE1A752788DA6C00632B26 /* MeetingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41C7DBE27316CC90053B723 /* MeetingSDK.xcframework */; };
+		E4EE1A762788DA6C00632B26 /* MeetingSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E41C7DBE27316CC90053B723 /* MeetingSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4F87F9B268CB591004531E7 /* VideoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F87F9A268CB591004531E7 /* VideoGalleryViewController.swift */; };
 		E4F87F9F268CBD47004531E7 /* ParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F87F9E268CBD47004531E7 /* ParticipantView.swift */; };
 /* End PBXBuildFile section */
@@ -53,13 +53,13 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E41C7DC127316CC90053B723 /* Embed Frameworks */ = {
+		E4EE1A772788DA6C00632B26 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E41C7DC027316CC90053B723 /* MeetingSDK.xcframework in Embed Frameworks */,
+				E4EE1A762788DA6C00632B26 /* MeetingSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41C7DBF27316CC90053B723 /* MeetingSDK.xcframework in Frameworks */,
+				E4EE1A752788DA6C00632B26 /* MeetingSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +224,7 @@
 				E44456C9263B904A00F94140 /* Frameworks */,
 				E44456CA263B904A00F94140 /* Resources */,
 				E40AA6BA2641E510004EA9A4 /* Embed App Extensions */,
-				E41C7DC127316CC90053B723 /* Embed Frameworks */,
+				E4EE1A772788DA6C00632B26 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

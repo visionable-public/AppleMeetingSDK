@@ -234,6 +234,8 @@ SWIFT_CLASS("_TtC14MeetingSDK_iOS9VideoView")
 @property (nonatomic, strong) UIImageView * _Nullable frameView;
 /// A low level object containing the raw image data.  Only populated if enableVideoStream in the MeetingSDK singleton is called with an optional third argument (lowLevel) of true.   Currently this data will be in RGB888 format, but in future versions of the SDK will allow this format to be specified.
 @property (nonatomic, copy) NSData * _Nullable imageData;
+/// The streamId associated with this video view
+@property (nonatomic, copy) NSString * _Nonnull streamId;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end

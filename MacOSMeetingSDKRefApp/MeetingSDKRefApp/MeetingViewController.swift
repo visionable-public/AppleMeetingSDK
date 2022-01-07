@@ -14,6 +14,7 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
     var mutedStreamIDs:[String:Bool] = [:]
     
     @IBOutlet weak var participantTableView: NSTableView!
+    @IBOutlet weak var inputVolumeSlider: NSSlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -115,6 +116,11 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
             sender.title = "Unmute Me"
         } else {
             MeetingSDK.shared.enableAudioInput(device: MeetingState.shared.audioInputDeviceName ?? "")
+            
+            // Set the input volume to whatever the input slider is currently set to
+            let newInputLevel = self.inputVolumeSlider.integerValue
+            MeetingSDK.shared.setAudioInputVolume(Int32(newInputLevel))
+            
             sender.title = "Mute Me"
         }
     }
