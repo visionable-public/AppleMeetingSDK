@@ -38,15 +38,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property(assign)BOOL autoEnableAudioOutput;
 
 typedef void (^AudioVideoCallback)(NSString *event_name,NSString *event_data);
+typedef void (^TraceLogCallback)(NSInteger level, NSString *message);
 
 +(MeetingAPI *)sharedInstance; 
 
 //- Callbacks
 
+
+-(void)enableInlineAudioVideoLogging:(BOOL) enable;
+
 /*! @discussion Set callback for log
-    @param LogCallback  callback for log
+    @param callback  callback for log
  */
--(void)setLogCallback: (void (^)(NSString*))LogCallback;
+-(void)setLogCallback: (TraceLogCallback)callback;
 
 /*! @discussion Set notification callback
     @param callback  callback for notification
@@ -62,6 +66,7 @@ typedef void (^AudioVideoCallback)(NSString *event_name,NSString *event_data);
     @param callback callback for video
 */
 -(void)setVideoCallback: (AudioVideoCallback)callback;
+
 
 //- Functions
 
@@ -212,8 +217,22 @@ typedef void (^AudioVideoCallback)(NSString *event_name,NSString *event_data);
 - (NSString *)getAudioDevices;
 - (NSString *)getVideoDevices;
 
+/*! @discussion set the debug trace level (1-7) for IGAudio
+    @param level  New level value (1-7)
+ */
+- (void)audioSetTraceLevel:(int) level;
+
+
+/*! @discussion set the debug trace level (1-7) for IGVideo
+    @param level  New level value (1-7)
+ */
+- (void)videoSetTraceLevel:(int) level;
+
 - (void)videoTraceOutputHistory:(NSString *)filename;
 - (void)audioTraceOutputHistory:(NSString *)filename;
+
+-(uint64_t)playSound:(NSData *)wavdata;
+-(bool)stopSound:(uint64_t) data;
 @end
 
 NS_ASSUME_NONNULL_END

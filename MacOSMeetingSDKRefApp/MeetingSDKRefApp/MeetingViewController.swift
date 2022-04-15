@@ -9,6 +9,7 @@ import Cocoa
 import MeetingSDK_macOS
 
 class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDelegate, NSTableViewDataSource {
+    
     var myParticipantName = ""
     var participantArray:[Participant] = []
     var mutedStreamIDs:[String:Bool] = [:]
@@ -274,7 +275,7 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
         }
         print("MeetingSDKDelegate:  amplitude")
     }
-    
+
     // MARK: -
     // MARK: NSTableViewDelegate Methods
     

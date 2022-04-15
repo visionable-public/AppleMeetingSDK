@@ -36,6 +36,7 @@ extension UIImageView {
 // Manages the "Videos" view controller which will allow the user to drag and resize
 // a number of ParticipantView objects on a 5000x5000 scroll view
 class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
+
     enum VideoOnOffState {
         case on
         case off
@@ -378,5 +379,4 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         }
         print("iOSReferenceApp::amplitude")
     }
-    
 }

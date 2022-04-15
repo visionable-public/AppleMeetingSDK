@@ -189,7 +189,12 @@ class ConfigurationViewController: NSViewController {
                 
                 let labelRect = CGRect(x: 5.0, y: 5.0, width: mediaView.frame.width-100.0, height: 20.0)
                 let label = NSTextField(frame:labelRect)
-                label.stringValue = videoInfo.name
+                
+                if videoInfo.isScreenShare() {
+                    label.stringValue = "\(videoInfo.name) (Screen)"
+                } else {
+                    label.stringValue = videoInfo.name
+                }
                 label.isEditable = false
                 label.isBordered = false
                 label.backgroundColor = .clear
