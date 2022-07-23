@@ -30,7 +30,8 @@ class ParticipantTableCellView: NSTableCellView {
             myWindow.makeKeyAndOrderFront(self)
             myWindow.title = "Configuration"
             
-            let userName = self.participant?.displayName ?? "Unknown"
+            let userName = self.participant?.displayName
+            
             if self.participant?.isLocal == true {
                 myWindow.title = "Configuration for \(userName)(local)"
             } else {

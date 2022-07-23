@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -747,7 +747,7 @@
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KQU-JD-h4z">
-                                <rect key="frame" x="20" y="73" width="377" height="22"/>
+                                <rect key="frame" x="20" y="73" width="214" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Enter Your Name" drawsBackground="YES" id="Twe-mw-hK0">
                                     <font key="font" metaFont="system" size="14"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -764,6 +764,17 @@
                                     <action selector="doJoinMeeting:" target="XfG-lQ-9wD" id="KBr-HG-100"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RtQ-Qv-HEs">
+                                <rect key="frame" x="297" y="75" width="100" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="7qU-te-dNG"/>
+                                    <constraint firstAttribute="width" constant="98" id="IRK-xQ-HmS"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="Use V3 API" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="2cp-1N-lWf">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="gcz-VE-Jy3" secondAttribute="trailing" constant="20" symbolic="YES" id="0ei-AG-2y1"/>
@@ -773,15 +784,18 @@
                             <constraint firstItem="gcz-VE-Jy3" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="Hc1-8f-3Lj"/>
                             <constraint firstItem="KQU-JD-h4z" firstAttribute="top" secondItem="LHj-U7-mcK" secondAttribute="bottom" constant="17" id="MCO-RD-bYs"/>
                             <constraint firstItem="7nn-aD-ub6" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="MxG-ir-5cD"/>
-                            <constraint firstAttribute="trailing" secondItem="KQU-JD-h4z" secondAttribute="trailing" constant="20" symbolic="YES" id="Tnj-lY-qmi"/>
+                            <constraint firstAttribute="trailing" secondItem="KQU-JD-h4z" secondAttribute="trailing" constant="183" id="Tnj-lY-qmi"/>
                             <constraint firstAttribute="centerX" secondItem="z16-fb-4iG" secondAttribute="trailing" constant="10" id="Wup-9D-6tf"/>
                             <constraint firstItem="KQU-JD-h4z" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="XGD-Vh-I3m"/>
+                            <constraint firstAttribute="trailing" secondItem="RtQ-Qv-HEs" secondAttribute="trailing" constant="20" symbolic="YES" id="a6x-f2-BNa"/>
                             <constraint firstItem="7nn-aD-ub6" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="dwJ-sI-kMC"/>
                             <constraint firstItem="QIL-WI-B7D" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" constant="10" id="eQ1-hJ-Hsh"/>
+                            <constraint firstItem="RtQ-Qv-HEs" firstAttribute="centerY" secondItem="KQU-JD-h4z" secondAttribute="centerY" id="glI-bJ-IKB"/>
                             <constraint firstAttribute="bottom" secondItem="QIL-WI-B7D" secondAttribute="bottom" constant="20" symbolic="YES" id="hMh-ia-741"/>
                             <constraint firstItem="gcz-VE-Jy3" firstAttribute="top" secondItem="7nn-aD-ub6" secondAttribute="bottom" constant="23" id="qJV-Ug-hoa"/>
                             <constraint firstAttribute="trailing" secondItem="LHj-U7-mcK" secondAttribute="trailing" constant="20" symbolic="YES" id="rFp-ck-6Lw"/>
                             <constraint firstItem="LHj-U7-mcK" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="t1A-aY-RAB"/>
+                            <constraint firstItem="RtQ-Qv-HEs" firstAttribute="leading" secondItem="KQU-JD-h4z" secondAttribute="trailing" constant="65" id="uRo-rf-RGV"/>
                             <constraint firstItem="z16-fb-4iG" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="zoP-jh-K7i"/>
                         </constraints>
                     </view>
@@ -789,6 +803,7 @@
                         <outlet property="meetingUUIDTextField" destination="LHj-U7-mcK" id="0A6-qk-vx4"/>
                         <outlet property="serverNameTextField" destination="gcz-VE-Jy3" id="Pvf-Kz-pDr"/>
                         <outlet property="userNameTextField" destination="KQU-JD-h4z" id="CJV-lb-wEi"/>
+                        <outlet property="v3Checkbox" destination="RtQ-Qv-HEs" id="lkB-Re-exc"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

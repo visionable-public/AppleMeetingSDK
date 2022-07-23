@@ -32,6 +32,7 @@ class ConfigurationViewController: NSViewController {
     {
         // We need to find a stream ID to identify the participant in the SDK store.  Audio is preferred
         // but not always available
+    
         if let audioInfo = participant?.audioInfo {
             // We have an audioInfo, so we should have a stream id
             
@@ -42,10 +43,11 @@ class ConfigurationViewController: NSViewController {
         }
         
         // OK, we need to try and find a participant based on video stream
-        if let videoInfoArray = participant?.videoInfo {
+        if let videoInfoDict = participant?.videoInfo {
             
             // Check each video stream id in succession
-            for videoInfo in videoInfoArray {
+           
+            for (_,videoInfo) in videoInfoDict {
                 // Make sure we get a participant back.    If the remote user disabled this video
                 // stream before we make this call, we'll get nil back from the findParticipant call
                 if let updatedParticipant = MeetingSDK.shared.findParticipant(withVideoStreamId: videoInfo.streamId) {
@@ -183,7 +185,7 @@ class ConfigurationViewController: NSViewController {
         }
         
         if let videoInfoArray =  participant?.videoInfo {
-            for videoInfo in videoInfoArray {
+            for (_,videoInfo) in videoInfoArray {
                 let rect = CGRect(x: 0.0, y: yOffset, width: mediaView.frame.width, height: 30.0)
                 let view = NSView(frame:rect)
                 
@@ -203,7 +205,7 @@ class ConfigurationViewController: NSViewController {
                 let buttonRect = CGRect(x: mediaView.frame.width - 90, y: 5.0, width: 80, height: 20.0)
                 let button = NSButton(frame: buttonRect)
                 
-                if videoInfo.active == "true" {
+                if videoInfo.active {
                     button.title = "Disable"
                 } else {
                     button.title = "Enable"

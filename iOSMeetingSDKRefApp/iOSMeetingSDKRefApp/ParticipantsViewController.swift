@@ -15,6 +15,7 @@ import MeetingSDK_iOS
 class ParticipantsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var noParticipantsLabel: UILabel!
     var audioStreams: [String: Int] = [:]
     
     override func viewDidLoad() {
@@ -27,17 +28,21 @@ class ParticipantsViewController: UIViewController, UITableViewDelegate, UITable
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
+        
+        // Tell the user if there are no participants
+        noParticipantsLabel.isHidden = !MeetingSDK.shared.getParticipants().isEmpty // "There are no meeting participants."
+        
     }
     
     // MARK: - UITableViewDelegate and UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return MeetingSDK.shared.participants.count
+        return MeetingSDK.shared.getParticipants().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "participantsCell", for: indexPath) as? ParticipantsTableViewCell else { return UITableViewCell() }
         
-        let participant = MeetingSDK.shared.participants[indexPath.row]
+        let participant = MeetingSDK.shared.getParticipants()[indexPath.row]
         
         cell.userUUIDLabel.text = "User UUID: " + participant.userUUID
         cell.audioInfoStreamIdLabel.text = "Stream ID: " + (participant.audioInfo?.streamId ?? "")
@@ -84,7 +89,7 @@ class ParticipantsViewController: UIViewController, UITableViewDelegate, UITable
     
     @objc func sliderValueChanged(sender: UISlider, event: UIEvent) {
         var audioInfo: [AudioInfo] = []
-        for participant in MeetingSDK.shared.participants {
+        for participant in MeetingSDK.shared.getParticipants() {
             if let info = participant.audioInfo {
                 audioInfo.append(info)
             }
@@ -117,18 +122,19 @@ class ParticipantsViewController: UIViewController, UITableViewDelegate, UITable
     // Bring up the Video Info view controller when the appropriate button is tapped
     @objc func seeInfoVideoButtonTapped(_ sender: UIButton){
         let buttonTag = sender.tag
-        let participant = MeetingSDK.shared.participants[buttonTag]
-        let videoInfo = MeetingSDK.shared.participants[buttonTag].videoInfo
+        let participant = MeetingSDK.shared.getParticipants()[buttonTag]
+        if let videoInfoDict = participant.videoInfo {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "VideoInfoViewController") as! VideoInfoViewController
-        viewController.videoInfo = videoInfo
-        viewController.participant = participant
-        viewController.title = "Video Info"
-        viewController.navigationItem.largeTitleDisplayMode = .never
-        viewController.modalPresentationStyle = .fullScreen
-        
-        navigationController?.pushViewController(viewController, animated: true)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "VideoInfoViewController") as! VideoInfoViewController
+            viewController.videoInfo = Array(videoInfoDict.values)
+            viewController.participant = participant
+            viewController.title = "Video Info"
+            viewController.navigationItem.largeTitleDisplayMode = .never
+            viewController.modalPresentationStyle = .fullScreen
+                
+            navigationController?.pushViewController(viewController, animated: true)
+        }
     }
     
 }

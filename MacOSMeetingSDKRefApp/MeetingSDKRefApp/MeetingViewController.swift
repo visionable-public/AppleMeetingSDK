@@ -11,8 +11,13 @@ import MeetingSDK_macOS
 class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDelegate, NSTableViewDataSource {
     
     var myParticipantName = ""
+    var meetingKey = ""
+    var server = ""
+    var meetingUUID = ""
+    var isV3Meeting = false
     var participantArray:[Participant] = []
     var mutedStreamIDs:[String:Bool] = [:]
+    var activeVideoViews:[String:VideoView] = [:]
     
     @IBOutlet weak var participantTableView: NSTableView!
     @IBOutlet weak var inputVolumeSlider: NSSlider!
@@ -23,20 +28,47 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
         
         // Set delegate
         MeetingSDK.shared.delegate = self
-        MeetingSDK.shared.joinMeeting(name: myParticipantName) { (success) in
-            if success {
-                print("join command succeeded, enabling local audio/video")
-                self.enableOutgoingAudioVideo()
-                
-                // Local user should be in the participants array now, reload table
-                self.participantArray = MeetingSDK.shared.participants
-                DispatchQueue.main.async {
-                    self.participantTableView.reloadData()
+        
+        MeetingSDK.shared.enableInlineAudioVideoLogging(true)
+        
+        // V3 meetings use token, V2 do not
+        if isV3Meeting {
+            
+            // Join V3
+            MeetingSDK.shared.joinMeetingWithToken(server: server, meetingUUID: meetingUUID, token: meetingKey, name: myParticipantName) { (success) in
+                if success {
+                    print("join command succeeded, enabling local audio/video")
+                    self.enableOutgoingAudioVideo()
+
+                    // Local user should be in the participants array now, reload table
+                    self.participantArray = MeetingSDK.shared.getParticipants()
+                    DispatchQueue.main.async {
+                        self.participantTableView.reloadData()
+                    }
+                } else {
+                    print("join command failed: \(MeetingAPI.sharedInstance().lastError)")
                 }
-            } else {
-                print("join command failed: \(MeetingAPI.sharedInstance().lastError)")
             }
         }
+        else {
+            
+            // Join V2
+            MeetingSDK.shared.joinMeeting(server: server, meetingUUID: meetingUUID, key: meetingKey, name: myParticipantName) { (success) in
+                if success {
+                    print("join command succeeded, enabling local audio/video")
+                    self.enableOutgoingAudioVideo()
+                    
+                    // Local user should be in the participants array now, reload table
+                    self.participantArray = MeetingSDK.shared.getParticipants()
+                    DispatchQueue.main.async {
+                        self.participantTableView.reloadData()
+                    }
+                } else {
+                    print("join command failed: \(MeetingAPI.sharedInstance().lastError)")
+                }
+            }
+        }
+         
     }
     
     // This function sets up our outgoing audio and video and begins sending it to
@@ -177,9 +209,9 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
             MeetingState.shared.audioStreamVolumes[audioInfo.streamId] = 50
         }
         
-        print("MeetingSDKDelegate:  participantAdded: \(participant.displayName), total count now \(MeetingSDK.shared.participants.count)")
+        print("MeetingSDKDelegate:  participantAdded: \(participant.displayName), total count now \(MeetingSDK.shared.getParticipants().count)")
         DispatchQueue.main.async {
-            self.participantArray = MeetingSDK.shared.participants
+            self.participantArray = MeetingSDK.shared.getParticipants()
             
             print("-------\nUpdating participant list based on data: \(self.participantArray)\n-------")
             self.participantTableView.reloadData()
@@ -199,12 +231,16 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
         // Since the reference app wants to store the streamId with the window it will create,
         // we need to iterate through all the VideoInfo objects for this participant and find
         // the one corresponding to the VideoView just created.  Then we can pass the right streamId
-        for videoInfo in participant.videoInfo {
-            if videoInfo.videoView == videoView {
-                spawnWindow(videoInfo.videoView!, streamId: videoInfo.streamId)
-            }
-        }
+        // TODO: Fix this!
         
+        if let videoView = activeVideoViews[videoView.streamId] {
+            // Already have a VideoView associated with this stream id.   Error?
+            print("MeetingSDKDelegate: participantVideoViewCreated: streamId \(videoView.streamId) already has an active VideoView")
+        } else {
+            activeVideoViews[videoView.streamId] = videoView
+            spawnWindow(videoView, streamId: videoView.streamId)
+        }
+
         print("MeetingSDKDelegate: participantVideoViewCreated (\(participant.displayName))")
     }
     
@@ -212,55 +248,57 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
         print("MeetingSDKDelegate:  participantVideoViewRetrieved")
         // If this window was put in the background/hidden because the stream was disabled,
         // we need to bring it back to the foreground
-        if let streamId = participant.videoInfo.first?.streamId {
-            for videoStreamVC in MeetingState.shared.videoWindows {
-                if videoStreamVC.streamId == streamId {
-                    videoStreamVC.window?.orderFront(self)
-                }
-            }
-        }
+        //if let streamId = participant.videoInfo.first?.streamId {
+        //    for videoStreamVC in MeetingState.shared.videoWindows {
+        //        if videoStreamVC.streamId == streamId {
+        //            videoStreamVC.window?.orderFront(self)
+        //        }
+        //    }
+        //}
     }
     
     func particpantVideoRemoteLayoutChanged(participant: Participant, streamId: String) {
         print("MeetingSDKDelegate:  particpantVideoRemoteLayoutChanged")
     }
     
-    func participantVideoRemoved(participant: Participant, streamId: String, videoView: VideoView?) {
+    func participantVideoRemoved(participant: Participant, streamId: String) {
         var name = "Unknown"
         
-        for videoInfo in participant.videoInfo {
-            if videoInfo.streamId == streamId {
-                name = videoInfo.site
-                self.removeWindow(videoInfo.streamId)
-            }
+        if let videoInfo = participant.videoInfo?[streamId] {
+            print("MeetingSDKDelegate:  participantVideoRemoved about to call removeWindow \(videoInfo.streamId)")
+            name = videoInfo.site
+            self.removeWindow(videoInfo.streamId as String)
+            self.activeVideoViews.removeValue(forKey: videoInfo.streamId)
         }
-
 
         print("MeetingSDKDelegate:  participantVideoRemoved (\(name))")
     }
     
     func participantRemoved(participant: Participant) {
-        print("MeetingSDKDelegate:  participantRemoved: \(participant.displayName), total count now \(MeetingSDK.shared.participants.count)")
+        print("MeetingSDKDelegate:  participantRemoved: \(participant.displayName), total count now \(MeetingSDK.shared.getParticipants().count)")
         DispatchQueue.main.async {
-            self.participantArray = MeetingSDK.shared.participants
+            self.participantArray = MeetingSDK.shared.getParticipants()
             self.participantTableView.reloadData()
         }
         
         // Remove all video windows
-        for videoInfo in participant.videoInfo {
-            self.removeWindow(videoInfo.streamId)
+        if let videoInfo = participant.videoInfo {
+            for (streamId,_) in videoInfo {
+                self.removeWindow(streamId as String)
+                self.activeVideoViews.removeValue(forKey: streamId)
+            }
         }
     }
     
-    func inputMeterChanged(meter: String) {
+    func inputMeterChanged(meter: Int) {
         print("MeetingSDKDelegate:  inputMeterChanged")
     }
     
-    func outputMeterChanged(meter: String) {
+    func outputMeterChanged(meter: Int) {
         print("MeetingSDKDelegate:  outputMeterChanged")
     }
     
-    func participantAmplitudeChanged(participant: Participant, amplitude: String, muted: Bool) {
+    func participantAmplitudeChanged(participant: Participant, amplitude: Int, muted: Bool) {
         if let streamId = participant.audioInfo?.streamId {
             if muted {
                 self.mutedStreamIDs[streamId] = true
@@ -276,6 +314,10 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
         print("MeetingSDKDelegate:  amplitude")
     }
 
+    func logMessage(level: Int, message: String) {
+        print("(\(level)) : \(message)")
+    }
+    
     // MARK: -
     // MARK: NSTableViewDelegate Methods
     
@@ -287,43 +329,21 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
     // MARK: NSTableViewDataSource Methods
     func numberOfRows(in tableView: NSTableView) -> Int {
         // Return number of participants + 1 for the user
-        let rowCount = participantArray.count
+        let rowCount = self.participantArray.count
         print("MeetingSDKDelegate:  there are going to be \(rowCount) rows in the table")
         return rowCount
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        var name1 = ""
-        var name2 = ""
-        
-        participantArray.sort { (first:Participant, second:Participant) -> Bool in
-            /*
-            if first.videoInfo.count == 0 {
-                guard let audioSite = first.audioInfo?.site else {
-                    return false
-                }
-                name1 = audioSite
-            } else {
-                name1 = first.videoInfo[0].site
-            }
-            
-            if second.videoInfo.count == 0 {
-                guard let audioSite = second.audioInfo?.site else {
-                    return false
-                }
-                name2 = audioSite
-            } else {
-                name2 = second.videoInfo[0].site
-            }
- */
-            
+        self.participantArray.sort { (first:Participant, second:Participant) -> Bool in
+
             return first.displayName < second.displayName
         }
         
-        let name = participantArray[row].displayName
+        let name = self.participantArray[row].displayName
     
         if let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "ParticipantCell"), owner: nil) as? ParticipantTableCellView {
-          cell.participant = participantArray[row]
+            cell.participant = self.participantArray[row]
         
             cell.textField?.stringValue = name
             

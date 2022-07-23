@@ -17,3 +17,6 @@ FOUNDATION_EXPORT const unsigned char MeetingSDK_macOSVersionString[];
 
 #import <MeetingSDK_macOS/MeetingAPI.h>
 #import <MeetingSDK_macOS/Utils.h>
+#import <MeetingSDK_macOS/CMParticipant.h>
+#import <MeetingSDK_macOS/CMAudioInfo.h>
+#import <MeetingSDK_macOS/CMVideoInfo.h>

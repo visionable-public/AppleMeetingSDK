@@ -36,15 +36,15 @@ class VideoInfoViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.streamIdLabel.text = "Stream ID: " + videoInfo.streamId
         cell.siteLabel.text = "Site: " + videoInfo.site
         cell.deviceNameLabel.text = "Device Name: " + videoInfo.name
-        cell.activeLabel.text = "Active: " + videoInfo.active
+        cell.activeLabel.text = "Active: \(videoInfo.active)"
         cell.codecNameLabel.text = "Codec Name: " + videoInfo.codecName
-        cell.localLabel.text = "Local: " + videoInfo.local
-        cell.layoutLabel.text = "Layout: " + videoInfo.local
-        cell.widthLabel.text = "Width: " + videoInfo.width
-        cell.heightLabel.text = "Height: " + videoInfo.height
+        cell.localLabel.text = "Local: \(videoInfo.local)"
+        cell.layoutLabel.text = "Layout: \(videoInfo.layout)"
+        cell.widthLabel.text = "Width: \(videoInfo.width)"
+        cell.heightLabel.text = "Height: \(videoInfo.height)"
         
         print("iOSReferenceApp:VideoInfoViewController -- cellForRowAt -- videoInfo.streamId: \(videoInfo.streamId), active flag is \(videoInfo.active)")
-        if videoInfo.active == "true" {
+        if videoInfo.active {
             cell.enableDisableVideoStreamButton.setTitle("Disable Video Stream", for: .normal)
         } else {
             cell.enableDisableVideoStreamButton.setTitle("Enable Video Stream", for: .normal)
@@ -60,7 +60,7 @@ class VideoInfoViewController: UIViewController, UITableViewDelegate, UITableVie
         let buttonTag = sender.tag
         let videoInfo = videoInfo[buttonTag]
         
-        if videoInfo.active == "true" {
+        if videoInfo.active {
             disableVideoStream(streamId: videoInfo.streamId)
 
             NotificationCenter.default.post(name: NSNotification.Name("videoStreamDisabled"), object: videoInfo.videoView)

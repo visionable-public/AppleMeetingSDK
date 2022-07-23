@@ -234,8 +234,8 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
     // change might be
     func participantVideoUpdated(participant: Participant, streamId: String, videoView: VideoView) {
         print("iOSReferenceApp::participantVideoUpdated")
-        for videoInfo in participant.videoInfo {
-            if videoInfo.active != "false" {
+        if let videoInfo = participant.videoInfo?[streamId] {
+            if videoInfo.active {
                 // If active is not false we remove the current video view and re enable the video stream
                 for (index, view) in self.participantViews.enumerated() {
                     if view.videoView == videoView {
@@ -265,10 +265,8 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         participantView.videoView?.frameView?.contentMode = .scaleAspectFit
         
         // Locate the stream id
-        for videoInfo in participant.videoInfo {
-            if (videoInfo.videoView == videoView) {
-                participantView.streamId = videoInfo.streamId
-            }
+        if let videoInfo = participant.videoInfo?[videoView.streamId] {
+            participantView.streamId = videoInfo.streamId
         }
         
         participantViews.append(participantView)
@@ -312,13 +310,16 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         // a participantVideoViewRetrieved event when the enableVideoStream API is called.
         // The active flag is set when we receive the corresponding video_stream_buffer_ready event.
     
-        for videoInfo in participant.videoInfo {
-            // Find corresponding videoInfo structure
-            if videoInfo.videoView == videoView {
-                // add the view
-                DispatchQueue.main.async {
-                    videoInfo.videoView?.frameView?.image = nil
-                    self.makeAndAddNewParticipantView(participant: participant, videoView: videoView)
+        if let videoInfoDict = participant.videoInfo {
+            for (_,videoInfo) in videoInfoDict {
+                // Find corresponding videoInfo structure
+                if videoInfo.streamId == videoView.streamId {
+                    // add the view
+                    DispatchQueue.main.async {
+                        // TODO: Convert to videoview map like mac reference app
+                        videoInfo.videoView?.frameView?.image = nil
+                        self.makeAndAddNewParticipantView(participant: participant, videoView: videoView)
+                    }
                 }
             }
         }
@@ -353,8 +354,10 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         print("iOSReferenceApp::participantRemoved")
         
         // Remove all video streams associated with this participant
-        for videoInfo in participant.videoInfo {
-            participantVideoRemoved(participant: participant, streamId: videoInfo.streamId, videoView: videoInfo.videoView)
+        if let videoInfoDict = participant.videoInfo {
+            for (_,videoInfo) in videoInfoDict {
+                participantVideoRemoved(participant: participant, streamId: videoInfo.streamId, videoView: videoInfo.videoView)
+            }
         }
     }
     

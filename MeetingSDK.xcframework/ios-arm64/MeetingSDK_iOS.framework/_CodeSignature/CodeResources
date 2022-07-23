@@ -4,9 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/CMAudioInfo.h</key>
+		<data>
+		BcY4i+v5M6vNZ0pa9Ej9ZlVaWeI=
+		</data>
+		<key>Headers/CMParticipant.h</key>
+		<data>
+		f9GTaspMG8OkUU5kfGrtJKPabHI=
+		</data>
+		<key>Headers/CMVideoInfo.h</key>
+		<data>
+		2K9QnUU6915hVHJOuv1ZVrGMzk8=
+		</data>
 		<key>Headers/MeetingAPI.h</key>
 		<data>
-		xojahyrZP59NUwJEfdjwz6SwF/8=
+		XAgcf7JlfkW/yeAQvGPPFRQEJ8k=
 		</data>
 		<key>Headers/MeetingSDKScreenSharing.h</key>
 		<data>
@@ -14,11 +26,11 @@
 		</data>
 		<key>Headers/MeetingSDK_iOS-Swift.h</key>
 		<data>
-		EyqrY/5495jTVJDPfn1ZWwfpLiQ=
+		MBlV1TEs+XW2v/DxPb823GRULn4=
 		</data>
 		<key>Headers/MeetingSDK_iOS.h</key>
 		<data>
-		tAHt4eDHdgwtEfePoagk7KcB25w=
+		YKBtcYWFoaWOmvkUwAePrIHQ37k=
 		</data>
 		<key>Headers/Utils.h</key>
 		<data>
@@ -26,31 +38,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PoPjaL2xkrYaNYP42ZMcKynDSiA=
+		4FqrYdtPY6A7ER0ocmZxyi//YlU=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		mq/N8jv67AW2uLdgz+yuOMw5IKA=
+		gNdVDMoZDC+HRKZCDOXxaEtXmhs=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		DmVIlRvKvHZOZjR8PN/oYLM5eLE=
+		nArn36DaNS05JhARjvT0jJbMqy4=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Ah2R0iLpmqHwHn6dNUVVsCrXUAs=
-		</data>
-		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		mq/N8jv67AW2uLdgz+yuOMw5IKA=
-		</data>
-		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		DmVIlRvKvHZOZjR8PN/oYLM5eLE=
-		</data>
-		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		Ah2R0iLpmqHwHn6dNUVVsCrXUAs=
+		uq0XfqaHg1sTeteGddaQT5liLks=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,11 +59,32 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/CMAudioInfo.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			F/aWwGcAUzWLXLBpdbYq/Dkw9Kc5PzO7gYilqbj8H4k=
+			</data>
+		</dict>
+		<key>Headers/CMParticipant.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			x3CSaxju0bn1jKwnpKFx1AhnxCKJ1CXUmh5T9tk1df8=
+			</data>
+		</dict>
+		<key>Headers/CMVideoInfo.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ix6eWxggwHpacguaAOLCsbbOvZVTMnXDW3HJFoizUik=
+			</data>
+		</dict>
 		<key>Headers/MeetingAPI.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yvRubNvEyzVZgSQ7gu30IaPymHPSm/llAG7aOHmTvWU=
+			XE1NUPvH5ESWD6rDreKDnTntC+szoe80GlFyiEtHX4E=
 			</data>
 		</dict>
 		<key>Headers/MeetingSDKScreenSharing.h</key>
@@ -77,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PFvQN35or1QWIiRfLCHsjpoMc3cG9r3BzTtQ6I+h2ds=
+			0l/Y0cmn4j+0bYzRS9pnifJe1h2rLpSEt87U0ApB6sU=
 			</data>
 		</dict>
 		<key>Headers/MeetingSDK_iOS.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vbYIX69nbtYA3AW59cSXdWqVZdapJqHLyqmsWoiU7L8=
+			yo/lEK2pAZ5ZZxG76zon2x2/nls2JW+E7dx3HSeNdG8=
 			</data>
 		</dict>
 		<key>Headers/Utils.h</key>
@@ -98,42 +119,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FjYCcpabti2Je8FdLMJ8zdp7hpneCfKFm0wCDyUreZI=
+			Xryzjm/cg0dCb/Xr31qswpK0DebsewQyAJ0Vf3+VrrA=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oWDOwlKf8amLnvtOZYe8BBTh7MXS2xxexFTWj1qI6Eg=
+			vn1ifB3SFSlG7LrZ0/wSkZEdoPpQEu6zbZ4HSY75Sh4=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D47gJQeN+fDm7sJYGEpNKu5aZXSFwfkaDKLrAWRCPEU=
-			</data>
-		</dict>
-		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FjYCcpabti2Je8FdLMJ8zdp7hpneCfKFm0wCDyUreZI=
-			</data>
-		</dict>
-		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oWDOwlKf8amLnvtOZYe8BBTh7MXS2xxexFTWj1qI6Eg=
-			</data>
-		</dict>
-		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			D47gJQeN+fDm7sJYGEpNKu5aZXSFwfkaDKLrAWRCPEU=
+			XX79rBHWY9cImnxosTU9RJQQQvLme8tgO9XWgmzCS4w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

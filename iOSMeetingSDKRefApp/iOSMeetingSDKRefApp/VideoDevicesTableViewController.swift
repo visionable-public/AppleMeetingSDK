@@ -76,6 +76,9 @@ class VideoDevicesTableViewController: UITableViewController {
                                 }
                             }
                         }
+                        
+                        // Pop back to settings
+                        //self.navigationController?.popViewController(animated: true) /// Added by Nick, then revoked
                     }
                     self.tableView.reloadData()
                 }

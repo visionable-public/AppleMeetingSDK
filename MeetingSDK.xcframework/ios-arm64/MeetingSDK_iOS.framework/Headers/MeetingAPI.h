@@ -6,18 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CMVideoInfo.h"
+#import "CMParticipant.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class MeetingSDK;
 @interface MeetingAPI : NSObject
-{
-    
-@private
-    void (^_completionHandler)(bool someParameter);
-    NSArray* deviceList;
-}
 
+// TODO: Remove unneeded properties
 //-Properties
 
 @property (readonly) NSString* defaultServer;
@@ -37,8 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(assign)BOOL autoEnableAudioInput;
 @property(assign)BOOL autoEnableAudioOutput;
 
-typedef void (^AudioVideoCallback)(NSString *event_name,NSString *event_data);
-typedef void (^TraceLogCallback)(NSInteger level, NSString *message);
+@property(assign)NSObject *_Nullable delegate;
 
 +(MeetingAPI *)sharedInstance; 
 
@@ -47,59 +42,24 @@ typedef void (^TraceLogCallback)(NSInteger level, NSString *message);
 
 -(void)enableInlineAudioVideoLogging:(BOOL) enable;
 
-/*! @discussion Set callback for log
-    @param callback  callback for log
- */
--(void)setLogCallback: (TraceLogCallback)callback;
-
-/*! @discussion Set notification callback
-    @param callback  callback for notification
-*/
--(void)setNotificationCallback: (void (^)(NSString*, NSString* ))callback;
-
-/*! @discussion Set audio callback
-    @param callback callback for audio
- */
--(void)setAudioCallback: (AudioVideoCallback)callback;
-
-/*! @discussion Set callback for video
-    @param callback callback for video
-*/
--(void)setVideoCallback: (AudioVideoCallback)callback;
-
 
 //- Functions
-
-/*! @discussion Get key. Timeout after 60 seconds if no response.
-    @param server  server info
-    @param mtg_guid meeting guif
-    @param handler  success callback with key
- */
-- (void)asyncGetKey:(NSString*)server mtg_guid:(NSString*)mtg_guid handler:(void(^)(bool success,NSString* key))handler;
 
 /*! @discussion Basic join a meeting call. Return false if error. Timeout after 60 seconds if no response.
     @param name  user name.
     @param userUUID  userUUID
     @param handler  success callback
  */
-- (void)joinMeeting:(NSString*)name userUUID:(NSString*)userUUID handler:(void(^)(bool))handler;
+- (void)joinMeeting:(NSString *)server meetingUUID:(NSString *) meetingUUID key:(NSString *)key
+           userUUID:(NSString *)userUUID name:(NSString *)name handler:(void(^)(bool))handler;
 
 /*! @discussion Initializes a meeting. Timeout after 60 seconds if no response.
     @param guid  meeting guid
     @param server server id
     @param handler  success callback
  */
-- (void)initializeMeeting:(NSString*)guid server:(NSString*)server handler:(void(^)(bool))handler;
-
-/*! @discussion Return the devices. Timeout after 60 seconds if no response.
-    @param handler  callback with devices
- */
-- (void)getDevices:(void(^)(NSString*))handler;
-
-/*! @discussion Return the devices. Timeout after 60 seconds if no response.
-    @param handler  callback with devices
- */
-- (void)getDevicesForVideo:(void(^)(NSString*))handler;
+- (void)initializeMeeting:(NSString*)guid server:(NSString*)server handler:(void(^)(bool,NSString *))handler;
+- (void)initializeMeetingWithToken:(NSString * _Nullable)token server:(NSString *)server uuid:(NSString *)meetingUUID handler:(void (^)(bool,NSString *))handler;
 
 /*! @discussion Exits a meeting
  */
@@ -136,12 +96,14 @@ typedef void (^TraceLogCallback)(NSInteger level, NSString *message);
 
 - (void)enableVideoCapture:(NSString*)deviceID withMode:(NSString *)mode handler:(void(^)(bool))handler;
 
+#if !defined(MACOS)
 /*! @discussion Set the bundle id and the app group id used by the Screen Sharing extension
         @param bundleId The bundle id of the screen sharing extension
         @param appGroupId The App Group identifier used to share data between the application and the screen sharing extension
  
  */
 -(void) initializeScreenCaptureExtension:(NSString *)bundleId withAppGroup:(NSString *)appGroupId;
+#endif
 
 /*! @discussion Stop capturing via the camera
     @param deviceID device id
@@ -165,22 +127,25 @@ typedef void (^TraceLogCallback)(NSInteger level, NSString *message);
 
 /*! @discussion Start displaying the incoming video stream
     @param streamID stream id
-    @param width width
-    @param height height
-    @param colorspace color space
+
 */
 
-- (bool)enableVideoStream:(NSString*)streamID width:(int)width height:(int)height colorspace:(NSString*)colorspace;
+- (bool)enableVideoStream:(NSString*)streamID;
 
 /*! @discussion disable specified video stream
     @param streamID device id
  */
 - (bool)disableVideoStream:(NSString*)streamID;
 
-/*! @discussion Return true if specified stream is ready
-    @param streamid stream id
+/*! @discussion Temporarily stop sending videoFrameReady delegate method callbacks for specified stream
+    @param streamID stream id
+*/
+- (void)pauseVideoFrameProcessing:(NSString*)streamID;
+
+/*! @discussion Resume sending videoFrameReady delegate method callbacks for specified stream
+    @param streamID device id
  */
-- (int)videoFrameReady:(NSString*)streamid;
+- (void)resumeVideoFrameProcessing:(NSString*)streamID;
 
 /*! @discussion Set volume of the audio stream. 0 to mute
     @param streamID stream id
@@ -203,19 +168,14 @@ typedef void (^TraceLogCallback)(NSInteger level, NSString *message);
 - (bool)setAudioOutputVolume:(NSString*)device volume:(int)volume;
 
 
-/*! @discussion Manually set the stored audio stream ID
-    @param newStreamID New stream id
- */
+- (NSArray *)getAudioInputDevices;
+- (NSArray *)getAudioOutputDevices;
+- (NSArray *)getVideoDevices;
+- (NSArray *)getSupportedVideoSendResolutions:(NSString *)device;
 
-- (void)setAudioStreamID:(NSString*)newStreamID;
+- (CMParticipant *_Nullable)getLocalParticipant;
 
-/*! @discussion Manually set the stored video stream ID
-    @param newStreamID  New stream id
- */
-- (void)setSelectedVideoStreamID:(NSString*)newStreamID;
-
-- (NSString *)getAudioDevices;
-- (NSString *)getVideoDevices;
+- (NSArray *)getParticipants;
 
 /*! @discussion set the debug trace level (1-7) for IGAudio
     @param level  New level value (1-7)
@@ -231,8 +191,15 @@ typedef void (^TraceLogCallback)(NSInteger level, NSString *message);
 - (void)videoTraceOutputHistory:(NSString *)filename;
 - (void)audioTraceOutputHistory:(NSString *)filename;
 
+- (NSString *) getLastError;
+
 -(uint64_t)playSound:(NSData *)wavdata;
 -(bool)stopSound:(uint64_t) data;
+
+-(CMParticipant *_Nullable) findParticipantByVideoStreamId:(NSString *)streamId;
+-(CMParticipant *_Nullable) findParticipantByAudioStreamId:(NSString *)streamId;
+-(CMVideoInfo *_Nullable) findVideoInfoByStreamId:(NSString *)streamId;
+
 @end
 
 NS_ASSUME_NONNULL_END

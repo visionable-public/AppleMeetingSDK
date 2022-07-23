@@ -18,4 +18,6 @@ FOUNDATION_EXPORT const unsigned char MeetingSDK_iOSVersionString[];
 #import <MeetingSDK_iOS/MeetingAPI.h>
 #import <MeetingSDK_iOS/Utils.h>
 #import <MeetingSDK_iOS/MeetingSDKScreenSharing.h>
-
+#import <MeetingSDK_iOS/CMParticipant.h>
+#import <MeetingSDK_iOS/CMAudioInfo.h>
+#import <MeetingSDK_iOS/CMVideoInfo.h>
