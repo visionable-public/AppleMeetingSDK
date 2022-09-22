@@ -6,6 +6,6 @@ framework module MeetingSDK_iOS {
 }
 
 module MeetingSDK_iOS.Swift {
-    header "MeetingSDK_iOS-Swift.h"
-    requires objc
+  header "MeetingSDK_iOS-Swift.h"
+  requires objc
 }

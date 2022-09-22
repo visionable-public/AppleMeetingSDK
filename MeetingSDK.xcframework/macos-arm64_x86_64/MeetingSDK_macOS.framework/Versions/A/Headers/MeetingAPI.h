@@ -110,6 +110,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (bool)disableVideoCapture:(NSString*)deviceID;
 
+- (bool)enableWindowSharing:(NSString*)windowID withMode:(NSString *)mode;
+- (bool)disableWindowSharing:(NSString*)windowID;
 
 /*! @discussion Start video capture from specified URL
     @param url  URL of video source

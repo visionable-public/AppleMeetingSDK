@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-macos10.13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MeetingSDK_macOS
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AppKit
 import Foundation
 @_exported import MeetingSDK_macOS
@@ -43,7 +44,7 @@ extension MeetingSDK_macOS.MeetingSDKDelegate {
   public func binaryPlaybackFailed(id: Swift.UInt64)
   public func screenShareCancelled()
 }
-@objc @_inheritsConvenienceInitializers public class MeetingSDKDelegateBridge : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MeetingSDKDelegateBridge : ObjectiveC.NSObject {
   @objc public func participantAdded(participant: MeetingSDK_macOS.Participant)
   @objc public func participantAudioAdded(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   @objc public func participantAudioUpdated(participant: MeetingSDK_macOS.Participant)
@@ -62,7 +63,6 @@ extension MeetingSDK_macOS.MeetingSDKDelegate {
   @objc public func binaryPlaybackEnded(id: Swift.UInt64)
   @objc public func binaryPlaybackFailed(id: Swift.UInt64)
   @objc public func screenShareCancelled()
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class VideoView : AppKit.NSView {
@@ -190,6 +190,8 @@ public enum DebugLevel : Swift.Int {
   public func setAudioOutputVolume(_ volume: Swift.Int32) -> Swift.Bool
   public func enableVideoCapture(camera: Swift.String, withMode: Swift.String, completion: @escaping (Swift.Bool) -> ())
   public func disableVideoCapture(camera: Swift.String)
+  public func enableWindowSharing(windowId: Swift.String, mode: Swift.String) -> Swift.Bool
+  public func disableWindowSharing(windowId: Swift.String) -> Swift.Bool
   public func enableNetworkVideo(url: Swift.String, mode: Swift.String, name: Swift.String, completion: @escaping (Swift.Bool) -> ())
   public func disableNetworkVideo(url: Swift.String)
   public func disableVideoStream(streamId: Swift.String)
