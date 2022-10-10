@@ -89,6 +89,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (bool)disableAudioOutput:(NSString*)deviceName deviceID:(NSString*)deviceID;
 
+- (bool)enableAudioInputPreview:(NSString *)deviceName;
+- (bool)disableAudioInputPreview:(NSString *)deviceName;
+- (bool)enableAudioOutputPreview:(NSString *)deviceName withSoundPath:(NSString *)soundPath;
+- (bool)disableAudioOutputPreview:(NSString *)deviceName;
+
 /*! @discussion Start video capture by the specified device
     @param deviceID  device id
     @param handler  returns true if success or false if failed
