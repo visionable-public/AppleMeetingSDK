@@ -14,6 +14,7 @@ public protocol MeetingSDKDelegate : AnyObject {
   func participantVideoAdded(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   func participantVideoUpdated(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   func participantVideoViewCreated(participant: MeetingSDK_macOS.Participant, videoView: MeetingSDK_macOS.VideoView, local: Swift.Bool)
+  func previewVideoViewCreated(videoView: MeetingSDK_macOS.VideoView)
   func participantVideoRemoved(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   func particpantVideoRemoteLayoutChanged(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   func participantRemoved(participant: MeetingSDK_macOS.Participant)
@@ -33,6 +34,7 @@ extension MeetingSDK_macOS.MeetingSDKDelegate {
   public func participantVideoAdded(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   public func participantVideoUpdated(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   public func participantVideoViewCreated(participant: MeetingSDK_macOS.Participant, videoView: MeetingSDK_macOS.VideoView, local: Swift.Bool)
+  public func previewVideoViewCreated(videoView: MeetingSDK_macOS.VideoView)
   public func participantVideoRemoved(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   public func particpantVideoRemoteLayoutChanged(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   public func inputMeterChanged(meter: Swift.Int)
@@ -52,6 +54,8 @@ extension MeetingSDK_macOS.MeetingSDKDelegate {
   @objc public func participantVideoUpdated(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   @objc public func participantVideoViewCreated(participant: MeetingSDK_macOS.Participant, videoView: MeetingSDK_macOS.VideoView, local: Swift.Bool)
   @objc public func videoFrameReady(streamId: Swift.String, frame: Foundation.Data)
+  @objc public func videoPreviewReady(streamId: Swift.String, name: Swift.String, width: Swift.Int32, height: Swift.Int32)
+  @objc public func previewFrameReady(streamId: Swift.String, frame: Foundation.Data)
   @objc public func participantVideoRemoved(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   @objc public func particpantVideoRemoteLayoutChanged(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   @objc public func participantRemoved(participant: MeetingSDK_macOS.Participant)
@@ -194,6 +198,8 @@ public enum DebugLevel : Swift.Int {
   public func setAudioOutputVolume(_ volume: Swift.Int32) -> Swift.Bool
   public func enableVideoCapture(camera: Swift.String, withMode: Swift.String, completion: @escaping (Swift.Bool) -> ())
   public func disableVideoCapture(camera: Swift.String)
+  public func enableVideoPreview(camera: Swift.String, withMode: Swift.String, lowLevel: Swift.Bool, completion: @escaping (Swift.Bool) -> ())
+  public func disableVideoPreview(camera: Swift.String)
   public func enableWindowSharing(windowId: Swift.String, mode: Swift.String) -> Swift.Bool
   public func disableWindowSharing(windowId: Swift.String) -> Swift.Bool
   public func enableNetworkVideo(url: Swift.String, mode: Swift.String, name: Swift.String, completion: @escaping (Swift.Bool) -> ())

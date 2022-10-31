@@ -238,6 +238,36 @@
           },
           {
             "kind": "Function",
+            "name": "previewVideoViewCreated",
+            "printedName": "previewVideoViewCreated(videoView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoView",
+                "printedName": "MeetingSDK_macOS.VideoView",
+                "usr": "c:@M@MeetingSDK_macOS@objc(cs)VideoView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0A11SDKDelegateP23previewVideoViewCreated05videoH0yAA0gH0C_tF",
+            "mangledName": "$s16MeetingSDK_macOS0A11SDKDelegateP23previewVideoViewCreated05videoH0yAA0gH0C_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "participantVideoRemoved",
             "printedName": "participantVideoRemoved(participant:streamId:)",
             "children": [
@@ -784,6 +814,32 @@
           },
           {
             "kind": "Function",
+            "name": "previewVideoViewCreated",
+            "printedName": "previewVideoViewCreated(videoView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoView",
+                "printedName": "MeetingSDK_macOS.VideoView",
+                "usr": "c:@M@MeetingSDK_macOS@objc(cs)VideoView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0A11SDKDelegatePAAE23previewVideoViewCreated05videoH0yAA0gH0C_tF",
+            "mangledName": "$s16MeetingSDK_macOS0A11SDKDelegatePAAE23previewVideoViewCreated05videoH0yAA0gH0C_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "participantVideoRemoved",
             "printedName": "participantVideoRemoved(participant:streamId:)",
             "children": [
@@ -1321,6 +1377,86 @@
             "mangledName": "$s16MeetingSDK_macOS0A17SDKDelegateBridgeC15videoFrameReady8streamId5frameySS_10Foundation4DataVtF",
             "moduleName": "MeetingSDK_macOS",
             "objc_name": "videoFrameReadyWithStreamId:frame:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoPreviewReady",
+            "printedName": "videoPreviewReady(streamId:name:width:height:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_macOS@objc(cs)MeetingSDKDelegateBridge(im)videoPreviewReadyWithStreamId:name:width:height:",
+            "mangledName": "$s16MeetingSDK_macOS0A17SDKDelegateBridgeC17videoPreviewReady8streamId4name5width6heightySS_SSs5Int32VAJtF",
+            "moduleName": "MeetingSDK_macOS",
+            "objc_name": "videoPreviewReadyWithStreamId:name:width:height:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "previewFrameReady",
+            "printedName": "previewFrameReady(streamId:frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_macOS@objc(cs)MeetingSDKDelegateBridge(im)previewFrameReadyWithStreamId:frame:",
+            "mangledName": "$s16MeetingSDK_macOS0A17SDKDelegateBridgeC17previewFrameReady8streamId5frameySS_10Foundation4DataVtF",
+            "moduleName": "MeetingSDK_macOS",
+            "objc_name": "previewFrameReadyWithStreamId:frame:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -5374,6 +5510,90 @@
             "declKind": "Func",
             "usr": "s:16MeetingSDK_macOS0aB0C19disableVideoCapture6cameraySS_tF",
             "mangledName": "$s16MeetingSDK_macOS0aB0C19disableVideoCapture6cameraySS_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableVideoPreview",
+            "printedName": "enableVideoPreview(camera:withMode:lowLevel:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0aB0C18enableVideoPreview6camera8withMode8lowLevel10completionySS_SSSbySbctF",
+            "mangledName": "$s16MeetingSDK_macOS0aB0C18enableVideoPreview6camera8withMode8lowLevel10completionySS_SSSbySbctF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableVideoPreview",
+            "printedName": "disableVideoPreview(camera:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0aB0C19disableVideoPreview6cameraySS_tF",
+            "mangledName": "$s16MeetingSDK_macOS0aB0C19disableVideoPreview6cameraySS_tF",
             "moduleName": "MeetingSDK_macOS",
             "declAttributes": [
               "AccessControl",
@@ -11243,50 +11463,57 @@
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 2953,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 2986,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Dictionary",
-      "offset": 3082,
+      "offset": 2687,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3224,
+      "offset": 3011,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6591,
+      "offset": 3044,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "Dictionary",
+      "offset": 3140,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3282,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7260,
+      "offset": 6649,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7318,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 18072,
+      "offset": 19397,
       "length": 5,
       "value": "false"
     },

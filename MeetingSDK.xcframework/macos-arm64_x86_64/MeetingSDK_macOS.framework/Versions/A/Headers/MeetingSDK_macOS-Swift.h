@@ -319,6 +319,8 @@ SWIFT_CLASS("_TtC16MeetingSDK_macOS24MeetingSDKDelegateBridge")
 ///
 - (void)participantVideoViewCreatedWithParticipant:(Participant * _Nonnull)participant videoView:(VideoView * _Nonnull)videoView local:(BOOL)local;
 - (void)videoFrameReadyWithStreamId:(NSString * _Nonnull)streamId frame:(NSData * _Nonnull)frame;
+- (void)videoPreviewReadyWithStreamId:(NSString * _Nonnull)streamId name:(NSString * _Nonnull)name width:(int32_t)width height:(int32_t)height;
+- (void)previewFrameReadyWithStreamId:(NSString * _Nonnull)streamId frame:(NSData * _Nonnull)frame;
 /// Called when a participant’s video is removed, on the video_stream_removed callback
 /// \param participant Current information of the corresponding participant
 ///
@@ -754,6 +756,8 @@ SWIFT_CLASS("_TtC16MeetingSDK_macOS24MeetingSDKDelegateBridge")
 ///
 - (void)participantVideoViewCreatedWithParticipant:(Participant * _Nonnull)participant videoView:(VideoView * _Nonnull)videoView local:(BOOL)local;
 - (void)videoFrameReadyWithStreamId:(NSString * _Nonnull)streamId frame:(NSData * _Nonnull)frame;
+- (void)videoPreviewReadyWithStreamId:(NSString * _Nonnull)streamId name:(NSString * _Nonnull)name width:(int32_t)width height:(int32_t)height;
+- (void)previewFrameReadyWithStreamId:(NSString * _Nonnull)streamId frame:(NSData * _Nonnull)frame;
 /// Called when a participant’s video is removed, on the video_stream_removed callback
 /// \param participant Current information of the corresponding participant
 ///
