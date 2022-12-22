@@ -37,6 +37,7 @@ extension MeetingSDK_macOS.MeetingSDKDelegate {
   public func previewVideoViewCreated(videoView: MeetingSDK_macOS.VideoView)
   public func participantVideoRemoved(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   public func particpantVideoRemoteLayoutChanged(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
+  public func participantRemoved(participant: MeetingSDK_macOS.Participant)
   public func inputMeterChanged(meter: Swift.Int)
   public func outputMeterChanged(meter: Swift.Int)
   public func participantAmplitudeChanged(participant: MeetingSDK_macOS.Participant, amplitude: Swift.Int, muted: Swift.Bool)
@@ -147,9 +148,11 @@ public enum iOSCamera : Swift.String {
   }
 }
 public enum CameraMode : Swift.String {
-  case cif
-  case vga
+  case small
+  case medium
+  case large
   case hd1
+  case hd2
   case hd3
   case fourK
   public init?(rawValue: Swift.String)
@@ -194,12 +197,14 @@ public enum DebugLevel : Swift.Int {
   public func enableAudioOutputPreview(device: Swift.String, soundPath: Swift.String) -> Swift.Bool
   public func disableAudioOutputPreview(device: Swift.String) -> Swift.Bool
   public func setAudioStreamVolume(streamId: Swift.String, volume: Swift.Int32)
+  public func setAudioInputVolume(_ volume: Swift.Int32, device: Swift.String) -> Swift.Bool
   public func setAudioInputVolume(_ volume: Swift.Int32) -> Swift.Bool
+  public func setAudioOutputVolume(_ volume: Swift.Int32, device: Swift.String) -> Swift.Bool
   public func setAudioOutputVolume(_ volume: Swift.Int32) -> Swift.Bool
   public func enableVideoCapture(camera: Swift.String, withMode: Swift.String, completion: @escaping (Swift.Bool) -> ())
   public func disableVideoCapture(camera: Swift.String)
   public func enableVideoPreview(camera: Swift.String, withMode: Swift.String, lowLevel: Swift.Bool, completion: @escaping (Swift.Bool) -> ())
-  public func disableVideoPreview(camera: Swift.String)
+  public func disableVideoPreview(camera: Swift.String, disconnect: Swift.Bool)
   public func enableWindowSharing(windowId: Swift.String, mode: Swift.String) -> Swift.Bool
   public func disableWindowSharing(windowId: Swift.String) -> Swift.Bool
   public func enableNetworkVideo(url: Swift.String, mode: Swift.String, name: Swift.String, completion: @escaping (Swift.Bool) -> ())

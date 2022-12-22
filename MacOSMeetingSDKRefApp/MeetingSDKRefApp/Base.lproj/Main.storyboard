@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -893,7 +893,7 @@
                                     </subviews>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Re4-5W-Zbj">
-                                    <rect key="frame" x="1" y="97" width="358" height="15"/>
+                                    <rect key="frame" x="1" y="96" width="358" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="ewW-tt-2EH">
@@ -906,7 +906,7 @@
                                 </tableHeaderView>
                             </scrollView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LGM-4v-pSZ">
-                                <rect key="frame" x="145" y="35" width="110" height="32"/>
+                                <rect key="frame" x="135" y="35" width="110" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="96" id="lcC-d2-wc5"/>
                                 </constraints>
@@ -919,7 +919,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iNj-vJ-cYO">
-                                <rect key="frame" x="59" y="35" width="88" height="32"/>
+                                <rect key="frame" x="49" y="35" width="88" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="74" id="UOV-KG-u6B"/>
                                 </constraints>
@@ -932,7 +932,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pt9-kJ-0aB">
-                                <rect key="frame" x="253" y="35" width="92" height="32"/>
+                                <rect key="frame" x="243" y="35" width="92" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="78" id="Q6n-a9-Vmi"/>
                                 </constraints>
@@ -945,14 +945,14 @@
                                 </connections>
                             </button>
                             <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B2A-pj-EEk">
-                                <rect key="frame" x="64" y="3" width="128" height="28"/>
+                                <rect key="frame" x="64" y="3" width="118" height="28"/>
                                 <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="c4Y-43-2nj"/>
                                 <connections>
                                     <action selector="doAudioInputSlider:" target="JVM-8b-lxh" id="f4W-rz-qCe"/>
                                 </connections>
                             </slider>
                             <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DuT-TE-ofb">
-                                <rect key="frame" x="208" y="3" width="123" height="28"/>
+                                <rect key="frame" x="198" y="3" width="113" height="28"/>
                                 <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="PV2-id-luH"/>
                                 <connections>
                                     <action selector="doAudioOutputSlider:" target="JVM-8b-lxh" id="WHQ-U0-i6i"/>
@@ -967,7 +967,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jgN-gj-18g">
-                                <rect key="frame" x="335" y="12" width="47" height="16"/>
+                                <rect key="frame" x="315" y="12" width="47" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Output" id="c0t-Lo-n9R">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1063,11 +1063,11 @@ DQ
                                 <rect key="frame" x="20" y="60" width="377" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" id="eQv-0X-8wX">
-                                    <rect key="frame" x="1" y="1" width="360" height="162"/>
+                                    <rect key="frame" x="1" y="1" width="375" height="162"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="ETF-xI-DxX">
-                                            <rect key="frame" x="0.0" y="0.0" width="345" height="147"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="147"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </view>
                                     </subviews>
@@ -1078,7 +1078,7 @@ DQ
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="dyN-s5-eQn">
-                                    <rect key="frame" x="361" y="1" width="15" height="162"/>
+                                    <rect key="frame" x="360" y="1" width="16" height="162"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>

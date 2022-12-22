@@ -8,8 +8,7 @@
 import Cocoa
 import MeetingSDK_macOS
 
-class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDelegate, NSTableViewDataSource {
-    
+class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDelegate, NSTableViewDataSource {    
     var myParticipantName = ""
     var meetingKey = ""
     var server = ""

@@ -8,8 +8,26 @@
 import UIKit
 import MeetingSDK_iOS
 
-class VideoDevicesTableViewController: UITableViewController {
-
+class VideoDevicesTableViewController: UITableViewController, MeetingSDKDelegate {
+    var previewView: VideoView? = nil
+    var subviewAdded: VideoView? = nil
+    
+    func participantRemoved(participant: MeetingSDK_iOS.Participant) {
+        
+    }
+    
+    func previewVideoViewCreated(videoView: VideoView) {
+        print("PREVIEW: previewVideoViewCreated!")
+        previewView = videoView
+        previewView?.backgroundColor = .white
+        previewView?.frame.size = CGSize(width: 500, height: 250)
+        self.tableView.reloadData()
+    }
+    
+    func logMessage(level: Int, message: String) {
+        print("(\(level)) -- \(message)")
+    }
+    
     var devices: [String] = []
 
     override func viewDidLoad() {
@@ -17,36 +35,102 @@ class VideoDevicesTableViewController: UITableViewController {
         super.viewDidLoad()
 
         self.tableView.register(SubtitleTableViewCell.self, forCellReuseIdentifier: "VideoDeviceCell")
+        //self.tableView.register(VideoDevicePreviewCell.self, forCellReuseIdentifier: "VideoDevicePreviewCell")
         devices = MeetingSDK.shared.getVideoDevices()
+        MeetingSDK.shared.delegate = self
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return devices.count
+        if (section == 0) {
+            return devices.count
+        } else {
+            return 1
+        }
     }
 
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Available Devices"
+        } else {
+            return "Preview"
+        }
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VideoDeviceCell", for: indexPath)
-        let device  = devices[indexPath.row]
-        
-        // Configure the cell...
-        cell.textLabel?.text = devices[indexPath.row]
-        
-        if let codec = MeetingState.shared.videoDevicesUsed[device] {
-            cell.detailTextLabel?.text = codec
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "VideoDeviceCell", for: indexPath)
+            let device  = devices[indexPath.row]
+            
+            // Configure the cell...
+            cell.textLabel?.text = devices[indexPath.row]
+            
+            if let codec = MeetingState.shared.videoDevicesUsed[device] {
+                cell.detailTextLabel?.text = codec
+            } else {
+                cell.detailTextLabel?.text = "Not enabled"
+            }
+            
+            return cell
         } else {
-            cell.detailTextLabel?.text = "Not enabled"
+            print("PREVIEW: getting DevicePreviewCell")
+            let cell = tableView.dequeueReusableCell(withIdentifier: "VideoDevicePreviewCell", for: indexPath) as! VideoDevicePreviewCell
+            if previewView !=  nil && subviewAdded == nil {
+                print("PREVIEW: adding previewView as subview of preview cell")
+                cell.contentView.addSubview(previewView!)
+                subviewAdded = previewView
+            }
+            return cell
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return 50
+        } else {
+            return 300
+        }
+    }
+    @IBAction func previewButtonTapped(_ sender: Any) {
+        // Preview Button was tapped.   Look for first cell that does not have
+        // "Not enabled" as it's codec and start a preview for it
         
-        return cell
+        if previewView != nil {
+            print("PREVIEW: Stopping preview")
+            
+            if subviewAdded != nil {
+                subviewAdded?.removeFromSuperview()
+                subviewAdded = nil
+            }
+            
+            // Already running preview, stop
+            for (device, _) in MeetingState.shared.videoDevicesUsed {
+                // Just disable first one encountered
+                print("PREVIEW:  Disabling preview for \(device)")
+                MeetingSDK.shared.disableVideoPreview(camera: device, disconnect:true)
+                previewView = nil
+                self.tableView.reloadData()
+                break
+            }
+            
+        } else {
+            print("PREVIEW: Looking for device to preview")
+            for (device, codec) in MeetingState.shared.videoDevicesUsed {
+                print("PREVIEW: starting preview")
+                // Just enable first one encountered
+                print("PREVIEW: Enabling preview for \(device) with codec: \(codec)")
+                MeetingSDK.shared.enableVideoPreview(camera: device, withMode: codec, lowLevel:false) { success in
+                    print("PREVIEW: enableVideoPreview returned \(success)")
+                }
+                break
+            }
+        }
     }
     
     // MARK: - Table view delegate

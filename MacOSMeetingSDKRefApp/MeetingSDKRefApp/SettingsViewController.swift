@@ -13,13 +13,74 @@
 import Cocoa
 import MeetingSDK_macOS
 
-class SettingsViewController: NSViewController {
+class SettingsViewController: NSViewController, MeetingSDKDelegate {
+    func previewVideoViewCreated(videoView: MeetingSDK_macOS.VideoView) {
+        
+        let view=videoView
+        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: Bundle.main)
+        if let vc = storyboard.instantiateController(withIdentifier: "VideoStream") as? VideoStreamViewController
+        {
+            vc.view.addSubview(view)
+            
+            // Add constraints
+            view.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint(item: view as Any, attribute: .leading, relatedBy: .equal, toItem: vc.view, attribute: .leading, multiplier: 1, constant: 0).isActive = true
+            NSLayoutConstraint(item: view as Any, attribute: .trailing, relatedBy: .equal, toItem: vc.view, attribute: .trailing, multiplier: 1, constant: 0).isActive = true
+            NSLayoutConstraint(item: view as Any, attribute: .top, relatedBy: .equal, toItem: vc.view, attribute: .top, multiplier: 1, constant: 0).isActive = true
+            NSLayoutConstraint(item: view as Any, attribute: .bottom, relatedBy: .equal, toItem: vc.view, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
+            print("compression: \(NSLayoutConstraint.Priority.defaultLow)")
+            
+            // Setting the compression resistance priority allows us to resize the window smaller
+            // than the size of the video frames coming in
+            view.frameView?.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+            view.frameView?.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
+            
+            let myWindow = NSWindow(contentViewController: vc)
+            myWindow.makeKeyAndOrderFront(self)
+            let controller = NSWindowController(window: myWindow)
+            controller.showWindow(self)
+
+            vc.streamId = view.streamId
+            vc.window = myWindow
+            
+            if let videoInfo = MeetingSDK.shared.findVideoInfo(streamId: view.streamId) {
+                myWindow.title = "\(videoInfo.site) -- \(videoInfo.name)"
+            }
+            
+            MeetingState.shared.videoWindows.append(vc)
+        }
+    }
+    
+    func participantRemoved(participant: MeetingSDK_macOS.Participant) {
+        print("participantRemvoed");
+    }
+    
+    func logMessage(level: Int, message: String) {
+        print("(\(level)) -- \(message)")
+        
+    }
+    
 
     @IBOutlet weak var contentView: NSView!
     @IBOutlet weak var scrollView: NSScrollView!
     var audioInputMenu:NSPopUpButton? = nil
     var audioOutputMenu:NSPopUpButton? = nil
     var videoCodecs:[String:NSPopUpButton] = [:]
+    
+    @objc func previewClicked(sender:NSButton) {
+        if sender.title == "Preview On" {
+            sender.title = "Preview Off"
+            
+            if let codecSelected = videoCodecs[sender.alternateTitle]?.titleOfSelectedItem {
+                MeetingSDK.shared.enableVideoPreview(camera: sender.alternateTitle, withMode: codecSelected, lowLevel:false) { success in
+                    print("Started preview")
+                }
+            }
+        } else {
+            sender.title = "Preview On"
+            MeetingSDK.shared.disableVideoPreview(camera: sender.alternateTitle, disconnect: true)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +134,7 @@ class SettingsViewController: NSViewController {
 
         for i in 0..<videoDevices.count {
             // Add popup
-            let popupMenu = NSPopUpButton(frame:CGRect(x: 5, y: (i*50)+130, width: 345, height: 20))
+            let popupMenu = NSPopUpButton(frame:CGRect(x: 5, y: (i*75)+130, width: 345, height: 20))
             var codecArray = [ "Not Used" ]
             codecArray.append(contentsOf: MeetingSDK.shared.getSupportedVideoSendResolutions(deviceId: videoDevices[i]))
             popupMenu.addItems(withTitles: codecArray)
@@ -82,15 +143,23 @@ class SettingsViewController: NSViewController {
             videoCodecs[videoDevices[i]] = popupMenu
             
             // Now "heading"
-            let label = NSTextField(frame:CGRect(x: 10, y: (i*50)+150, width: 360, height: 20))
+            let label = NSTextField(frame:CGRect(x: 10, y: (i*75)+150, width: 360, height: 20))
             label.stringValue = "\(videoDevices[i])"
             label.isEditable = false
             label.isBordered = false
             label.backgroundColor = .gridColor
             contentView.addSubview(label)
+            
+            let previewButton = NSButton(frame:CGRect(x:10, y:(i*75)+110,width: 300, height: 20))
+            previewButton.title = "Preview On"
+            previewButton.alternateTitle = "\(videoDevices[i])"
+            previewButton.target = self;
+            previewButton.action = #selector(previewClicked(sender:))
+            contentView.addSubview(previewButton)
+            
         }
         
-        label = NSTextField(frame:CGRect(x: 10, y: (videoDevices.count*50    )+120, width: 360, height: 20))
+        label = NSTextField(frame:CGRect(x: 10, y: (videoDevices.count*75    )+120, width: 360, height: 20))
         label.attributedStringValue = NSAttributedString(string: "Video Devices:", attributes: boldAttributes)
         label.isEditable = false
         label.isBordered = false
@@ -99,13 +168,15 @@ class SettingsViewController: NSViewController {
 
         let origin = contentView.frame.origin
         let size = contentView.frame.size
-        let height = ((videoDevices.count) * 50)+155
+        let height = ((videoDevices.count) * 75)+155
         // Set size of scroll view content frame.   Multiple 30 points by the number of entries to display + 2 (for labels)
         contentView.frame = CGRect(x: origin.x, y: origin.y, width: size.width, height: CGFloat(height))
         
         if let documentView = scrollView.documentView {
                 documentView.scroll(NSPoint(x: 0, y: documentView.bounds.size.height))
         }
+        
+
     }
     
     @IBAction func doSave(_ sender: Any) {

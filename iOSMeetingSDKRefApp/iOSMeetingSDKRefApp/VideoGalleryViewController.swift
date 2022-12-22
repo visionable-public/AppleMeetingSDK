@@ -74,6 +74,7 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         
         // Setting the delegate of the MeetingSDK
         MeetingSDK.shared.delegate = self
+        MeetingSDK.shared.enableInlineAudioVideoLogging(true)
         
         // Set the scroll view content size to 5000x5000 and enable scrolling
         self.scrollView.contentSize = CGSize(width: 5000.0, height: 5000.0)
@@ -381,5 +382,13 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
             }
         }
         print("iOSReferenceApp::amplitude")
+    }
+    
+    func screenShareCancelled() {
+        print("iOSReferenceApp::screenShareCancelled");
+    }
+    
+    func logMessage(level: Int, message: String) {
+        print("(\(level)) -- \(message)")
     }
 }

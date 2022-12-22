@@ -116,7 +116,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (bool)disableVideoCapture:(NSString*)deviceID;
 
 - (void)enableVideoPreview:(NSString *)deviceID withMode:(NSString *)mode handler:(void(^)(bool))handler;
-- (bool)disableVideoPreview:(NSString *)deviceID;
+- (bool)disableVideoPreview:(NSString *)deviceID disconnect:(Boolean)disconnect;
 
 - (bool)enableWindowSharing:(NSString*)windowID withMode:(NSString *)mode;
 - (bool)disableWindowSharing:(NSString*)windowID;
