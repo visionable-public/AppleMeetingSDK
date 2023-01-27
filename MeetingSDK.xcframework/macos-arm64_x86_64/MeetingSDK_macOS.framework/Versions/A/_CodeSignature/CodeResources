@@ -64,70 +64,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BxfjmOiMSejjNy5RSZ6wKxeKk4tPusDdZEDnmE9ulB8=
+			LPZmyT4uRstqAhBgudTSqeD0vGfwmwWuAYcddvcSsYs=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7+Is1pBN3tV+5/TtfbQpAqDQ+R1ZmtYyLY/KuPQ2F80=
+			Fh8Bj8AOdF1hdQo430BisfG9fQOmXrleY+9aDFv9+nQ=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5gF86WYAtuYbuJsUpC/XCjSxy8zJWU46Gm+Qwtf3Roo=
+			LDr7Q5mGYWqY27nUsoWOmcRVscGwsjSHYqXeX5sHJO0=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7+Is1pBN3tV+5/TtfbQpAqDQ+R1ZmtYyLY/KuPQ2F80=
+			Fh8Bj8AOdF1hdQo430BisfG9fQOmXrleY+9aDFv9+nQ=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JS0AvSLFMBK99WJKbKdjeUFaW9d6yUHBIEm3X+hshRI=
+			P9A9iZbjeKbL31w8jS3F7L1iKmj3H4+T2LfPlbLI0mw=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BxfjmOiMSejjNy5RSZ6wKxeKk4tPusDdZEDnmE9ulB8=
+			LPZmyT4uRstqAhBgudTSqeD0vGfwmwWuAYcddvcSsYs=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			go5rznOgMNRnbXl/MCna2l4YnLKyeZPBXvpIIZEXS+c=
+			BpUJlfa0ofUDPcZXy8J6EyFXrvv2POsKKWE2Tn3Uk0c=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			13KIaeGtQqi3CV+4iNN7FI3H3tR0fAqe1rr8BpW9kPo=
+			YjAIh/WXKNeVx3rtmpDXrso821QfN1r34pfEtV7mcU0=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			go5rznOgMNRnbXl/MCna2l4YnLKyeZPBXvpIIZEXS+c=
+			BpUJlfa0ofUDPcZXy8J6EyFXrvv2POsKKWE2Tn3Uk0c=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F0nEyMKis1yspfkbLiNapAGAaMP4Ryhz4mCOgQ3kKgs=
+			lfIiPje70wADgzld8PjWILeNc915PtK/bdpQi+qCa4U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			vX0O+Ggh8/B10uy+OiTfYadrP84=
+			yUI4PGWu6+tvAkRCPrX3xwKrhNY=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libCoreMeeting-macOS" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>

@@ -1512,6 +1512,46 @@
           },
           {
             "kind": "Var",
+            "name": "isScreenShare",
+            "printedName": "isScreenShare",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14MeetingSDK_iOS9VideoInfoC13isScreenShareSbvp",
+            "mangledName": "$s14MeetingSDK_iOS9VideoInfoC13isScreenShareSbvp",
+            "moduleName": "MeetingSDK_iOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14MeetingSDK_iOS9VideoInfoC13isScreenShareSbvg",
+                "mangledName": "$s14MeetingSDK_iOS9VideoInfoC13isScreenShareSbvg",
+                "moduleName": "MeetingSDK_iOS",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "videoView",
             "printedName": "videoView",
             "children": [
@@ -10197,8 +10237,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -10214,8 +10255,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14MeetingSDK_iOS0aB0C20setAudioStreamVolume8streamId6volumeySS_s5Int32VtF",
-            "mangledName": "$s14MeetingSDK_iOS0aB0C20setAudioStreamVolume8streamId6volumeySS_s5Int32VtF",
+            "usr": "s:14MeetingSDK_iOS0aB0C20setAudioStreamVolume8streamId6volumeSbSS_s5Int32VtF",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C20setAudioStreamVolume8streamId6volumeSbSS_s5Int32VtF",
             "moduleName": "MeetingSDK_iOS",
             "declAttributes": [
               "AccessControl",
@@ -11925,7 +11966,7 @@
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 21820,
+      "offset": 22156,
       "length": 5,
       "value": "false"
     }

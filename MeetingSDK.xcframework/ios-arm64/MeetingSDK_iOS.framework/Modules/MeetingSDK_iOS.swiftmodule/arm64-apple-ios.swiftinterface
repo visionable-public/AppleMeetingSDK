@@ -75,6 +75,9 @@ extension UIKit.UIDevice {
   public var height: Swift.UInt32 {
     get
   }
+  public var isScreenShare: Swift.Bool {
+    get
+  }
   public var videoView: MeetingSDK_iOS.VideoView? {
     get
   }
@@ -421,7 +424,7 @@ public enum DebugLevel : Swift.Int {
   public func disableAudioInputPreview(device: Swift.String) -> Swift.Bool
   public func enableAudioOutputPreview(device: Swift.String, soundPath: Swift.String) -> Swift.Bool
   public func disableAudioOutputPreview(device: Swift.String) -> Swift.Bool
-  public func setAudioStreamVolume(streamId: Swift.String, volume: Swift.Int32)
+  public func setAudioStreamVolume(streamId: Swift.String, volume: Swift.Int32) -> Swift.Bool
   public func setAudioInputVolume(_ volume: Swift.Int32, device: Swift.String) -> Swift.Bool
   public func setAudioInputVolume(_ volume: Swift.Int32) -> Swift.Bool
   public func setAudioOutputVolume(_ volume: Swift.Int32, device: Swift.String) -> Swift.Bool
