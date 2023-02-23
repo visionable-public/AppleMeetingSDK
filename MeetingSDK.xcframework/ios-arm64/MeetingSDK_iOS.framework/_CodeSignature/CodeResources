@@ -42,23 +42,23 @@
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		72nBe7oxCGEiohTGutjtqQh4MDc=
+		EePchcQnqurSX3kajprNh+JzYVU=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		xCUkuYNwrOB9FiD57yki0ZgP+2A=
+		E5uBoZPxVxLD4uVjvmi4BNjbbJU=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		FcvfQAK2A+oKcXLuMkzyCGeH0t0=
+		hoQJt/+9XFpV2y2HrR9hGG8igvE=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		xCUkuYNwrOB9FiD57yki0ZgP+2A=
+		E5uBoZPxVxLD4uVjvmi4BNjbbJU=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		3MKzVq5Q9WOk850+PD4UYJeOD7Y=
+		ZglPQaPuKKCq3oTXo3PMkgzMvqg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -127,35 +127,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZvZfnxe4aGkJFcEeXyIZw9CLvLLTcwFIaRiCr7Jljrk=
+			pCunn/+mFeSjCRYMevmVt2PPvIx1siI7VEnl3Qbh4EU=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0cASozVVx9JzwCZGp3jX8YawTmH4UTy/wF5j2g1fyqo=
+			J2R74CyShYz8KgzhlooR/w8CKfQU569GGUgvfcheVe4=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bYJmD2kblqrjiYuu2m3z6Fx8+GJ/oL/oyWaPRICVss8=
+			xnlk0QdT3/rEYVyuGnOa+vmZhEIg1MTr3Nr13FWK0Co=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0cASozVVx9JzwCZGp3jX8YawTmH4UTy/wF5j2g1fyqo=
+			J2R74CyShYz8KgzhlooR/w8CKfQU569GGUgvfcheVe4=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rwn13FQOpLI1eGD+o+b633oou/dyGPBUJQdfpeep5l8=
+			cBxxtIAkpebVPbAxRPJCs/Cdbty5UFj5Jk3D2tZQjCU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

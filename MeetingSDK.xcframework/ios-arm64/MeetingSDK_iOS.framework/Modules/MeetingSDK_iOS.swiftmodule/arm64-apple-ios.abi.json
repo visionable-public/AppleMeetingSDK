@@ -6716,6 +6716,48 @@
           },
           {
             "kind": "Function",
+            "name": "participantVideoViewRetrieved",
+            "printedName": "participantVideoViewRetrieved(participant:videoView:local:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Participant",
+                "printedName": "MeetingSDK_iOS.Participant",
+                "usr": "c:@M@MeetingSDK_iOS@objc(cs)Participant"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoView",
+                "printedName": "MeetingSDK_iOS.VideoView",
+                "usr": "c:@M@MeetingSDK_iOS@objc(cs)VideoView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MeetingSDK_iOS0A11SDKDelegateP29participantVideoViewRetrieved0E005videoG05localyAA11ParticipantC_AA0fG0CSbtF",
+            "mangledName": "$s14MeetingSDK_iOS0A11SDKDelegateP29participantVideoViewRetrieved0E005videoG05localyAA11ParticipantC_AA0fG0CSbtF",
+            "moduleName": "MeetingSDK_iOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_iOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_iOS.MeetingSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "participantVideoRemoved",
             "printedName": "participantVideoRemoved(participant:streamId:)",
             "children": [
@@ -7254,6 +7296,44 @@
             "declKind": "Func",
             "usr": "s:14MeetingSDK_iOS0A11SDKDelegatePAAE27participantVideoViewCreated0E005videoG05localyAA11ParticipantC_AA0fG0CSbtF",
             "mangledName": "$s14MeetingSDK_iOS0A11SDKDelegatePAAE27participantVideoViewCreated0E005videoG05localyAA11ParticipantC_AA0fG0CSbtF",
+            "moduleName": "MeetingSDK_iOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_iOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_iOS.MeetingSDKDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "participantVideoViewRetrieved",
+            "printedName": "participantVideoViewRetrieved(participant:videoView:local:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Participant",
+                "printedName": "MeetingSDK_iOS.Participant",
+                "usr": "c:@M@MeetingSDK_iOS@objc(cs)Participant"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoView",
+                "printedName": "MeetingSDK_iOS.VideoView",
+                "usr": "c:@M@MeetingSDK_iOS@objc(cs)VideoView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MeetingSDK_iOS0A11SDKDelegatePAAE29participantVideoViewRetrieved0E005videoG05localyAA11ParticipantC_AA0fG0CSbtF",
+            "mangledName": "$s14MeetingSDK_iOS0A11SDKDelegatePAAE29participantVideoViewRetrieved0E005videoG05localyAA11ParticipantC_AA0fG0CSbtF",
             "moduleName": "MeetingSDK_iOS",
             "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_iOS.MeetingSDKDelegate>",
             "sugared_genericSig": "<Self where Self : MeetingSDK_iOS.MeetingSDKDelegate>",
@@ -11609,7 +11689,7 @@
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 9519,
+      "offset": 9615,
       "length": 2,
       "value": "\"\""
     },
