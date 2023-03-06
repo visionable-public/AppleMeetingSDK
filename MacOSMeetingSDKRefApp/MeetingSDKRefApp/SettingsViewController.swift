@@ -78,7 +78,7 @@ class SettingsViewController: NSViewController, MeetingSDKDelegate {
             }
         } else {
             sender.title = "Preview On"
-            MeetingSDK.shared.disableVideoPreview(camera: sender.alternateTitle, disconnect: true)
+            MeetingSDK.shared.disableVideoPreview(camera: sender.alternateTitle)
         }
     }
     
@@ -87,6 +87,7 @@ class SettingsViewController: NSViewController, MeetingSDKDelegate {
         // Do view setup here.
         contentView.layer?.backgroundColor = NSColor.blue.cgColor
         
+        MeetingSDK.shared.delegate = self
         // First, get an array of video devices
         let videoDevices = MeetingSDK.shared.getVideoDevices()
         let audioInputDevices = MeetingSDK.shared.getAudioInputDevices()

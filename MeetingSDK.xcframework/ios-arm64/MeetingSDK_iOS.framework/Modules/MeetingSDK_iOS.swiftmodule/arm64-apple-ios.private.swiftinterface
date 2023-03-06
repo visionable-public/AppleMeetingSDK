@@ -435,7 +435,7 @@ public enum DebugLevel : Swift.Int {
   public func initializeScreenCaptureExtension(bundleId: Swift.String, appGroupId: Swift.String)
   public func disableVideoCapture(camera: Swift.String)
   public func enableVideoPreview(camera: Swift.String, withMode: Swift.String, lowLevel: Swift.Bool, completion: @escaping (Swift.Bool) -> ())
-  public func disableVideoPreview(camera: Swift.String, disconnect: Swift.Bool)
+  public func disableVideoPreview(camera: Swift.String)
   public func enableWindowSharing(windowId: Swift.String, mode: Swift.String) -> Swift.Bool
   public func disableWindowSharing(windowId: Swift.String) -> Swift.Bool
   public func enableNetworkVideo(url: Swift.String, mode: Swift.String, name: Swift.String, completion: @escaping (Swift.Bool) -> ())

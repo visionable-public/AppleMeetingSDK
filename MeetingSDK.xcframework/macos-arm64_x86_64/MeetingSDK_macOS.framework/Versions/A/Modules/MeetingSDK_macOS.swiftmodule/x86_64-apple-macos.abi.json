@@ -5876,7 +5876,7 @@
           {
             "kind": "Function",
             "name": "disableVideoPreview",
-            "printedName": "disableVideoPreview(camera:disconnect:)",
+            "printedName": "disableVideoPreview(camera:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5888,17 +5888,11 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16MeetingSDK_macOS0aB0C19disableVideoPreview6camera10disconnectySS_SbtF",
-            "mangledName": "$s16MeetingSDK_macOS0aB0C19disableVideoPreview6camera10disconnectySS_SbtF",
+            "usr": "s:16MeetingSDK_macOS0aB0C19disableVideoPreview6cameraySS_tF",
+            "mangledName": "$s16MeetingSDK_macOS0aB0C19disableVideoPreview6cameraySS_tF",
             "moduleName": "MeetingSDK_macOS",
             "declAttributes": [
               "AccessControl",
@@ -11846,7 +11840,7 @@
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 22156,
+      "offset": 21982,
       "length": 5,
       "value": "false"
     },

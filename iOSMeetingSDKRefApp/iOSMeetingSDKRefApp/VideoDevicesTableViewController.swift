@@ -113,7 +113,7 @@ class VideoDevicesTableViewController: UITableViewController, MeetingSDKDelegate
             for (device, _) in MeetingState.shared.videoDevicesUsed {
                 // Just disable first one encountered
                 print("PREVIEW:  Disabling preview for \(device)")
-                MeetingSDK.shared.disableVideoPreview(camera: device, disconnect:true)
+                MeetingSDK.shared.disableVideoPreview(camera: device)
                 previewView = nil
                 self.tableView.reloadData()
                 break
