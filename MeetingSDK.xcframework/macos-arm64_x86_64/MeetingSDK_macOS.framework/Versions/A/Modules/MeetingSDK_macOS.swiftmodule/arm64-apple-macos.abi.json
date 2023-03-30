@@ -2421,7 +2421,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CGRect",
-                "printedName": "CoreGraphics.CGRect",
+                "printedName": "CoreFoundation.CGRect",
                 "usr": "c:@S@CGRect"
               }
             ],
