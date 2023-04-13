@@ -222,6 +222,7 @@ public enum DebugLevel : Swift.Int {
   public func findParticipant(withVideoStreamId: Swift.String) -> MeetingSDK_macOS.Participant?
   public func findParticipant(withAudioStreamId: Swift.String) -> MeetingSDK_macOS.Participant?
   public func enableInlineAudioVideoLogging(_ enable: Swift.Bool)
+  public func setLogFile(_ filename: Swift.String)
   public func setTraceLevel(_ level: MeetingSDK_macOS.DebugLevel)
   public func audioSetTraceLevel(_ level: MeetingSDK_macOS.DebugLevel)
   public func videoSetTraceLevel(_ level: MeetingSDK_macOS.DebugLevel)

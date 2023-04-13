@@ -41,7 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 -(void)enableInlineAudioVideoLogging:(BOOL) enable;
-
+-(void)setLogFileName:(NSString *)fileName;
 
 //- Functions
 

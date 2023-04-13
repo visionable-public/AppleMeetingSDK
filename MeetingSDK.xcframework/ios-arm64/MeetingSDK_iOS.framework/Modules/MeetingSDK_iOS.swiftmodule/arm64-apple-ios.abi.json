@@ -11034,6 +11034,32 @@
           },
           {
             "kind": "Function",
+            "name": "setLogFile",
+            "printedName": "setLogFile(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MeetingSDK_iOS0aB0C10setLogFileyySSF",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C10setLogFileyySSF",
+            "moduleName": "MeetingSDK_iOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setTraceLevel",
             "printedName": "setTraceLevel(_:)",
             "children": [
@@ -11620,28 +11646,28 @@
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/Participant.swift",
       "kind": "StringLiteral",
-      "offset": 1698,
+      "offset": 1616,
       "length": 9,
       "value": "\"MeetingSDK_iOS.AudioInfo\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/Participant.swift",
       "kind": "StringLiteral",
-      "offset": 1698,
+      "offset": 1616,
       "length": 9,
       "value": "\"MeetingSDK_iOS.AudioInfo\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/Participant.swift",
       "kind": "StringLiteral",
-      "offset": 2101,
+      "offset": 2019,
       "length": 9,
       "value": "\"MeetingSDK_iOS.VideoInfo\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/Participant.swift",
       "kind": "StringLiteral",
-      "offset": 2101,
+      "offset": 2019,
       "length": 9,
       "value": "\"MeetingSDK_iOS.VideoInfo\""
     },

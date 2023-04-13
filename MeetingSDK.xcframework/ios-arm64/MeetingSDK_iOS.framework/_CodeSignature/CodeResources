@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/MeetingAPI.h</key>
 		<data>
-		yqxpZBRoeR+Qlzj2pn/Y9q4TJsQ=
+		0sA0XVrRCtpnKs87XuvvItGEPMQ=
 		</data>
 		<key>Headers/MeetingSDKScreenSharing.h</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		gqiwqqSQeH+hYcgvRoNY2fwt3To=
+		+P9V6v6xxQhCs79zrR/VUENJUcY=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		X0//44fsy0t5ua/TDQZksotun30=
+		FFvRoMsc9sx7H3ee4jzXCc4QJig=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		X0//44fsy0t5ua/TDQZksotun30=
+		FFvRoMsc9sx7H3ee4jzXCc4QJig=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		BKFFzfs4vQDy3eyzNVxhCrA9aag=
+		MHaJPmHoP03R+qgY6BBmX4lZZSM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xxoiZNKX58C//rjERS7VFZpOe39gjKzJo9y03J3BAHs=
+			uIjH8ytcz8O71HQFCay0kcWAJss7d/Z8c3UUPBoqDSc=
 			</data>
 		</dict>
 		<key>Headers/MeetingSDKScreenSharing.h</key>
@@ -127,14 +127,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yzLnbY0AhSS8fBhhm+NKkPNu8iBpzbx8bqbfKdqLsDE=
+			pUUxAuRz0yPxJpERI2g+bKYZiZZM4ZhrndzrvRd0Exo=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NJP4GAGDoapzUW+OVtXICt1totSLxfuvdu3lSBUyGXk=
+			3MxJgL7e8TmI9pBZ2l8MtFXy26yPpI634CUGLF+yxlo=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -148,14 +148,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NJP4GAGDoapzUW+OVtXICt1totSLxfuvdu3lSBUyGXk=
+			3MxJgL7e8TmI9pBZ2l8MtFXy26yPpI634CUGLF+yxlo=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lAlHV4uDb7zJFkKdIHwulX/CCXbs+/md7cR9vvj12Zo=
+			B0tjEtU5yHtm+loP1JDn4U1n2etILU+jLZq6is1Ki7g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
