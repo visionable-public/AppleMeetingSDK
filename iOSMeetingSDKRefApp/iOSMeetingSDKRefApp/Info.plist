@@ -20,6 +20,8 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <key>UIFileSharingEnabled</key>
+    <true/>
 	<key>NSCameraUsageDescription</key>
 	<string>To access the camera for video conferences</string>
 	<key>NSMicrophoneUsageDescription</key>

@@ -76,6 +76,9 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         MeetingSDK.shared.delegate = self
         MeetingSDK.shared.enableInlineAudioVideoLogging(true)
         
+        print("Calling setupLogFile")
+        setupLogFile()
+        
         // Set the scroll view content size to 5000x5000 and enable scrolling
         self.scrollView.contentSize = CGSize(width: 5000.0, height: 5000.0)
         self.scrollView.isScrollEnabled = true
@@ -103,6 +106,23 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
                 }
             }
         }
+    }
+    
+    //
+    // Called to set up a log file that can be shared via iTunes File Sharing
+    //
+    func setupLogFile() {
+        let docDir = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        let absolutePath = docDir.path
+        
+        let dateFormatter = DateFormatter();
+        dateFormatter.dateFormat = "yyyy-MM-dd-hh-mma"
+        let date = dateFormatter.string(from: NSDate() as Date)
+        
+        let logFile = "\(absolutePath)/V1LOG_\(date)"
+
+        print("logfile name: \(logFile)")
+        MeetingSDK.shared.setLogFile(logFile)
     }
     
     // The selector called when a meetingExited NSNotification is received.  We'll

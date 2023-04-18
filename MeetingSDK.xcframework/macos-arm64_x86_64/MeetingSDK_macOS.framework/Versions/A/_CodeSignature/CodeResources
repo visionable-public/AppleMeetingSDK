@@ -148,7 +148,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			95rF4JStA69r2fZZlGe+4csLd+A=
+			4EZyRfDXOStcCfTweGDHuIrKGmY=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libCoreMeeting-macOS" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
