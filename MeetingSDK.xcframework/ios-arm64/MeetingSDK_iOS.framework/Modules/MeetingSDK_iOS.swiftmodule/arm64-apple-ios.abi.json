@@ -6716,6 +6716,36 @@
           },
           {
             "kind": "Function",
+            "name": "previewVideoUpdated",
+            "printedName": "previewVideoUpdated(streamId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MeetingSDK_iOS0A11SDKDelegateP19previewVideoUpdated8streamIdySS_tF",
+            "mangledName": "$s14MeetingSDK_iOS0A11SDKDelegateP19previewVideoUpdated8streamIdySS_tF",
+            "moduleName": "MeetingSDK_iOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_iOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_iOS.MeetingSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "participantVideoViewRetrieved",
             "printedName": "participantVideoViewRetrieved(participant:videoView:local:)",
             "children": [
@@ -7368,6 +7398,32 @@
           },
           {
             "kind": "Function",
+            "name": "previewVideoUpdated",
+            "printedName": "previewVideoUpdated(streamId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MeetingSDK_iOS0A11SDKDelegatePAAE19previewVideoUpdated8streamIdySS_tF",
+            "mangledName": "$s14MeetingSDK_iOS0A11SDKDelegatePAAE19previewVideoUpdated8streamIdySS_tF",
+            "moduleName": "MeetingSDK_iOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_iOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_iOS.MeetingSDKDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "participantVideoRemoved",
             "printedName": "participantVideoRemoved(participant:streamId:)",
             "children": [
@@ -7977,6 +8033,34 @@
             "mangledName": "$s14MeetingSDK_iOS0A17SDKDelegateBridgeC17videoPreviewReady8streamId4name5width6heightySS_SSs5Int32VAJtF",
             "moduleName": "MeetingSDK_iOS",
             "objc_name": "videoPreviewReadyWithStreamId:name:width:height:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "previewVideoUpdated",
+            "printedName": "previewVideoUpdated(streamId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_iOS@objc(cs)MeetingSDKDelegateBridge(im)previewVideoUpdatedWithStreamId:",
+            "mangledName": "$s14MeetingSDK_iOS0A17SDKDelegateBridgeC19previewVideoUpdated8streamIdySS_tF",
+            "moduleName": "MeetingSDK_iOS",
+            "objc_name": "previewVideoUpdatedWithStreamId:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -11709,7 +11793,7 @@
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 9615,
+      "offset": 9863,
       "length": 2,
       "value": "\"\""
     },
