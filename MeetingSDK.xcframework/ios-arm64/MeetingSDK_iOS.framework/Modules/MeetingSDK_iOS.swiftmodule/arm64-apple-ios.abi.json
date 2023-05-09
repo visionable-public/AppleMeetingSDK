@@ -11138,7 +11138,8 @@
             "mangledName": "$s14MeetingSDK_iOS0aB0C10setLogFileyySSF",
             "moduleName": "MeetingSDK_iOS",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },

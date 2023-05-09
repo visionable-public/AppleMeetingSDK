@@ -6375,7 +6375,8 @@
             "mangledName": "$s16MeetingSDK_macOS0aB0C10setLogFileyySSF",
             "moduleName": "MeetingSDK_macOS",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
