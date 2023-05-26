@@ -14,7 +14,7 @@ extension UIKit.UIDevice {
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class VideoView : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) public var frameView: UIKit.UIImageView?
-  @objc @_Concurrency.MainActor(unsafe) dynamic public var imageData: Foundation.Data?
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var imageData: Foundation.Data
   @objc @_Concurrency.MainActor(unsafe) public var streamId: Swift.String
   @_Concurrency.MainActor(unsafe) public var isEnabled: Swift.Bool {
     get

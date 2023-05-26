@@ -2217,22 +2217,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Data?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@MeetingSDK_macOS@objc(cs)VideoView(py)imageData",
-            "mangledName": "$s16MeetingSDK_macOS9VideoViewC9imageData10Foundation0H0VSgvp",
+            "mangledName": "$s16MeetingSDK_macOS9VideoViewC9imageData10Foundation0H0Vvp",
             "moduleName": "MeetingSDK_macOS",
             "declAttributes": [
               "HasInitialValue",
@@ -2252,22 +2244,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.Data?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Data",
-                        "printedName": "Foundation.Data",
-                        "usr": "s:10Foundation4DataV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@MeetingSDK_macOS@objc(cs)VideoView(im)imageData",
-                "mangledName": "$s16MeetingSDK_macOS9VideoViewC9imageData10Foundation0H0VSgvg",
+                "mangledName": "$s16MeetingSDK_macOS9VideoViewC9imageData10Foundation0H0Vvg",
                 "moduleName": "MeetingSDK_macOS",
                 "implicit": true,
                 "declAttributes": [
@@ -2288,22 +2272,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.Data?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Data",
-                        "printedName": "Foundation.Data",
-                        "usr": "s:10Foundation4DataV"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@MeetingSDK_macOS@objc(cs)VideoView(im)setImageData:",
-                "mangledName": "$s16MeetingSDK_macOS9VideoViewC9imageData10Foundation0H0VSgvs",
+                "mangledName": "$s16MeetingSDK_macOS9VideoViewC9imageData10Foundation0H0Vvs",
                 "moduleName": "MeetingSDK_macOS",
                 "implicit": true,
                 "declAttributes": [
@@ -11545,14 +11521,14 @@
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/VideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4382,
+      "offset": 4376,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/VideoView.swift",
       "kind": "StringLiteral",
-      "offset": 3703,
+      "offset": 3700,
       "length": 9,
       "value": "\"MeetingSDK_macOS.VideoView\""
     },

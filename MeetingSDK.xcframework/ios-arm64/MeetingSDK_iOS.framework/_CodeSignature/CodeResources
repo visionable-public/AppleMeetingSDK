@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/MeetingSDK_iOS-Swift.h</key>
 		<data>
-		HLfrOaniimOJUcMSrm2UDLPhFXw=
+		Hpq9OctPEjS17d+x7PNoyiwwbQM=
 		</data>
 		<key>Headers/MeetingSDK_iOS.h</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		YQkX+UEqA/2a1dYGSqASkLuxguM=
+		vAbc9aA6tFvKAuxdbrcQZtWc0Mg=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		vUgp/LJ4K1Q4WfF7irGry7ud8Yk=
+		DN1Pf2o9c5V/hUpWdjFAtxeIFh4=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		vUgp/LJ4K1Q4WfF7irGry7ud8Yk=
+		DN1Pf2o9c5V/hUpWdjFAtxeIFh4=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		tZBOO9hr3G1Sj9jxbG6bqWhAeoU=
+		T6WZvhRdMaZt49vGd7z2uQ9C6/4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eJWBvtMOAcmYnG0xRMtC6exPPRRtnDSh+mio7gk5yT8=
+			LRU6VOyerhhy+pE1MrqAVTGi9IlemPgSNqgNCYBoTZI=
 			</data>
 		</dict>
 		<key>Headers/MeetingSDK_iOS.h</key>
@@ -127,14 +127,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CdAscPRfMDwuDBYvQ8GKRg5/DvYqPSfI1CGYq0X7oiA=
+			CMLNWpamk1dD01d/DuwpeDAavG/sDn+32fbeKxWwFA4=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UFxM5VG14qpF9BhdBuIIVohIdpuT0WllHmGEQCtUa34=
+			5nGE5OyYmos1swyVkGYxsjeybd0Vnzoo0Zg5NgaJOCg=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -148,14 +148,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UFxM5VG14qpF9BhdBuIIVohIdpuT0WllHmGEQCtUa34=
+			5nGE5OyYmos1swyVkGYxsjeybd0Vnzoo0Zg5NgaJOCg=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LinCglIlfLKe1Fl09FD8pDQiAj7E/HyMIbV8QK6riRA=
+			+tLCnjkNmpqSQPRVPJKAr/SDaO368pVncB3xYwoXzfI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
