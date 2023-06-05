@@ -202,19 +202,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			0Y0e6nS2MXLAwcPpYabxS/zQtWY=
+			sPqooSk3yJ/MWXNxmU6zeJ/dcf4=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigaudio-mac-55554944afb8f3c3fa7330658079932026e80337" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigaudio-mac-55554944767eac8d506d339b8ade30b61c188c67" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libigvideo-mac.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			oZEagclq2GyTdcI1i0SpzGvZp3s=
+			CbUKuBWzSMwidquGJG6MuNFf9+k=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigvideo-mac-55554944f254dd1aae7e3f1cbf6f8591972d1768" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigvideo-mac-555549447e484f6ef30c31c1a0f6ccae51e8e9a3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_core.3.4.dylib</key>
 		<dict>
