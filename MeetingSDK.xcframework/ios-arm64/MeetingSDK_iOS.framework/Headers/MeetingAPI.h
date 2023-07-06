@@ -187,19 +187,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSArray *)getParticipants;
 
-/*! @discussion set the debug trace level (1-7) for IGAudio
-    @param level  New level value (1-7)
- */
+- (void)enableCombinedLogs:(bool) enable;
+- (void)enableLogForwarding:(bool) enable;
+- (void)enableActiveLogging:(NSString *) filename;
+- (void)setTraceLevel:(int) level;
 - (void)audioSetTraceLevel:(int) level;
-
-
-/*! @discussion set the debug trace level (1-7) for IGVideo
-    @param level  New level value (1-7)
- */
 - (void)videoSetTraceLevel:(int) level;
-
 - (void)videoTraceOutputHistory:(NSString *)filename;
 - (void)audioTraceOutputHistory:(NSString *)filename;
+- (void)coreMeetingTraceOutputHistory:(NSString *)filename;
 
 - (NSString *) getLastError;
 

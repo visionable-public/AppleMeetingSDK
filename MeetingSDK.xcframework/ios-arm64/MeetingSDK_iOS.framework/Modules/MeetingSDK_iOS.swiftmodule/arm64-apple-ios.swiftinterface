@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios12.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MeetingSDK_iOS
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -301,7 +301,7 @@ extension MeetingSDK_iOS.XML {
   @objc public func parser(_ parser: Foundation.XMLParser, didStartElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?, attributes attributeDict: [Swift.String : Swift.String])
   @objc public func parser(_ parser: Foundation.XMLParser, foundCharacters string: Swift.String)
   @objc public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
-  @objc public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: Swift.Error)
+  @objc public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: any Swift.Error)
 }
 public protocol MeetingSDKDelegate : AnyObject {
   func participantAdded(participant: MeetingSDK_iOS.Participant)
@@ -411,7 +411,7 @@ public enum DebugLevel : Swift.Int {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MeetingSDK : ObjectiveC.NSObject {
   public static let shared: MeetingSDK_iOS.MeetingSDK
-  public var delegate: MeetingSDK_iOS.MeetingSDKDelegate?
+  public var delegate: (any MeetingSDK_iOS.MeetingSDKDelegate)?
   public func pauseVideoFrameProcessing(streamId: Swift.String)
   public func resumeVideoFrameProcessing(streamId: Swift.String)
   public func getParticipants() -> [MeetingSDK_iOS.Participant]
@@ -449,13 +449,16 @@ public enum DebugLevel : Swift.Int {
   public func findVideoInfo(streamId: Swift.String) -> MeetingSDK_iOS.VideoInfo?
   public func findParticipant(withVideoStreamId: Swift.String) -> MeetingSDK_iOS.Participant?
   public func findParticipant(withAudioStreamId: Swift.String) -> MeetingSDK_iOS.Participant?
-  public func enableInlineAudioVideoLogging(_ enable: Swift.Bool)
-  public func setLogFile(_ filename: Swift.String)
+  public func enableCombinedLogs(_ enable: Swift.Bool)
+  public func enableLogForwarding(_ enable: Swift.Bool)
+  public func enableActiveLogging(_ filename: Swift.String)
   public func setTraceLevel(_ level: MeetingSDK_iOS.DebugLevel)
   public func audioSetTraceLevel(_ level: MeetingSDK_iOS.DebugLevel)
   public func videoSetTraceLevel(_ level: MeetingSDK_iOS.DebugLevel)
   public func videoTraceOutputHistory(_ filename: Swift.String)
   public func audioTraceOutputHistory(_ filename: Swift.String)
+  public func coreMeetingTraceOutputHistory(_ filename: Swift.String)
+  public func setLogFile(_ filename: Swift.String)
   public func getVideoDevices() -> [Swift.String]
   public func getAudioInputDevices() -> [Swift.String]
   public func getAudioOutputDevices() -> [Swift.String]

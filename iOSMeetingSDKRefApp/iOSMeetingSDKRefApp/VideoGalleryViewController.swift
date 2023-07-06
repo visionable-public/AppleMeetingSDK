@@ -74,10 +74,10 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         
         // Setting the delegate of the MeetingSDK
         MeetingSDK.shared.delegate = self
-        MeetingSDK.shared.enableInlineAudioVideoLogging(true)
+        MeetingSDK.shared.enableCombinedLogs(true)
         
-        print("Calling setupLogFile")
-        setupLogFile()
+        // Uncomment to utilize active logging
+        // setupLogFile()
         
         // Set the scroll view content size to 5000x5000 and enable scrolling
         self.scrollView.contentSize = CGSize(width: 5000.0, height: 5000.0)
@@ -122,7 +122,7 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         let logFile = "\(absolutePath)/V1LOG_\(date)"
 
         print("logfile name: \(logFile)")
-        MeetingSDK.shared.setLogFile(logFile)
+        MeetingSDK.shared.enableActiveLogging(logFile)
     }
     
     // The selector called when a meetingExited NSNotification is received.  We'll

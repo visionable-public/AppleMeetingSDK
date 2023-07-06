@@ -27,7 +27,7 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
         
         // Set delegate
         MeetingSDK.shared.delegate = self
-        MeetingSDK.shared.enableInlineAudioVideoLogging(true)
+        MeetingSDK.shared.enableCombinedLogs(true)
         
         // V3 meetings use token, V2 do not
         if isV3Meeting {
