@@ -237,6 +237,7 @@ public enum DebugLevel : Swift.Int {
   public func getVideoDevices() -> [Swift.String]
   public func getAudioInputDevices() -> [Swift.String]
   public func getAudioOutputDevices() -> [Swift.String]
+  public func getWindowList() -> [Swift.Int : Swift.String]
   public func playSound(_ resource: Swift.String) -> Swift.UInt64
   public func stopSound(_ id: Swift.UInt64)
   public func getSupportedVideoSendResolutions(deviceId: Swift.String) -> [Swift.String]

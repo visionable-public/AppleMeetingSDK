@@ -6664,6 +6664,42 @@
           },
           {
             "kind": "Function",
+            "name": "getWindowList",
+            "printedName": "getWindowList()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.Int : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0aB0C13getWindowListSDySiSSGyF",
+            "mangledName": "$s16MeetingSDK_macOS0aB0C13getWindowListSDySiSSGyF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "playSound",
             "printedName": "playSound(_:)",
             "children": [
@@ -12609,15 +12645,22 @@
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "Dictionary",
+      "offset": 32227,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 32476,
+      "offset": 32871,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 33325,
+      "offset": 33720,
       "length": 2,
       "value": "[]"
     },

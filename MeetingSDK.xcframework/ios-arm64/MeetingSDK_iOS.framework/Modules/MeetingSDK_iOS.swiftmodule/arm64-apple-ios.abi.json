@@ -15176,14 +15176,14 @@
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 32476,
+      "offset": 32871,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 33325,
+      "offset": 33720,
       "length": 2,
       "value": "[]"
     }

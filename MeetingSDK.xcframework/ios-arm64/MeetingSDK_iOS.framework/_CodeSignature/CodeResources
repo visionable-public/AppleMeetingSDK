@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/MeetingAPI.h</key>
 		<data>
-		smLBuOwbJDuREsIlRlL1uVuamwI=
+		Jwqy1xTQX6EoyRJK3cqvkc5+97I=
 		</data>
 		<key>Headers/MeetingSDKScreenSharing.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		EeX3Ov0p7Oyr70WNpdYKIGttWiE=
+		jBEFahGMJv4Byo/zvBtOrBIdh/I=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		UkzasQlJGwANXe6FMecxnPs9uAY=
+		/SnhtHcCkFeH5245PI0kaJMN0wM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gDlKD75qEcYM5otU+j1wtjVu+Ssf8h/oGtwKd0m2X40=
+			5y7/tSUsWzSdf7KPh6LiqPEi+Vh6VxiaYRe70XeBfmg=
 			</data>
 		</dict>
 		<key>Headers/MeetingSDKScreenSharing.h</key>
@@ -127,7 +127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t3txDh2KbIMWjf575MDCCjV6wLZ+783IWhUo8sExOj8=
+			uH+zFA0isKcXTjKBXVYki28R2/63chlqwaS/n+E2WkU=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J/L7GSvAOg3Q8NrdExp2J6yOuiMobsbwmQwanb0D9tU=
+			TqvZhHkwS8aRlDYJpT8UUj1gxSin0iLsQUqb7KO1dz8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

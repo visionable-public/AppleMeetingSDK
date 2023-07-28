@@ -183,6 +183,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray *)getVideoDevices;
 - (NSArray *)getSupportedVideoSendResolutions:(NSString *)device;
 
+#if defined(MACOS)
+- (NSDictionary *) getWindowList;
+#endif
+
 - (CMParticipant *_Nullable)getLocalParticipant;
 
 - (NSArray *)getParticipants;
