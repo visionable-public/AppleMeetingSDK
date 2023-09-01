@@ -233,7 +233,13 @@ public enum DebugLevel : Swift.Int {
   public func videoTraceOutputHistory(_ filename: Swift.String)
   public func audioTraceOutputHistory(_ filename: Swift.String)
   public func coreMeetingTraceOutputHistory(_ filename: Swift.String)
-  public func setLogFile(_ filename: Swift.String)
+  @objc public func setLogDirectory(_ path: Swift.String) -> Swift.Bool
+  @objc public func deleteLogFile(_ fileName: Swift.String) -> Swift.Bool
+  @objc public func deleteAllLogFiles() -> Swift.Bool
+  @objc public func resetCurrentLogFile() -> Swift.Bool
+  @objc public func trimCurrentLogFile(_ numBytes: Swift.Int32) -> Swift.Bool
+  @objc public func flushCurrentLogFile() -> Swift.Bool
+  @objc public func getLogFiles() -> [Swift.String]
   public func getVideoDevices() -> [Swift.String]
   public func getAudioInputDevices() -> [Swift.String]
   public func getAudioOutputDevices() -> [Swift.String]

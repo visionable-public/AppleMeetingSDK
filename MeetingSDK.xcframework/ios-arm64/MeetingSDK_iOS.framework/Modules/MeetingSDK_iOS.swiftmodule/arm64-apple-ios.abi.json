@@ -11310,13 +11310,14 @@
           },
           {
             "kind": "Function",
-            "name": "setLogFile",
-            "printedName": "setLogFile(_:)",
+            "name": "setLogDirectory",
+            "printedName": "setLogDirectory(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -11326,11 +11327,170 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14MeetingSDK_iOS0aB0C10setLogFileyySSF",
-            "mangledName": "$s14MeetingSDK_iOS0aB0C10setLogFileyySSF",
+            "usr": "c:@M@MeetingSDK_iOS@objc(cs)MeetingSDK(im)setLogDirectory:",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C15setLogDirectoryySbSSF",
             "moduleName": "MeetingSDK_iOS",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteLogFile",
+            "printedName": "deleteLogFile(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_iOS@objc(cs)MeetingSDK(im)deleteLogFile:",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C13deleteLogFileySbSSF",
+            "moduleName": "MeetingSDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteAllLogFiles",
+            "printedName": "deleteAllLogFiles()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_iOS@objc(cs)MeetingSDK(im)deleteAllLogFiles",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C17deleteAllLogFilesSbyF",
+            "moduleName": "MeetingSDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetCurrentLogFile",
+            "printedName": "resetCurrentLogFile()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_iOS@objc(cs)MeetingSDK(im)resetCurrentLogFile",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C19resetCurrentLogFileSbyF",
+            "moduleName": "MeetingSDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trimCurrentLogFile",
+            "printedName": "trimCurrentLogFile(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_iOS@objc(cs)MeetingSDK(im)trimCurrentLogFile:",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C18trimCurrentLogFileySbs5Int32VF",
+            "moduleName": "MeetingSDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flushCurrentLogFile",
+            "printedName": "flushCurrentLogFile()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_iOS@objc(cs)MeetingSDK(im)flushCurrentLogFile",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C19flushCurrentLogFileSbyF",
+            "moduleName": "MeetingSDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLogFiles",
+            "printedName": "getLogFiles()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_iOS@objc(cs)MeetingSDK(im)getLogFiles",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C11getLogFilesSaySSGyF",
+            "moduleName": "MeetingSDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -15155,35 +15315,42 @@
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 30580,
+      "offset": 32103,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 31208,
+      "offset": 32612,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 31840,
+      "offset": 33240,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "Array",
+      "offset": 33872,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 32871,
+      "offset": 34903,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 33720,
+      "offset": 35752,
       "length": 2,
       "value": "[]"
     }

@@ -41,7 +41,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 -(void)enableInlineAudioVideoLogging:(BOOL) enable;
--(void)setLogFileName:(NSString *)fileName;
 
 //- Functions
 
@@ -200,6 +199,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)videoTraceOutputHistory:(NSString *)filename;
 - (void)audioTraceOutputHistory:(NSString *)filename;
 - (void)coreMeetingTraceOutputHistory:(NSString *)filename;
+
+- (bool)setLogDirectory:(NSString *)path;
+- (bool)deleteLogFile:(NSString *)fileName;
+- (bool)deleteAllLogFiles;
+- (bool)resetCurrentLogFile;
+- (bool)trimCurrentLogFile:(int)numBytes;
+- (bool)flushCurrentLogFile;
+- (NSArray *)getLogFiles;
 
 - (NSString *) getLastError;
 

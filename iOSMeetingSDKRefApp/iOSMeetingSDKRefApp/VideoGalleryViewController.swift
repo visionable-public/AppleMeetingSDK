@@ -77,7 +77,7 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         MeetingSDK.shared.enableCombinedLogs(true)
         
         // Uncomment to utilize active logging
-        // setupLogFile()
+        //  setupLogFile()
         
         // Set the scroll view content size to 5000x5000 and enable scrolling
         self.scrollView.contentSize = CGSize(width: 5000.0, height: 5000.0)

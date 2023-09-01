@@ -302,6 +302,47 @@ SWIFT_CLASS("_TtC14MeetingSDK_iOS10MeetingSDK")
 @interface MeetingSDK : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Set the path to which log files should be written to
+/// \param path An absolute path representing the directory to write log files to
+///
+///
+/// returns:
+/// true if the log directory was successfully created (or already exists), false if an error occurred
+- (BOOL)setLogDirectory:(NSString * _Nonnull)path SWIFT_WARN_UNUSED_RESULT;
+/// Delete a log file from the previously specified log directory
+/// \param fileName The name of the file in the specified log directory to delete
+///
+///
+/// returns:
+/// true if the file was deleted, false if there was an error deleting the file or if no log directory has been specified
+- (BOOL)deleteLogFile:(NSString * _Nonnull)fileName SWIFT_WARN_UNUSED_RESULT;
+/// Delete all log files in the specified logging directory
+///
+/// returns:
+/// true if the files were deleted, false if an error occurred or if no log directory has been specified
+- (BOOL)deleteAllLogFiles SWIFT_WARN_UNUSED_RESULT;
+/// Deletes all entries in the current log file but then continues to log to that log file
+///
+/// returns:
+/// true if the reset was successful, false if an error occurred
+- (BOOL)resetCurrentLogFile SWIFT_WARN_UNUSED_RESULT;
+/// Trims the current log file to the most recent entries that fit within the speified number of bytes
+/// \param numBytes The maximum number of bytes to leave in the log file
+///
+///
+/// returns:
+/// true if the operation was successful, false if there was no log directory or log file specified.
+- (BOOL)trimCurrentLogFile:(int32_t)numBytes SWIFT_WARN_UNUSED_RESULT;
+/// Flushes any buffered log messages to the current log file.
+///
+/// returns:
+/// true if the operation was successful, false if there was no log directory or log file specified.
+- (BOOL)flushCurrentLogFile SWIFT_WARN_UNUSED_RESULT;
+/// Returns an array of file names present in the specified log directory
+///
+/// returns:
+/// An array of filename.   Returns an empty array if the logging directory has not been specified or if an error occurs.
+- (NSArray<NSString *> * _Nonnull)getLogFiles SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
