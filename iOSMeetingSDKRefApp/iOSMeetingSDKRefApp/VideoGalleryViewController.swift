@@ -75,6 +75,7 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         // Setting the delegate of the MeetingSDK
         MeetingSDK.shared.delegate = self
         MeetingSDK.shared.enableCombinedLogs(true)
+        MeetingSDK.shared.enableLogForwarding(true)
         
         // Uncomment to utilize active logging
         //  setupLogFile()
