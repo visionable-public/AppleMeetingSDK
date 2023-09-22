@@ -36,7 +36,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qN3aO9agkxwzifViuRi8rUb94CB9/o8XTP3SrkUTyHY=
+			62OWQ/OT69ddPRrJsPqCJh4kpUa4mDjAXcYI0opFuQ4=
 			</data>
 		</dict>
 		<key>Headers/MeetingSDK_macOS-Swift.h</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			vHw7hdGxp6puSeM4BKqg3PTTqAQ=
+			7AdWwuHuDPYDaJUVuiFo3VMxeX4=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libCoreMeeting-macOS" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -202,19 +202,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			h2238KbgHHAKma/qYdUA+ctBdtQ=
+			T6xQ+U5n9w24PjjB6tnXmuESZoM=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigaudio-mac-55554944048acac1c0de39febc30785d88e8cda1" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigaudio-mac-555549440c3eea4b8aef3b139a9b1373e9478e73" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libigvideo-mac.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			Ezb0X+FKmgZBHSUR2KqL3UUVDOk=
+			x91eg+ngmDoOS+BKo8Ddj5Vj6kw=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigvideo-mac-55554944fb22ef25c6f239db931d8dd3f7eb7c6c" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigvideo-mac-55554944b8acf138597538858a1a6b1f5246c272" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_core.3.4.dylib</key>
 		<dict>

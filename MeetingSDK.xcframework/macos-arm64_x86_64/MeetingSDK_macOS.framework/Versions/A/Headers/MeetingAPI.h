@@ -59,6 +59,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)initializeMeeting:(NSString*)guid server:(NSString*)server handler:(void(^)(bool,NSString *))handler;
 - (void)initializeMeetingWithToken:(NSString * _Nullable)token server:(NSString *)server uuid:(NSString *)meetingUUID handler:(void (^)(bool,NSString *))handler;
+- (void)resolveUCSServer:(NSString *)server uuid:(NSString *)meetingUUID handler:(void (^)(NSString *))handler;
 
 /*! @discussion Exits a meeting
  */
