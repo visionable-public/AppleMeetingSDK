@@ -28,6 +28,36 @@
         "children": [
           {
             "kind": "Function",
+            "name": "meetingToken",
+            "printedName": "meetingToken(decodedToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0A11SDKDelegateP12meetingToken07decodedG0ySS_tF",
+            "mangledName": "$s16MeetingSDK_macOS0A11SDKDelegateP12meetingToken07decodedG0ySS_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "participantAdded",
             "printedName": "participantAdded(participant:)",
             "children": [
@@ -700,6 +730,32 @@
           },
           {
             "kind": "Function",
+            "name": "meetingToken",
+            "printedName": "meetingToken(decodedToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0A11SDKDelegatePAAE12meetingToken07decodedG0ySS_tF",
+            "mangledName": "$s16MeetingSDK_macOS0A11SDKDelegatePAAE12meetingToken07decodedG0ySS_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "participantAdded",
             "printedName": "participantAdded(participant:)",
             "children": [
@@ -1307,6 +1363,34 @@
         "name": "MeetingSDKDelegateBridge",
         "printedName": "MeetingSDKDelegateBridge",
         "children": [
+          {
+            "kind": "Function",
+            "name": "meetingToken",
+            "printedName": "meetingToken(decodedToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_macOS@objc(cs)MeetingSDKDelegateBridge(im)meetingTokenWithDecodedToken:",
+            "mangledName": "$s16MeetingSDK_macOS0A17SDKDelegateBridgeC12meetingToken07decodedH0ySS_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "objc_name": "meetingTokenWithDecodedToken:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
           {
             "kind": "Function",
             "name": "participantAdded",
@@ -11784,112 +11868,112 @@
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 6644,
+      "offset": 6863,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 6987,
+      "offset": 7206,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 7004,
+      "offset": 7223,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 7088,
+      "offset": 7307,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "BooleanLiteral",
-      "offset": 7149,
+      "offset": 7368,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 7882,
+      "offset": 8101,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 10105,
+      "offset": 10363,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 13848,
+      "offset": 14313,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 13854,
+      "offset": 14319,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "BooleanLiteral",
-      "offset": 13972,
+      "offset": 14437,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 14307,
+      "offset": 14772,
       "length": 74,
       "value": "\"MeetingSDKDelegate.videoPreviewReady: calling findVideoInfo: \""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 14380,
+      "offset": 14845,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 14490,
+      "offset": 14955,
       "length": 103,
       "value": "\"MeetingSDKDelegate.videoPreviewReady: About to call previewVideoViewCreated for streamId: \""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 14592,
+      "offset": 15057,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 14729,
+      "offset": 15194,
       "length": 90,
       "value": "\"MeetingSDKDelegate.videoPreviewReady: Could not find VideoInfo for streamId: \""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 14818,
+      "offset": 15283,
       "length": 2,
       "value": "\"\""
     },

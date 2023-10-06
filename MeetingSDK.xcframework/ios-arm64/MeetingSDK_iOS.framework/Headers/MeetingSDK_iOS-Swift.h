@@ -354,6 +354,7 @@ SWIFT_CLASS("_TtC14MeetingSDK_iOS24MeetingSDKDelegateBridge")
 @interface MeetingSDKDelegateBridge : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)meetingTokenWithDecodedToken:(NSString * _Nonnull)decodedToken;
 /// Called when a participant gets added, on the audio_site_changed callback
 /// \param participant Current information of the corresponding participant
 ///

@@ -9,6 +9,7 @@ import Swift
 import _Concurrency
 import _StringProcessing
 public protocol MeetingSDKDelegate : AnyObject {
+  func meetingToken(decodedToken: Swift.String)
   func participantAdded(participant: MeetingSDK_macOS.Participant)
   func participantAudioAdded(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   func participantAudioUpdated(participant: MeetingSDK_macOS.Participant)
@@ -31,6 +32,7 @@ public protocol MeetingSDKDelegate : AnyObject {
   func screenShareCancelled()
 }
 extension MeetingSDK_macOS.MeetingSDKDelegate {
+  public func meetingToken(decodedToken: Swift.String)
   public func participantAdded(participant: MeetingSDK_macOS.Participant)
   public func participantAudioAdded(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   public func participantAudioUpdated(participant: MeetingSDK_macOS.Participant)
@@ -53,6 +55,7 @@ extension MeetingSDK_macOS.MeetingSDKDelegate {
   public func screenShareCancelled()
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MeetingSDKDelegateBridge : ObjectiveC.NSObject {
+  @objc public func meetingToken(decodedToken: Swift.String)
   @objc public func participantAdded(participant: MeetingSDK_macOS.Participant)
   @objc public func participantAudioAdded(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   @objc public func participantAudioUpdated(participant: MeetingSDK_macOS.Participant)
