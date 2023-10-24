@@ -1,7 +1,7 @@
 framework module MeetingSDK_iOS {
   umbrella header "MeetingSDK_iOS.h"
-
   export *
+
   module * { export * }
 }
 
