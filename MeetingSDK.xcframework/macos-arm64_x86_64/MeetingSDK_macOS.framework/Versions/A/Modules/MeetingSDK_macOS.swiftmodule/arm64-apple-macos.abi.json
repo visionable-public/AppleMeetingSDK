@@ -730,6 +730,132 @@
           },
           {
             "kind": "Function",
+            "name": "meetingDisconnected",
+            "printedName": "meetingDisconnected()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0A11SDKDelegateP19meetingDisconnectedyyF",
+            "mangledName": "$s16MeetingSDK_macOS0A11SDKDelegateP19meetingDisconnectedyyF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "participantNetworkQuality",
+            "printedName": "participantNetworkQuality(participant:streamId:quality:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Participant",
+                "printedName": "MeetingSDK_macOS.Participant",
+                "usr": "c:@M@MeetingSDK_macOS@objc(cs)Participant"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkQuality",
+                "printedName": "MeetingSDK_macOS.NetworkQuality",
+                "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0A11SDKDelegateP25participantNetworkQuality0F08streamId7qualityyAA11ParticipantC_SSAA0gH0OtF",
+            "mangledName": "$s16MeetingSDK_macOS0A11SDKDelegateP25participantNetworkQuality0F08streamId7qualityyAA11ParticipantC_SSAA0gH0OtF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "networkQuality",
+            "printedName": "networkQuality(quality:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkQuality",
+                "printedName": "MeetingSDK_macOS.NetworkQuality",
+                "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0A11SDKDelegateP14networkQuality7qualityyAA07NetworkG0O_tF",
+            "mangledName": "$s16MeetingSDK_macOS0A11SDKDelegateP14networkQuality7qualityyAA07NetworkG0O_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectionStatus",
+            "printedName": "connectionStatus(status:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConnectionStatus",
+                "printedName": "MeetingSDK_macOS.ConnectionStatus",
+                "usr": "s:16MeetingSDK_macOS16ConnectionStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0A11SDKDelegateP16connectionStatus6statusyAA010ConnectionG0O_tF",
+            "mangledName": "$s16MeetingSDK_macOS0A11SDKDelegateP16connectionStatus6statusyAA010ConnectionG0O_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "meetingToken",
             "printedName": "meetingToken(decodedToken:)",
             "children": [
@@ -1340,6 +1466,116 @@
             "declKind": "Func",
             "usr": "s:16MeetingSDK_macOS0A11SDKDelegatePAAE20screenShareCancelledyyF",
             "mangledName": "$s16MeetingSDK_macOS0A11SDKDelegatePAAE20screenShareCancelledyyF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "meetingDisconnected",
+            "printedName": "meetingDisconnected()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0A11SDKDelegatePAAE19meetingDisconnectedyyF",
+            "mangledName": "$s16MeetingSDK_macOS0A11SDKDelegatePAAE19meetingDisconnectedyyF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "participantNetworkQuality",
+            "printedName": "participantNetworkQuality(participant:streamId:quality:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Participant",
+                "printedName": "MeetingSDK_macOS.Participant",
+                "usr": "c:@M@MeetingSDK_macOS@objc(cs)Participant"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkQuality",
+                "printedName": "MeetingSDK_macOS.NetworkQuality",
+                "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0A11SDKDelegatePAAE25participantNetworkQuality0F08streamId7qualityyAA11ParticipantC_SSAA0gH0OtF",
+            "mangledName": "$s16MeetingSDK_macOS0A11SDKDelegatePAAE25participantNetworkQuality0F08streamId7qualityyAA11ParticipantC_SSAA0gH0OtF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "networkQuality",
+            "printedName": "networkQuality(quality:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkQuality",
+                "printedName": "MeetingSDK_macOS.NetworkQuality",
+                "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0A11SDKDelegatePAAE14networkQuality7qualityyAA07NetworkG0O_tF",
+            "mangledName": "$s16MeetingSDK_macOS0A11SDKDelegatePAAE14networkQuality7qualityyAA07NetworkG0O_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.MeetingSDKDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectionStatus",
+            "printedName": "connectionStatus(status:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConnectionStatus",
+                "printedName": "MeetingSDK_macOS.ConnectionStatus",
+                "usr": "s:16MeetingSDK_macOS16ConnectionStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0A11SDKDelegatePAAE16connectionStatus6statusyAA010ConnectionG0O_tF",
+            "mangledName": "$s16MeetingSDK_macOS0A11SDKDelegatePAAE16connectionStatus6statusyAA010ConnectionG0O_tF",
             "moduleName": "MeetingSDK_macOS",
             "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.MeetingSDKDelegate>",
             "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.MeetingSDKDelegate>",
@@ -2082,6 +2318,123 @@
               "AccessControl",
               "ObjC",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "meetingDisconnected",
+            "printedName": "meetingDisconnected()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_macOS@objc(cs)MeetingSDKDelegateBridge(im)meetingDisconnected",
+            "mangledName": "$s16MeetingSDK_macOS0A17SDKDelegateBridgeC19meetingDisconnectedyyF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "participantNetworkQuality",
+            "printedName": "participantNetworkQuality(participant:streamId:bars:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Participant",
+                "printedName": "MeetingSDK_macOS.Participant",
+                "usr": "c:@M@MeetingSDK_macOS@objc(cs)Participant"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_macOS@objc(cs)MeetingSDKDelegateBridge(im)participantNetworkQualityWithParticipant:streamId:bars:",
+            "mangledName": "$s16MeetingSDK_macOS0A17SDKDelegateBridgeC25participantNetworkQuality0G08streamId4barsyAA11ParticipantC_SSs5Int32VtF",
+            "moduleName": "MeetingSDK_macOS",
+            "objc_name": "participantNetworkQualityWithParticipant:streamId:bars:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "networkQuality",
+            "printedName": "networkQuality(bars:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_macOS@objc(cs)MeetingSDKDelegateBridge(im)networkQualityWithBars:",
+            "mangledName": "$s16MeetingSDK_macOS0A17SDKDelegateBridgeC14networkQuality4barsys5Int32V_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "objc_name": "networkQualityWithBars:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectionStatus",
+            "printedName": "connectionStatus(status:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_macOS@objc(cs)MeetingSDKDelegateBridge(im)connectionStatusWithStatus:",
+            "mangledName": "$s16MeetingSDK_macOS0A17SDKDelegateBridgeC16connectionStatus6statusys5Int32V_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "objc_name": "connectionStatusWithStatus:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -4923,6 +5276,681 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "NetworkQuality",
+        "printedName": "NetworkQuality",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.NetworkQuality.Type) -> MeetingSDK_macOS.NetworkQuality",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkQuality",
+                    "printedName": "MeetingSDK_macOS.NetworkQuality",
+                    "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.NetworkQuality.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkQuality",
+                        "printedName": "MeetingSDK_macOS.NetworkQuality",
+                        "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS14NetworkQualityO4noneyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS14NetworkQualityO4noneyA2CmF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "compromised",
+            "printedName": "compromised",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.NetworkQuality.Type) -> MeetingSDK_macOS.NetworkQuality",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkQuality",
+                    "printedName": "MeetingSDK_macOS.NetworkQuality",
+                    "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.NetworkQuality.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkQuality",
+                        "printedName": "MeetingSDK_macOS.NetworkQuality",
+                        "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS14NetworkQualityO11compromisedyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS14NetworkQualityO11compromisedyA2CmF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fair",
+            "printedName": "fair",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.NetworkQuality.Type) -> MeetingSDK_macOS.NetworkQuality",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkQuality",
+                    "printedName": "MeetingSDK_macOS.NetworkQuality",
+                    "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.NetworkQuality.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkQuality",
+                        "printedName": "MeetingSDK_macOS.NetworkQuality",
+                        "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS14NetworkQualityO4fairyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS14NetworkQualityO4fairyA2CmF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "good",
+            "printedName": "good",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.NetworkQuality.Type) -> MeetingSDK_macOS.NetworkQuality",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkQuality",
+                    "printedName": "MeetingSDK_macOS.NetworkQuality",
+                    "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.NetworkQuality.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkQuality",
+                        "printedName": "MeetingSDK_macOS.NetworkQuality",
+                        "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS14NetworkQualityO4goodyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS14NetworkQualityO4goodyA2CmF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "verygood",
+            "printedName": "verygood",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.NetworkQuality.Type) -> MeetingSDK_macOS.NetworkQuality",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkQuality",
+                    "printedName": "MeetingSDK_macOS.NetworkQuality",
+                    "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.NetworkQuality.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkQuality",
+                        "printedName": "MeetingSDK_macOS.NetworkQuality",
+                        "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS14NetworkQualityO8verygoodyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS14NetworkQualityO8verygoodyA2CmF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "excellent",
+            "printedName": "excellent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.NetworkQuality.Type) -> MeetingSDK_macOS.NetworkQuality",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkQuality",
+                    "printedName": "MeetingSDK_macOS.NetworkQuality",
+                    "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.NetworkQuality.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkQuality",
+                        "printedName": "MeetingSDK_macOS.NetworkQuality",
+                        "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS14NetworkQualityO9excellentyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS14NetworkQualityO9excellentyA2CmF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MeetingSDK_macOS.NetworkQuality?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkQuality",
+                    "printedName": "MeetingSDK_macOS.NetworkQuality",
+                    "usr": "s:16MeetingSDK_macOS14NetworkQualityO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16MeetingSDK_macOS14NetworkQualityO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16MeetingSDK_macOS14NetworkQualityO8rawValueACSgSi_tcfc",
+            "moduleName": "MeetingSDK_macOS",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16MeetingSDK_macOS14NetworkQualityO8rawValueSivp",
+            "mangledName": "$s16MeetingSDK_macOS14NetworkQualityO8rawValueSivp",
+            "moduleName": "MeetingSDK_macOS",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MeetingSDK_macOS14NetworkQualityO8rawValueSivg",
+                "mangledName": "$s16MeetingSDK_macOS14NetworkQualityO8rawValueSivg",
+                "moduleName": "MeetingSDK_macOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16MeetingSDK_macOS14NetworkQualityO",
+        "mangledName": "$s16MeetingSDK_macOS14NetworkQualityO",
+        "moduleName": "MeetingSDK_macOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ConnectionStatus",
+        "printedName": "ConnectionStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "connected",
+            "printedName": "connected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ConnectionStatus.Type) -> MeetingSDK_macOS.ConnectionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConnectionStatus",
+                    "printedName": "MeetingSDK_macOS.ConnectionStatus",
+                    "usr": "s:16MeetingSDK_macOS16ConnectionStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ConnectionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConnectionStatus",
+                        "printedName": "MeetingSDK_macOS.ConnectionStatus",
+                        "usr": "s:16MeetingSDK_macOS16ConnectionStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS16ConnectionStatusO9connectedyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS16ConnectionStatusO9connectedyA2CmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Var",
+            "name": "connecting",
+            "printedName": "connecting",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ConnectionStatus.Type) -> MeetingSDK_macOS.ConnectionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConnectionStatus",
+                    "printedName": "MeetingSDK_macOS.ConnectionStatus",
+                    "usr": "s:16MeetingSDK_macOS16ConnectionStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ConnectionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConnectionStatus",
+                        "printedName": "MeetingSDK_macOS.ConnectionStatus",
+                        "usr": "s:16MeetingSDK_macOS16ConnectionStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS16ConnectionStatusO10connectingyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS16ConnectionStatusO10connectingyA2CmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Var",
+            "name": "disconnected",
+            "printedName": "disconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ConnectionStatus.Type) -> MeetingSDK_macOS.ConnectionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConnectionStatus",
+                    "printedName": "MeetingSDK_macOS.ConnectionStatus",
+                    "usr": "s:16MeetingSDK_macOS16ConnectionStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ConnectionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConnectionStatus",
+                        "printedName": "MeetingSDK_macOS.ConnectionStatus",
+                        "usr": "s:16MeetingSDK_macOS16ConnectionStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS16ConnectionStatusO12disconnectedyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS16ConnectionStatusO12disconnectedyA2CmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ConnectionStatus.Type) -> MeetingSDK_macOS.ConnectionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConnectionStatus",
+                    "printedName": "MeetingSDK_macOS.ConnectionStatus",
+                    "usr": "s:16MeetingSDK_macOS16ConnectionStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ConnectionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConnectionStatus",
+                        "printedName": "MeetingSDK_macOS.ConnectionStatus",
+                        "usr": "s:16MeetingSDK_macOS16ConnectionStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS16ConnectionStatusO6failedyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS16ConnectionStatusO6failedyA2CmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Var",
+            "name": "reconnecting",
+            "printedName": "reconnecting",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ConnectionStatus.Type) -> MeetingSDK_macOS.ConnectionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConnectionStatus",
+                    "printedName": "MeetingSDK_macOS.ConnectionStatus",
+                    "usr": "s:16MeetingSDK_macOS16ConnectionStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ConnectionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConnectionStatus",
+                        "printedName": "MeetingSDK_macOS.ConnectionStatus",
+                        "usr": "s:16MeetingSDK_macOS16ConnectionStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS16ConnectionStatusO12reconnectingyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS16ConnectionStatusO12reconnectingyA2CmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MeetingSDK_macOS.ConnectionStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConnectionStatus",
+                    "printedName": "MeetingSDK_macOS.ConnectionStatus",
+                    "usr": "s:16MeetingSDK_macOS16ConnectionStatusO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16MeetingSDK_macOS16ConnectionStatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16MeetingSDK_macOS16ConnectionStatusO8rawValueACSgSi_tcfc",
+            "moduleName": "MeetingSDK_macOS",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16MeetingSDK_macOS16ConnectionStatusO8rawValueSivp",
+            "mangledName": "$s16MeetingSDK_macOS16ConnectionStatusO8rawValueSivp",
+            "moduleName": "MeetingSDK_macOS",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MeetingSDK_macOS16ConnectionStatusO8rawValueSivg",
+                "mangledName": "$s16MeetingSDK_macOS16ConnectionStatusO8rawValueSivg",
+                "moduleName": "MeetingSDK_macOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16MeetingSDK_macOS16ConnectionStatusO",
+        "mangledName": "$s16MeetingSDK_macOS16ConnectionStatusO",
+        "moduleName": "MeetingSDK_macOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "MeetingSDK",
         "printedName": "MeetingSDK",
         "children": [
@@ -6939,6 +7967,65 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getWindowThumbnail",
+            "printedName": "getWindowThumbnail(id:format:dirPath:width:height:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0aB0C18getWindowThumbnail2id6format7dirPath5width6height10Foundation4DataVSgSS_S2Ss5Int32VAOtF",
+            "mangledName": "$s16MeetingSDK_macOS0aB0C18getWindowThumbnail2id6format7dirPath5width6height10Foundation4DataVSgSS_S2Ss5Int32VAOtF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -11868,112 +12955,210 @@
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 6863,
+      "offset": 7542,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 7206,
+      "offset": 7867,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7875,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 7950,
+      "length": 76,
+      "value": "\"updating videoView frame for streamId \""
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 8000,
+      "length": 10,
+      "value": "\" frameCount \""
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 8025,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8104,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8183,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8351,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 7223,
+      "offset": 8368,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 7307,
+      "offset": 8452,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "BooleanLiteral",
-      "offset": 7368,
+      "offset": 8513,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 8101,
+      "offset": 9289,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9297,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 9372,
+      "length": 80,
+      "value": "\"updating videoView imageData for streamId \""
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 9426,
+      "length": 10,
+      "value": "\" frameCount \""
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 9451,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9530,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 10363,
+      "offset": 9609,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 14313,
+      "offset": 9737,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12244,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16194,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 14319,
+      "offset": 16200,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "BooleanLiteral",
-      "offset": 14437,
+      "offset": 16318,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 14772,
+      "offset": 16653,
       "length": 74,
       "value": "\"MeetingSDKDelegate.videoPreviewReady: calling findVideoInfo: \""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 14845,
+      "offset": 16726,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 14955,
+      "offset": 16836,
       "length": 103,
       "value": "\"MeetingSDKDelegate.videoPreviewReady: About to call previewVideoViewCreated for streamId: \""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 15057,
+      "offset": 16938,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 15194,
+      "offset": 17075,
       "length": 90,
       "value": "\"MeetingSDKDelegate.videoPreviewReady: Could not find VideoInfo for streamId: \""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDKDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 15283,
+      "offset": 17164,
       "length": 2,
       "value": "\"\""
     },
@@ -12512,406 +13697,644 @@
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2116,
+      "offset": 1535,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1601,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1656,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1716,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1787,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1863,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1535,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1601,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1656,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1716,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1787,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1863,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1535,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1601,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1656,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1716,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1787,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1863,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1926,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1950,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1976,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1996,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2022,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1926,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1950,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1976,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1996,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2022,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1926,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1950,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1976,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1996,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2022,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2696,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Dictionary",
-      "offset": 2617,
+      "offset": 2818,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Dictionary",
-      "offset": 2675,
+      "offset": 3321,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "Dictionary",
+      "offset": 3379,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2999,
+      "offset": 3703,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3032,
+      "offset": 3736,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3221,
+      "offset": 3925,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 4335,
+      "offset": 5039,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 5116,
+      "offset": 5820,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5146,
+      "offset": 5850,
       "length": 22,
       "value": "\"COULD NOT INITIALIZE\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5259,
+      "offset": 5963,
       "length": 24,
       "value": "\"INITIALIZED SUCCESSFUL\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6171,
+      "offset": 6875,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 6195,
+      "offset": 6899,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6205,
+      "offset": 6909,
       "length": 6,
       "value": "\"-api\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6270,
+      "offset": 6974,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 6456,
+      "offset": 7160,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6486,
+      "offset": 7190,
       "length": 22,
       "value": "\"COULD NOT INITIALIZE\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6600,
+      "offset": 7304,
       "length": 24,
       "value": "\"INITIALIZED SUCCESSFUL\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7471,
+      "offset": 8175,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7550,
+      "offset": 8254,
       "length": 35,
       "value": "\"joinMeeting(\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7570,
+      "offset": 8274,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7583,
+      "offset": 8287,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 7795,
+      "offset": 8499,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7828,
+      "offset": 8532,
       "length": 29,
       "value": "\"JOINED MEETING SUCCESSFULLY\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7910,
+      "offset": 8614,
       "length": 14,
       "value": "\"DID NOT JOIN\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8732,
+      "offset": 9436,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8899,
+      "offset": 9603,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 8998,
+      "offset": 9702,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9008,
+      "offset": 9712,
       "length": 6,
       "value": "\"-api\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9073,
+      "offset": 9777,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 9364,
+      "offset": 10068,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9950,
+      "offset": 10654,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 10020,
+      "offset": 10724,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 10059,
+      "offset": 10763,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10360,
+      "offset": 11064,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 11023,
+      "offset": 11727,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 11094,
+      "offset": 11798,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 11133,
+      "offset": 11837,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 11428,
+      "offset": 12132,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 15288,
+      "offset": 15992,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 16336,
+      "offset": 17040,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 22057,
+      "offset": 22761,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 22095,
+      "offset": 22799,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 22125,
+      "offset": 22829,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22476,
+      "offset": 23180,
       "length": 73,
       "value": "\"MeetingSDK:  enableVideoStream:   We already know about this stream!!!!\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22669,
+      "offset": 23373,
       "length": 76,
       "value": "\"MeetingSDK:  enableVideoStream:   Calling paricipantVideoViewRetrieved!!!!\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 22954,
+      "offset": 23658,
       "length": 82,
       "value": "\"MeetingSDK.enableVideoStream: Could not find VideoInfo for streamId: \""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 23035,
+      "offset": 23739,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 23119,
+      "offset": 23823,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 23125,
+      "offset": 23829,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 23652,
+      "offset": 24356,
       "length": 82,
       "value": "\"MeetingSDK.enableVideoStream: Could not find VideoInfo for streamId: \""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 23733,
+      "offset": 24437,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 32178,
+      "offset": 32882,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 32687,
+      "offset": 33391,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 33315,
+      "offset": 34019,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 33947,
+      "offset": 34651,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Dictionary",
-      "offset": 34334,
+      "offset": 35038,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 34978,
+      "offset": 35950,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 35827,
+      "offset": 36799,
       "length": 2,
       "value": "[]"
     },

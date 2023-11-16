@@ -185,6 +185,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #if defined(MACOS)
 - (NSDictionary *) getWindowList;
+- (NSData *) getWindowThumbnail:(NSString *)windowId withFormat:(NSString* )format inPath:(NSString *)dirPath withWidth:(int) width andHeight:(int) height;
 #endif
 
 - (CMParticipant *_Nullable)getLocalParticipant;
@@ -200,6 +201,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)videoTraceOutputHistory:(NSString *)filename;
 - (void)audioTraceOutputHistory:(NSString *)filename;
 - (void)coreMeetingTraceOutputHistory:(NSString *)filename;
+- (void)coreMeetingLog:(NSString *)message;
 
 - (bool)setLogDirectory:(NSString *)path;
 - (bool)deleteLogFile:(NSString *)fileName;

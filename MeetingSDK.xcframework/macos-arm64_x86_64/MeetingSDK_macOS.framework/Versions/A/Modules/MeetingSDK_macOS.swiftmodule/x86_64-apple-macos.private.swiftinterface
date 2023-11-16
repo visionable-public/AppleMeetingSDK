@@ -31,6 +31,10 @@ public protocol MeetingSDKDelegate : AnyObject {
   func binaryPlaybackEnded(id: Swift.UInt64)
   func binaryPlaybackFailed(id: Swift.UInt64)
   func screenShareCancelled()
+  func meetingDisconnected()
+  func participantNetworkQuality(participant: MeetingSDK_macOS.Participant, streamId: Swift.String, quality: MeetingSDK_macOS.NetworkQuality)
+  func networkQuality(quality: MeetingSDK_macOS.NetworkQuality)
+  func connectionStatus(status: MeetingSDK_macOS.ConnectionStatus)
 }
 extension MeetingSDK_macOS.MeetingSDKDelegate {
   public func meetingToken(decodedToken: Swift.String)
@@ -54,6 +58,10 @@ extension MeetingSDK_macOS.MeetingSDKDelegate {
   public func binaryPlaybackEnded(id: Swift.UInt64)
   public func binaryPlaybackFailed(id: Swift.UInt64)
   public func screenShareCancelled()
+  public func meetingDisconnected()
+  public func participantNetworkQuality(participant: MeetingSDK_macOS.Participant, streamId: Swift.String, quality: MeetingSDK_macOS.NetworkQuality)
+  public func networkQuality(quality: MeetingSDK_macOS.NetworkQuality)
+  public func connectionStatus(status: MeetingSDK_macOS.ConnectionStatus)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MeetingSDKDelegateBridge : ObjectiveC.NSObject {
   @objc public func meetingToken(decodedToken: Swift.String)
@@ -78,6 +86,10 @@ extension MeetingSDK_macOS.MeetingSDKDelegate {
   @objc public func binaryPlaybackEnded(id: Swift.UInt64)
   @objc public func binaryPlaybackFailed(id: Swift.UInt64)
   @objc public func screenShareCancelled()
+  @objc public func meetingDisconnected()
+  @objc public func participantNetworkQuality(participant: MeetingSDK_macOS.Participant, streamId: Swift.String, bars: Swift.Int32)
+  @objc public func networkQuality(bars: Swift.Int32)
+  @objc public func connectionStatus(status: Swift.Int32)
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class VideoView : AppKit.NSView {
@@ -189,6 +201,31 @@ public enum DebugLevel : Swift.Int {
     get
   }
 }
+public enum NetworkQuality : Swift.Int {
+  case none
+  case compromised
+  case fair
+  case good
+  case verygood
+  case excellent
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum ConnectionStatus : Swift.Int {
+  case connected
+  case connecting
+  case disconnected
+  case failed
+  case reconnecting
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MeetingSDK : ObjectiveC.NSObject {
   public static let shared: MeetingSDK_macOS.MeetingSDK
   public var delegate: (any MeetingSDK_macOS.MeetingSDKDelegate)?
@@ -248,6 +285,7 @@ public enum DebugLevel : Swift.Int {
   public func getAudioInputDevices() -> [Swift.String]
   public func getAudioOutputDevices() -> [Swift.String]
   public func getWindowList() -> [Swift.Int : Swift.String]
+  public func getWindowThumbnail(id: Swift.String, format: Swift.String, dirPath: Swift.String, width: Swift.Int32, height: Swift.Int32) -> Foundation.Data?
   public func playSound(_ resource: Swift.String) -> Swift.UInt64
   public func stopSound(_ id: Swift.UInt64)
   public func getSupportedVideoSendResolutions(deviceId: Swift.String) -> [Swift.String]
@@ -483,3 +521,9 @@ extension MeetingSDK_macOS.CameraMode : Swift.RawRepresentable {}
 extension MeetingSDK_macOS.DebugLevel : Swift.Equatable {}
 extension MeetingSDK_macOS.DebugLevel : Swift.Hashable {}
 extension MeetingSDK_macOS.DebugLevel : Swift.RawRepresentable {}
+extension MeetingSDK_macOS.NetworkQuality : Swift.Equatable {}
+extension MeetingSDK_macOS.NetworkQuality : Swift.Hashable {}
+extension MeetingSDK_macOS.NetworkQuality : Swift.RawRepresentable {}
+extension MeetingSDK_macOS.ConnectionStatus : Swift.Equatable {}
+extension MeetingSDK_macOS.ConnectionStatus : Swift.Hashable {}
+extension MeetingSDK_macOS.ConnectionStatus : Swift.RawRepresentable {}

@@ -469,6 +469,10 @@ SWIFT_CLASS("_TtC14MeetingSDK_iOS24MeetingSDKDelegateBridge")
 /// \param id The id of the sound that just failed to play
 ///
 - (void)screenShareCancelled;
+- (void)meetingDisconnected;
+- (void)participantNetworkQualityWithParticipant:(Participant * _Nonnull)participant streamId:(NSString * _Nonnull)streamId bars:(int32_t)bars;
+- (void)networkQualityWithBars:(int32_t)bars;
+- (void)connectionStatusWithStatus:(int32_t)status;
 @end
 
 

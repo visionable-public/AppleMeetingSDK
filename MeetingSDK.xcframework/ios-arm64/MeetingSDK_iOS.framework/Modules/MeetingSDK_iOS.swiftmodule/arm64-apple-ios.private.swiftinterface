@@ -326,6 +326,10 @@ public protocol MeetingSDKDelegate : AnyObject {
   func binaryPlaybackEnded(id: Swift.UInt64)
   func binaryPlaybackFailed(id: Swift.UInt64)
   func screenShareCancelled()
+  func meetingDisconnected()
+  func participantNetworkQuality(participant: MeetingSDK_iOS.Participant, streamId: Swift.String, quality: MeetingSDK_iOS.NetworkQuality)
+  func networkQuality(quality: MeetingSDK_iOS.NetworkQuality)
+  func connectionStatus(status: MeetingSDK_iOS.ConnectionStatus)
 }
 extension MeetingSDK_iOS.MeetingSDKDelegate {
   public func meetingToken(decodedToken: Swift.String)
@@ -349,6 +353,10 @@ extension MeetingSDK_iOS.MeetingSDKDelegate {
   public func binaryPlaybackEnded(id: Swift.UInt64)
   public func binaryPlaybackFailed(id: Swift.UInt64)
   public func screenShareCancelled()
+  public func meetingDisconnected()
+  public func participantNetworkQuality(participant: MeetingSDK_iOS.Participant, streamId: Swift.String, quality: MeetingSDK_iOS.NetworkQuality)
+  public func networkQuality(quality: MeetingSDK_iOS.NetworkQuality)
+  public func connectionStatus(status: MeetingSDK_iOS.ConnectionStatus)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MeetingSDKDelegateBridge : ObjectiveC.NSObject {
   @objc public func meetingToken(decodedToken: Swift.String)
@@ -373,6 +381,10 @@ extension MeetingSDK_iOS.MeetingSDKDelegate {
   @objc public func binaryPlaybackEnded(id: Swift.UInt64)
   @objc public func binaryPlaybackFailed(id: Swift.UInt64)
   @objc public func screenShareCancelled()
+  @objc public func meetingDisconnected()
+  @objc public func participantNetworkQuality(participant: MeetingSDK_iOS.Participant, streamId: Swift.String, bars: Swift.Int32)
+  @objc public func networkQuality(bars: Swift.Int32)
+  @objc public func connectionStatus(status: Swift.Int32)
   @objc deinit
 }
 public enum iOSCamera : Swift.String {
@@ -407,6 +419,31 @@ public enum DebugLevel : Swift.Int {
   case dbg2
   case dbg3
   case dbg4
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum NetworkQuality : Swift.Int {
+  case none
+  case compromised
+  case fair
+  case good
+  case verygood
+  case excellent
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum ConnectionStatus : Swift.Int {
+  case connected
+  case connecting
+  case disconnected
+  case failed
+  case reconnecting
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -487,3 +524,9 @@ extension MeetingSDK_iOS.CameraMode : Swift.RawRepresentable {}
 extension MeetingSDK_iOS.DebugLevel : Swift.Equatable {}
 extension MeetingSDK_iOS.DebugLevel : Swift.Hashable {}
 extension MeetingSDK_iOS.DebugLevel : Swift.RawRepresentable {}
+extension MeetingSDK_iOS.NetworkQuality : Swift.Equatable {}
+extension MeetingSDK_iOS.NetworkQuality : Swift.Hashable {}
+extension MeetingSDK_iOS.NetworkQuality : Swift.RawRepresentable {}
+extension MeetingSDK_iOS.ConnectionStatus : Swift.Equatable {}
+extension MeetingSDK_iOS.ConnectionStatus : Swift.Hashable {}
+extension MeetingSDK_iOS.ConnectionStatus : Swift.RawRepresentable {}
