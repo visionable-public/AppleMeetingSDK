@@ -78,7 +78,7 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         MeetingSDK.shared.enableLogForwarding(true)
         
         // Uncomment to utilize active logging
-        //  setupLogFile()
+        setupLogFile()
         
         // Set the scroll view content size to 5000x5000 and enable scrolling
         self.scrollView.contentSize = CGSize(width: 5000.0, height: 5000.0)
@@ -120,7 +120,8 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         dateFormatter.dateFormat = "yyyy-MM-dd-hh-mma"
         let date = dateFormatter.string(from: NSDate() as Date)
         
-        let logFile = "\(absolutePath)/V1LOG_\(date)"
+        MeetingSDK.shared.setLogDirectory(absolutePath)
+        let logFile = "V1LOG_\(date)"
 
         print("logfile name: \(logFile)")
         MeetingSDK.shared.enableActiveLogging(logFile)
