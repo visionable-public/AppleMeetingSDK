@@ -12706,6 +12706,28 @@
           },
           {
             "kind": "Function",
+            "name": "getTimeZone",
+            "printedName": "getTimeZone()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MeetingSDK_iOS0aB0C11getTimeZoneSSyF",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C11getTimeZoneSSyF",
+            "moduleName": "MeetingSDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "playSound",
             "printedName": "playSound(_:)",
             "children": [
@@ -16798,14 +16820,14 @@
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 35950,
+      "offset": 36274,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 36799,
+      "offset": 37123,
       "length": 2,
       "value": "[]"
     }
