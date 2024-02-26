@@ -251,7 +251,7 @@ public enum ConnectionStatus : Swift.Int {
   public func setAudioInputVolume(_ volume: Swift.Int32) -> Swift.Bool
   public func setAudioOutputVolume(_ volume: Swift.Int32, device: Swift.String) -> Swift.Bool
   public func setAudioOutputVolume(_ volume: Swift.Int32) -> Swift.Bool
-  public func enableVideoCapture(camera: Swift.String, withMode: Swift.String, completion: @escaping (Swift.Bool) -> ())
+  public func enableVideoCapture(camera: Swift.String, withMode: Swift.String, blurring: Swift.Bool = false, completion: @escaping (Swift.Bool) -> ())
   public func disableVideoCapture(camera: Swift.String)
   public func enableVideoPreview(camera: Swift.String, withMode: Swift.String, lowLevel: Swift.Bool, completion: @escaping (Swift.Bool) -> ())
   public func disableVideoPreview(camera: Swift.String)

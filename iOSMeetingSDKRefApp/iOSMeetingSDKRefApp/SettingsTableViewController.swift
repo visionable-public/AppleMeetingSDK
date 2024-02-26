@@ -142,7 +142,7 @@ class SettingsTableViewController: UITableViewController, UITextFieldDelegate {
             print("enableOutgoingAudioVideo:: Attempting to enable capture on device \(device) with codec \(codec)")
             // Dispatch to main queue to avoid problem with a multiple input devices
             DispatchQueue.main.async {
-                MeetingSDK.shared.enableVideoCapture(camera: device, withMode: codec) { (success) in
+                MeetingSDK.shared.enableVideoCapture(camera: device, withMode: codec, blurring: true) { (success) in
                     if success {
                         print("Successfully enabled \(device) with mode: \(codec)")
                         
@@ -205,7 +205,7 @@ class SettingsTableViewController: UITableViewController, UITextFieldDelegate {
                 }
                 
                 if let useCodec = useCodec {
-                    MeetingSDK.shared.enableVideoCapture(camera: "Back Camera", withMode: useCodec) { success in
+                    MeetingSDK.shared.enableVideoCapture(camera: "Back Camera", withMode: useCodec, blurring: true) { success in
                         print("flip to back camera success: \(success)")
                     }
                     
@@ -224,7 +224,7 @@ class SettingsTableViewController: UITableViewController, UITextFieldDelegate {
                 }
                 
                 if let useCodec = useCodec {
-                    MeetingSDK.shared.enableVideoCapture(camera: "Front Camera", withMode: useCodec) { success in
+                    MeetingSDK.shared.enableVideoCapture(camera: "Front Camera", withMode: useCodec, blurring: true) { success in
                         print("flip to front camera success: \(success)")
                     }
                     

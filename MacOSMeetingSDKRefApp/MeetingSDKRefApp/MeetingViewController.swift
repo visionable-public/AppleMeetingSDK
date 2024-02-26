@@ -103,7 +103,7 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
             print("enableOutgoingAudioVideo:: Attempting to enable capture on device \(device) with codec \(codec)")
             // Dispatch to main queue to avoid problem with a multiple input devices
             DispatchQueue.main.async {
-                MeetingSDK.shared.enableVideoCapture(camera: device, withMode: codec) { (success) in
+                MeetingSDK.shared.enableVideoCapture(camera: device, withMode: codec, blurring: true) { (success) in
                     if success {
                         print("Successfully enabled \(device) with mode: \(codec)")
                         

@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/MeetingAPI.h</key>
 		<data>
-		DTDUqFsGBve/rAWpCR6X17OKkkM=
+		nvy1/phN2BNowcFRvJhmf7yAHLU=
 		</data>
 		<key>Headers/MeetingSDKScreenSharing.h</key>
 		<data>
@@ -38,31 +38,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		t6WisDkJOWecJ8UJD7wmR9OxbRI=
+		ynJuK7N+SGYmB5tK9oSplAj+hUM=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		zBtp0PNT84UJ94487Mko4U9mYEM=
+		bh7Rv1aDjdc6Dha6AXd57h6nPxs=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		vWPfh2eCzX7KSratEMhkBBM6jZE=
+		n+Ih6ZtB8xNl4uQYHNjTHak9I4s=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		bJ1FyLRAjYrZRtub0SyUuY1TCTk=
+		C2qj9T2pSSblti/3cUmkOVZZJUo=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		vWPfh2eCzX7KSratEMhkBBM6jZE=
+		n+Ih6ZtB8xNl4uQYHNjTHak9I4s=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		YPbEu4mdW8fRpFDsgqJ5ibqR96o=
+		jYBoyZNADzsKNK05gu8y/CC/nQk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		cMcW4NPeC4CA3xkBqE6FlMw69FI=
+		</data>
+		<key>deeplabv3_257_mv_gpu.tflite</key>
+		<data>
+		tfUNGYlsBHtI55fISDmS4wfNroQ=
+		</data>
+		<key>segm_full_v679.tflite</key>
+		<data>
+		lJz5tQA0swJhABowHVnoDcNPZWQ=
+		</data>
+		<key>segm_lite_v681.tflite</key>
+		<data>
+		YbT6TKJNF22+FPdMXBRpcKls/ts=
+		</data>
+		<key>selfie_segmentation.tflite</key>
+		<data>
+		jUl/Ub1nj6X7lcOHG+cutdciuDE=
+		</data>
+		<key>selfie_segmentation_landscape.tflite</key>
+		<data>
+		I9gIT90gjANdt3Yg6QDKUYK12pg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -92,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9HkPzAHtcHAWmIpN3kqi19PYGlwh893nJIGc9qTtKvc=
+			KGEkwu8pgiCm+CMXcD/CXEp6/ScJEW9EELxpZlxTZeA=
 			</data>
 		</dict>
 		<key>Headers/MeetingSDKScreenSharing.h</key>
@@ -127,35 +147,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			riUB+EsOLCtm6X0mc4uYegJ4Jr8H+LQ51X3MVEk4ogc=
+			K9q9xZ37dqDx15qjmHB5Gvz28r8mhrm3wH9pznpAM7A=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T1aTCHPcd73HpqmpN+igYxylQZ6hJKi3KYQCF6Gz16U=
+			xUNCQpCWHL/QCZC0ZvTXoelS9lrwxsETAPIOeOzzaHc=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vN5+j7tHta3NChid1X7Kf0j3/k/n8nEdKD4wxYLEkYE=
+			0YVHrDHo3pn593C+lHD/hY6sjQxixFkk30PMaDwvhKM=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T1aTCHPcd73HpqmpN+igYxylQZ6hJKi3KYQCF6Gz16U=
+			xUNCQpCWHL/QCZC0ZvTXoelS9lrwxsETAPIOeOzzaHc=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nPq6FEcKzn9PJgwKDBJ4enMPwBRal9mXfU5vcTtSjJ4=
+			6LodBWDGmE+nK9mBN1TsuG8ncA+C6j70UwI04m6PACI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -163,6 +183,41 @@
 			<key>hash2</key>
 			<data>
 			Ujb9aYzMZZtKwWTcFif2KIn3NbDxHNavfy3WU2eXBqw=
+			</data>
+		</dict>
+		<key>deeplabv3_257_mv_gpu.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aKU5eCwsanL4qsNyRgASSoXtl3FitE6Ey65dtxfJM8Y=
+			</data>
+		</dict>
+		<key>segm_full_v679.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			T6OKjS5I5uOm/FmoyI+HZhR1RJR2id7CmfZUv9srFx4=
+			</data>
+		</dict>
+		<key>segm_lite_v681.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sTVxR3dg+ZAS+9Y2WzhAbpQCC46q9RPajo7/YzLzi0Q=
+			</data>
+		</dict>
+		<key>selfie_segmentation.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jRO3+udK9iXGQSJoE2FqIRe9a8oZ6zt1V0Yh/AhVfyc=
+			</data>
+		</dict>
+		<key>selfie_segmentation_landscape.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Sq/mIju42sb6yMqO1WhShwozBR7z9iOIItKCoQmWKJQ=
 			</data>
 		</dict>
 	</dict>

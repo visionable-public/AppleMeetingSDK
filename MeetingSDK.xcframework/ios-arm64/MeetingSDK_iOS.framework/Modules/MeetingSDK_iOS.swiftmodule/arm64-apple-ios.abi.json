@@ -11650,7 +11650,7 @@
           {
             "kind": "Function",
             "name": "enableVideoCapture",
-            "printedName": "enableVideoCapture(camera:withMode:completion:)",
+            "printedName": "enableVideoCapture(camera:withMode:blurring:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11668,6 +11668,13 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeFunc",
@@ -11689,8 +11696,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14MeetingSDK_iOS0aB0C18enableVideoCapture6camera8withMode10completionySS_SSySbctF",
-            "mangledName": "$s14MeetingSDK_iOS0aB0C18enableVideoCapture6camera8withMode10completionySS_SSySbctF",
+            "usr": "s:14MeetingSDK_iOS0aB0C18enableVideoCapture6camera8withMode8blurring10completionySS_SSSbySbctF",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C18enableVideoCapture6camera8withMode8blurring10completionySS_SSSbySbctF",
             "moduleName": "MeetingSDK_iOS",
             "declAttributes": [
               "AccessControl",
@@ -16715,119 +16722,126 @@
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 22761,
+      "offset": 17602,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 22807,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 22799,
+      "offset": 22845,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 22829,
+      "offset": 22875,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 23180,
+      "offset": 23226,
       "length": 73,
       "value": "\"MeetingSDK:  enableVideoStream:   We already know about this stream!!!!\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 23373,
+      "offset": 23419,
       "length": 76,
       "value": "\"MeetingSDK:  enableVideoStream:   Calling paricipantVideoViewRetrieved!!!!\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 23658,
+      "offset": 23704,
       "length": 82,
       "value": "\"MeetingSDK.enableVideoStream: Could not find VideoInfo for streamId: \""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 23739,
+      "offset": 23785,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 23823,
+      "offset": 23869,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 23829,
+      "offset": 23875,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 24356,
+      "offset": 24402,
       "length": 82,
       "value": "\"MeetingSDK.enableVideoStream: Could not find VideoInfo for streamId: \""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 24437,
+      "offset": 24483,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 32882,
+      "offset": 32928,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 33391,
+      "offset": 33437,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 34019,
+      "offset": 34065,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 34651,
+      "offset": 34697,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 36274,
+      "offset": 36320,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Array",
-      "offset": 37123,
+      "offset": 37169,
       "length": 2,
       "value": "[]"
     }

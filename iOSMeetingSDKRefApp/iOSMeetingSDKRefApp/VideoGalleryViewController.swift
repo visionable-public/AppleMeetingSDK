@@ -159,6 +159,9 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
     // audio to be disabled.   If the local audio was already disabled, this will cause the local
     // audio to be re-enabled
     @IBAction func microphoneButtonAction(_ sender: Any) {
+        MeetingSDK.shared.enableNetworkVideo(url: "http://webcam01.ecn.purdue.edu/mjpg/video.mjpg", mode: "LARGE", name: "Network Camera") { result in
+            print("network camere enable: \(result)")
+        }
         // Handling turning on and off your mic
         if micOnOffState == .on {
             micOnOffState = .off

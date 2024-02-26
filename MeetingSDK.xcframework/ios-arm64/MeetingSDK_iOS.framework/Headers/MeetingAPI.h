@@ -99,7 +99,7 @@ NS_ASSUME_NONNULL_BEGIN
     @param handler  returns true if success or false if failed
  */
 
-- (void)enableVideoCapture:(NSString*)deviceID withMode:(NSString *)mode handler:(void(^)(bool))handler;
+- (void)enableVideoCapture:(NSString*)deviceID withMode:(NSString *)mode andBlurring:(bool)blurring handler:(void(^)(bool))handler;
 
 #if !defined(MACOS)
 /*! @discussion Set the bundle id and the app group id used by the Screen Sharing extension
