@@ -18,11 +18,10 @@ class ConfigurationViewController: NSViewController {
     
     // Used to keep track of which popup menu refers to which local video device
     fileprivate var videoPopUpMenuMappings:[NSPopUpButton:String]=[:]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-
         self.rebuildUI()
     }
     
@@ -88,9 +87,7 @@ class ConfigurationViewController: NSViewController {
                 }
             }
         }
-
     }
-    
     
     func rebuildUIForLocalUser() {
         let videoDevices = MeetingSDK.shared.getVideoDevices()

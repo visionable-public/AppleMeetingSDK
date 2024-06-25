@@ -8,7 +8,11 @@
 import Cocoa
 import MeetingSDK_macOS
 
-class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDelegate, NSTableViewDataSource {    
+class MeetingViewController: NSViewController, MeetingSDKDelegate, ModeratorSDKDelegate, NSTableViewDelegate, NSTableViewDataSource {
+    func deviceListUpdated(_ deviceJSON: String) {
+        print("ModeratorSDKDelegate::deviceListUpdated: \(deviceJSON)")
+    }
+    
     var myParticipantName = ""
     var meetingKey = ""
     var server = ""
@@ -17,9 +21,33 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
     var participantArray:[Participant] = []
     var mutedStreamIDs:[String:Bool] = [:]
     var activeVideoViews:[String:VideoView] = [:]
+    var jwt = ""
+    
     
     @IBOutlet weak var participantTableView: NSTableView!
     @IBOutlet weak var inputVolumeSlider: NSSlider!
+    
+    //
+    // Called to set up a log file that can be shared via iTunes File Sharing
+    //
+    func setupLogFile() {
+        let docDir = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        let absolutePath = docDir.path
+        
+        let dateFormatter = DateFormatter();
+        dateFormatter.dateFormat = "yyyy-MM-dd-hh-mma"
+        let date = dateFormatter.string(from: NSDate() as Date)
+        
+        // Set up log directory
+        let result = MeetingSDK.shared.setLogDirectory("\(absolutePath)/")
+        
+
+        let logFile = "V1LOG_\(date)"
+
+        print("logfile name: \(logFile)")
+        MeetingSDK.shared.enableActiveLogging(logFile)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,27 +55,31 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
         
         // Set delegate
         MeetingSDK.shared.delegate = self
+        ModeratorSDK.shared.delegate = self
         MeetingSDK.shared.enableCombinedLogs(true)
         MeetingSDK.shared.enableLogForwarding(true)
+        // Uncomment to setup logging to a file stored in the Documents directory
+        setupLogFile()
+        
+        MeetingSDK.shared.setTraceLevel(.dbg3)
         
         // V3 meetings use token, V2 do not
         if isV3Meeting {
-            
             // Join V3
-            MeetingSDK.shared.joinMeetingWithToken(server: server, meetingUUID: meetingUUID, token: meetingKey, name: myParticipantName) { (success) in
-                if success {
-                    print("join command succeeded, enabling local audio/video")
-                    self.enableOutgoingAudioVideo()
+                MeetingSDK.shared.joinMeetingWithToken(server: self.server, meetingUUID: self.meetingUUID, token: self.meetingKey, jwt: self.jwt, name: self.myParticipantName) { (success) in
+                    if success {
+                        print("join command succeeded, enabling local audio/video")
+                        self.enableOutgoingAudioVideo()
 
-                    // Local user should be in the participants array now, reload table
-                    self.participantArray = MeetingSDK.shared.getParticipants()
-                    DispatchQueue.main.async {
-                        self.participantTableView.reloadData()
+                        // Local user should be in the participants array now, reload table
+                        self.participantArray = MeetingSDK.shared.getParticipants()
+                        DispatchQueue.main.async {
+                            self.participantTableView.reloadData()
+                        }
+                    } else {
+                        print("join command failed: \(MeetingAPI.sharedInstance().lastError)")
                     }
-                } else {
-                    print("join command failed: \(MeetingAPI.sharedInstance().lastError)")
                 }
-            }
         }
         else {
             
@@ -202,6 +234,10 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
     
     // MARK: -
     // MARK: MeetingSDK Delegate Methods
+    func meetingToken(decodedToken: String) {
+        print("DECODED TOKEN: \(decodedToken)")
+    }
+    
     func participantAdded(participant: Participant) {
         if let audioInfo = participant.audioInfo {
             // Add default audio level for this stream into array in MeetingState
@@ -219,7 +255,7 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
     
     func participantVideoAdded(participant: Participant, streamId: String) {
         MeetingSDK.shared.enableVideoStream(participant: participant, streamId: streamId)
-        print("MeetingSDKDelegate:  participantVideoAdded (\(participant.displayName)), streamId: \(streamId)")
+        print("MeetingSDKDelegate:  participantVideoAdded (\(participant.displayName)), streamId: \(streamId), uuid: \(participant.userUUID)")
     }
     
     func participantVideoUpdated(participant: Participant, streamId: String, videoView: VideoView) {
@@ -237,7 +273,7 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
             print("MeetingSDKDelegate: participantVideoViewCreated: streamId \(videoView.streamId) already has an active VideoView")
         } else {
             activeVideoViews[videoView.streamId] = videoView
-            spawnWindow(videoView, streamId: videoView.streamId)
+            spawnWindow(videoView, streamId: videoView.streamId,participant: participant)
         }
 
         print("MeetingSDKDelegate: participantVideoViewCreated (\(participant.displayName))")
@@ -317,6 +353,22 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
         print("(\(level)) : \(message)")
     }
     
+    func meetingDisconnected() {
+        print("MeetingSDKDelegate: MEETING DISCONNECTED")
+    }
+    
+    func participantNetworkQuality(participant: Participant, streamId: String, quality: NetworkQuality) {
+        print("NEWDELEGATE: participantNetworkStrength \(participant.userUUID), \(streamId), \(quality)")
+    }
+
+    func networkQuality(quality: NetworkQuality) {
+        print("NEWDELEGATE: networkStrength  \(quality)")
+    }
+    
+    func connectionStatus(status: ConnectionStatus) {
+        print("NEWDELEGATE: connectionStatus: \(status)")
+    }
+
     // MARK: -
     // MARK: NSTableViewDelegate Methods
     
@@ -362,20 +414,12 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
     // MARK: -
     // MARK: Window Management
     
-    func spawnWindow(_ view:VideoView, streamId: String) {
+    func spawnWindow(_ view:VideoView, streamId: String, participant: Participant) {
         DispatchQueue.main.async {
             let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: Bundle.main)
             if let vc = storyboard.instantiateController(withIdentifier: "VideoStream") as? VideoStreamViewController
             {
-                vc.view.addSubview(view)
-                
-                // Add constraints
-                view.translatesAutoresizingMaskIntoConstraints = false
-                NSLayoutConstraint(item: view as Any, attribute: .leading, relatedBy: .equal, toItem: vc.view, attribute: .leading, multiplier: 1, constant: 0).isActive = true
-                NSLayoutConstraint(item: view as Any, attribute: .trailing, relatedBy: .equal, toItem: vc.view, attribute: .trailing, multiplier: 1, constant: 0).isActive = true
-                NSLayoutConstraint(item: view as Any, attribute: .top, relatedBy: .equal, toItem: vc.view, attribute: .top, multiplier: 1, constant: 0).isActive = true
-                NSLayoutConstraint(item: view as Any, attribute: .bottom, relatedBy: .equal, toItem: vc.view, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
-                print("compression: \(NSLayoutConstraint.Priority.defaultLow)")
+
                 
                 // Setting the compression resistance priority allows us to resize the window smaller
                 // than the size of the video frames coming in
@@ -390,6 +434,16 @@ class MeetingViewController: NSViewController, MeetingSDKDelegate, NSTableViewDe
                 vc.streamId = streamId
                 vc.window = myWindow
                 
+                vc.videoArea?.addSubview(view)
+                vc.participant = participant
+                
+                // Add constraints
+                view.translatesAutoresizingMaskIntoConstraints = false
+                NSLayoutConstraint(item: view as Any, attribute: .leading, relatedBy: .equal, toItem: vc.videoArea, attribute: .leading, multiplier: 1, constant: 0).isActive = true
+                NSLayoutConstraint(item: view as Any, attribute: .trailing, relatedBy: .equal, toItem: vc.videoArea, attribute: .trailing, multiplier: 1, constant: 0).isActive = true
+                NSLayoutConstraint(item: view as Any, attribute: .top, relatedBy: .equal, toItem: vc.videoArea, attribute: .top, multiplier: 1, constant: 0).isActive = true
+                NSLayoutConstraint(item: view as Any, attribute: .bottom, relatedBy: .equal, toItem: vc.videoArea, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
+                print("compression: \(NSLayoutConstraint.Priority.defaultLow)")
                 if let videoInfo = MeetingSDK.shared.findVideoInfo(streamId: streamId) {
                     myWindow.title = "\(videoInfo.site) -- \(videoInfo.name)"
                 }

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		WlESGxOHQdKTXMzrngpXNmyfT64=
+		z9C+tCvkfkEr2cQs+2ATh/FR4+o=
 		</data>
 		<key>Resources/deeplabv3_257_mv_gpu.tflite</key>
 		<data>
@@ -49,105 +49,98 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ix6eWxggwHpacguaAOLCsbbOvZVTMnXDW3HJFoizUik=
+			pXnkb9ixm+VqaeNSE1MaxVzJebEpuU94TAOKb/rfbG8=
 			</data>
 		</dict>
 		<key>Headers/MeetingAPI.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KGEkwu8pgiCm+CMXcD/CXEp6/ScJEW9EELxpZlxTZeA=
+			Uv87u12DFiQwys50Pc/MU9STa9Apovb5AlNazOk0KiM=
 			</data>
 		</dict>
 		<key>Headers/MeetingSDK_macOS-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EU0D/9mYsZzRK7NRmRA+5LHzJUMxrJKBK75RgVZ1Dq8=
+			e7iI0XHVFg6ShgnD4FvJYYaNzNu3BMvB35TjtC6R3h0=
 			</data>
 		</dict>
 		<key>Headers/MeetingSDK_macOS.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WgH66JmxeLsJYw5QDSToJbZC4DdpItVtmjR9gDGgoTg=
-			</data>
-		</dict>
-		<key>Headers/Utils.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			C8m82c73jtL3j3uM9iD/CF4o4im//1Qz1P1Ims1qmrA=
+			Xf8/aGPFcAeOqDSZIwWkLmG9ibwhvqnYH+Ty4uSW8+k=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/arm64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tFRgPStbt/N57by+2WMB9XDdPZJIB/HNwC6ty2Ygby4=
+			AW3kQdxCTSdZbuF9YHfQwwo6V9psikdGYACmFH5SUto=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gq2rNTMKFurqsszBNKk7D4Vx7RRjMkUzrdSvmneQ/QE=
+			LS0MolGGJ9kTLsoBs99v8W/zAZUNj2BmMzGrnckxBW0=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t6CzLqys958P61w+a8aveWVu1CmuSdHmxCgdlpJL/gA=
+			7AxMrRICkZ3HsNeU85kkkg3nDqbskdMEmirly91KNec=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/arm64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gq2rNTMKFurqsszBNKk7D4Vx7RRjMkUzrdSvmneQ/QE=
+			LS0MolGGJ9kTLsoBs99v8W/zAZUNj2BmMzGrnckxBW0=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WvNosXW+cs3h/sT57AnIt2EJIZzHrF3+GQ927L8rnHA=
+			URUs8PwXSmPyehIgofd76MU8HVUBeXzbFKw8mXm/6So=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tFRgPStbt/N57by+2WMB9XDdPZJIB/HNwC6ty2Ygby4=
+			AW3kQdxCTSdZbuF9YHfQwwo6V9psikdGYACmFH5SUto=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NrDr2z0FC6nGtyEJXjPtEcTh50zdkT1mofJ9d4Xirbs=
+			Lg9xu78TnUggsrpn+mhmgKri75a/fZx2U9Jx+SR6Ntw=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MYKXKKbVzTCQWX3ui0z7lP7+rnizAUc2tALvd6FZMzU=
+			xAEtPIdlmYls9PTVoT73w1au7QT740zraMuqsedtfdg=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NrDr2z0FC6nGtyEJXjPtEcTh50zdkT1mofJ9d4Xirbs=
+			Lg9xu78TnUggsrpn+mhmgKri75a/fZx2U9Jx+SR6Ntw=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			krh96saamBko8sKFVCElX3WCuxBhL0AJNeDsioHVPi8=
+			ouQ4JLaLCLR9umFSO+FI3DSgnik4emhzGKfb2Az3ufU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -161,7 +154,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oe+wVcAIFBreciDHGeMbbQJBJb0GD6VWx2gbxyrQYl4=
+			MqSrle6WI4p+yWNc+QLctQ/+vSphSGXANe248WSBW5M=
 			</data>
 		</dict>
 		<key>Resources/deeplabv3_257_mv_gpu.tflite</key>
@@ -203,7 +196,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			QQQc4hBDvpTTVclsiijHzV59vWc=
+			hsGhy0cAtBnd2mVZQj0WaQW05K8=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libCoreMeeting-macOS" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -257,19 +250,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			qAh0xaduByt9MrW3iNGNq5UN+G8=
+			lR8iU9IJcQJ0q+ZkVm6EGLAP9o4=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigaudio-mac-55554944f99b34b6eae43ff9b41df6fea1671b0b" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigaudio-mac-55554944b45e99aa8790340db1a6c56d3f70517e" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libigvideo-mac.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			YuirxmhgAD40O7HoBV+dtCtG1c0=
+			SIvizJ6VcMigXIT382/uv29d3oE=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigvideo-mac-55554944e6b6411eb89c3b6f9f2fbef2ff53aeb1" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigvideo-mac-5555494462f6c3adaa27306c990a2e45db731071" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_core.3.4.dylib</key>
 		<dict>

@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSString *)_codecName;
 -(bool)_local;
 -(bool)_active;
+-(bool)_ptzStatus;
 -(uint8_t)_layout;
 -(uint32_t)_width;
 -(uint32_t)_height;

@@ -77,7 +77,7 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         MeetingSDK.shared.enableCombinedLogs(true)
         MeetingSDK.shared.enableLogForwarding(true)
         
-        // Uncomment to utilize active logging
+        // Uncomment to log to a file stored in app's Documents directory
         setupLogFile()
         
         // Set the scroll view content size to 5000x5000 and enable scrolling
@@ -120,12 +120,13 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         dateFormatter.dateFormat = "yyyy-MM-dd-hh-mma"
         let date = dateFormatter.string(from: NSDate() as Date)
         
-        MeetingSDK.shared.setLogDirectory(absolutePath)
         let logFile = "V1LOG_\(date)"
 
+        MeetingSDK.shared.setLogDirectory(absolutePath)
         print("logfile name: \(logFile)")
         MeetingSDK.shared.enableActiveLogging(logFile)
     }
+    
     
     // The selector called when a meetingExited NSNotification is received.  We'll
     // iterate through all the participant views and remove them from the array of
@@ -159,9 +160,6 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
     // audio to be disabled.   If the local audio was already disabled, this will cause the local
     // audio to be re-enabled
     @IBAction func microphoneButtonAction(_ sender: Any) {
-        MeetingSDK.shared.enableNetworkVideo(url: "http://webcam01.ecn.purdue.edu/mjpg/video.mjpg", mode: "LARGE", name: "Network Camera") { result in
-            print("network camere enable: \(result)")
-        }
         // Handling turning on and off your mic
         if micOnOffState == .on {
             micOnOffState = .off
@@ -279,6 +277,21 @@ class VideoGalleryViewController: UIViewController, MeetingSDKDelegate {
         }
     }
     
+    func meetingDisconnected() {
+        print("MEETING DISCONNECTED")
+    }
+    
+    func participantNetworkQuality(participant: Participant, streamId: String, quality: NetworkQuality) {
+        print("NEWDELEGATE: participantNetworkStrength \(participant.userUUID), \(streamId), \(quality)")
+    }
+
+    func networkQuality(quality: NetworkQuality) {
+        print("NEWDELEGATE: networkStrength  \(quality)")
+    }
+    
+    func connectionStatus(status: ConnectionStatus) {
+        print("NEWDELEGATE: connectionStatus: \(status)")
+    }
     // This is a private utility function used to create a new ParticipantView and add it to
     // the user interface
     private func makeAndAddNewParticipantView(participant: Participant, videoView: VideoView) {

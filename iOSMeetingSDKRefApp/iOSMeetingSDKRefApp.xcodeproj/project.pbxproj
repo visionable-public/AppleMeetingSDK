@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,9 +25,9 @@
 		E4650B73263E5251000197CB /* VideoDevicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4650B72263E5251000197CB /* VideoDevicesTableViewController.swift */; };
 		E4650B75263F953A000197CB /* SubtitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4650B74263F953A000197CB /* SubtitleTableViewCell.swift */; };
 		E4650B77263F9966000197CB /* MeetingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4650B76263F9966000197CB /* MeetingState.swift */; };
-		E4A928AF295502EF009E6403 /* MeetingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A928AE295502EF009E6403 /* MeetingSDK.xcframework */; };
-		E4A928B0295502EF009E6403 /* MeetingSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4A928AE295502EF009E6403 /* MeetingSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E4A928B2295502FD009E6403 /* MeetingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A928AE295502EF009E6403 /* MeetingSDK.xcframework */; };
+		E4B583A32C2A4C3E00F8EE65 /* MeetingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B583A22C2A4C3E00F8EE65 /* MeetingSDK.xcframework */; };
+		E4B583A42C2A4C3E00F8EE65 /* MeetingSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4B583A22C2A4C3E00F8EE65 /* MeetingSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4B583A62C2A4CF900F8EE65 /* MeetingSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B583A22C2A4C3E00F8EE65 /* MeetingSDK.xcframework */; };
 		E4D4532B263BA4A9006AEBAA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D4532A263BA4A9006AEBAA /* SettingsTableViewController.swift */; };
 		E4F87F9B268CB591004531E7 /* VideoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F87F9A268CB591004531E7 /* VideoGalleryViewController.swift */; };
 		E4F87F9F268CBD47004531E7 /* ParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F87F9E268CBD47004531E7 /* ParticipantView.swift */; };
@@ -55,13 +55,22 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4A928B1295502EF009E6403 /* Embed Frameworks */ = {
+		E4A59DB52B7182F600BE31E3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B583A52C2A4C3E00F8EE65 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E4A928B0295502EF009E6403 /* MeetingSDK.xcframework in Embed Frameworks */,
+				E4B583A42C2A4C3E00F8EE65 /* MeetingSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,9 +109,8 @@
 		E4650B74263F953A000197CB /* SubtitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleTableViewCell.swift; sourceTree = "<group>"; };
 		E4650B76263F9966000197CB /* MeetingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingState.swift; sourceTree = "<group>"; };
 		E4A445D22655F46800D4A051 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		E4A928AE295502EF009E6403 /* MeetingSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MeetingSDK.xcframework; path = ../MeetingSDK.xcframework; sourceTree = "<group>"; };
+		E4B583A22C2A4C3E00F8EE65 /* MeetingSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MeetingSDK.xcframework; path = ../MeetingSDK.xcframework; sourceTree = "<group>"; };
 		E4D4532A263BA4A9006AEBAA /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
-		E4D45330263C34B5006AEBAA /* MeetingSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MeetingSDK.xcframework; path = ../../../Apple/MeetingSDK.xcframework; sourceTree = "<group>"; };
 		E4F87F9A268CB591004531E7 /* VideoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGalleryViewController.swift; sourceTree = "<group>"; };
 		E4F87F9E268CBD47004531E7 /* ParticipantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4A928B2295502FD009E6403 /* MeetingSDK.xcframework in Frameworks */,
+				E4B583A62C2A4CF900F8EE65 /* MeetingSDK.xcframework in Frameworks */,
 				E40AA6D42642ADCC004EA9A4 /* ReplayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4A928AF295502EF009E6403 /* MeetingSDK.xcframework in Frameworks */,
+				E4B583A32C2A4C3E00F8EE65 /* MeetingSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +196,13 @@
 		E4D4532F263C34B5006AEBAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E4A928AE295502EF009E6403 /* MeetingSDK.xcframework */,
+				E4B583A22C2A4C3E00F8EE65 /* MeetingSDK.xcframework */,
 				E4A445D22655F46800D4A051 /* CoreImage.framework */,
 				E455F0C12649DAB000A23E4C /* CoreGraphics.framework */,
 				E455F0BF2649DA8A00A23E4C /* AVFoundation.framework */,
 				E455F0BD2649DA1D00A23E4C /* Accelerate.framework */,
 				E40AA6E82642B6C1004EA9A4 /* CoreMedia.framework */,
 				E40AA6E52642B687004EA9A4 /* CoreVideo.framework */,
-				E4D45330263C34B5006AEBAA /* MeetingSDK.xcframework */,
 				E40AA6A22641E50F004EA9A4 /* ReplayKit.framework */,
 				E40AA6AE2641E510004EA9A4 /* UIKit.framework */,
 			);
@@ -230,7 +237,8 @@
 				E44456C9263B904A00F94140 /* Frameworks */,
 				E44456CA263B904A00F94140 /* Resources */,
 				E40AA6BA2641E510004EA9A4 /* Embed App Extensions */,
-				E4A928B1295502EF009E6403 /* Embed Frameworks */,
+				E4A59DB52B7182F600BE31E3 /* CopyFiles */,
+				E4B583A52C2A4C3E00F8EE65 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

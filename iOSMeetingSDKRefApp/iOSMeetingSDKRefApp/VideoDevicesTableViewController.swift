@@ -38,6 +38,7 @@ class VideoDevicesTableViewController: UITableViewController, MeetingSDKDelegate
         //self.tableView.register(VideoDevicePreviewCell.self, forCellReuseIdentifier: "VideoDevicePreviewCell")
         devices = MeetingSDK.shared.getVideoDevices()
         MeetingSDK.shared.delegate = self
+        MeetingSDK.shared.enableCombinedLogs(false)
     }
 
     // MARK: - Table view data source
@@ -125,7 +126,7 @@ class VideoDevicesTableViewController: UITableViewController, MeetingSDKDelegate
                 print("PREVIEW: starting preview")
                 // Just enable first one encountered
                 print("PREVIEW: Enabling preview for \(device) with codec: \(codec)")
-                MeetingSDK.shared.enableVideoPreview(camera: device, withMode: codec, lowLevel:false) { success in
+                MeetingSDK.shared.enableVideoPreview(camera: device, withMode: codec, andBlurring: true, lowLevel:false) { success in
                     print("PREVIEW: enableVideoPreview returned \(success)")
                 }
                 break

@@ -474,6 +474,18 @@ SWIFT_CLASS("_TtC16MeetingSDK_macOS24MeetingSDKDelegateBridge")
 - (void)connectionStatusWithStatus:(int32_t)status;
 @end
 
+@class NSURLSession;
+@class NSURLSessionWebSocketTask;
+
+/// The main high-level interface to the SDK.  This is a singleton that you will obtain through the ‘shared’ property
+SWIFT_CLASS("_TtC16MeetingSDK_macOS12ModeratorSDK")
+@interface ModeratorSDK : NSObject <NSURLSessionWebSocketDelegate>
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)URLSession:(NSURLSession * _Nonnull)session webSocketTask:(NSURLSessionWebSocketTask * _Nonnull)webSocketTask didOpenWithProtocol:(NSString * _Nullable)protocol;
+- (void)URLSession:(NSURLSession * _Nonnull)session webSocketTask:(NSURLSessionWebSocketTask * _Nonnull)webSocketTask didCloseWithCode:(NSURLSessionWebSocketCloseCode)closeCode reason:(NSData * _Nullable)reason;
+@end
+
 
 /// A single user in the meeting.   A Participant can have multiple video sources from one or more cameras and/or screen/window shares.
 SWIFT_CLASS("_TtC16MeetingSDK_macOS11Participant")
@@ -1003,6 +1015,18 @@ SWIFT_CLASS("_TtC16MeetingSDK_macOS24MeetingSDKDelegateBridge")
 - (void)participantNetworkQualityWithParticipant:(Participant * _Nonnull)participant streamId:(NSString * _Nonnull)streamId bars:(int32_t)bars;
 - (void)networkQualityWithBars:(int32_t)bars;
 - (void)connectionStatusWithStatus:(int32_t)status;
+@end
+
+@class NSURLSession;
+@class NSURLSessionWebSocketTask;
+
+/// The main high-level interface to the SDK.  This is a singleton that you will obtain through the ‘shared’ property
+SWIFT_CLASS("_TtC16MeetingSDK_macOS12ModeratorSDK")
+@interface ModeratorSDK : NSObject <NSURLSessionWebSocketDelegate>
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)URLSession:(NSURLSession * _Nonnull)session webSocketTask:(NSURLSessionWebSocketTask * _Nonnull)webSocketTask didOpenWithProtocol:(NSString * _Nullable)protocol;
+- (void)URLSession:(NSURLSession * _Nonnull)session webSocketTask:(NSURLSessionWebSocketTask * _Nonnull)webSocketTask didCloseWithCode:(NSURLSessionWebSocketCloseCode)closeCode reason:(NSData * _Nullable)reason;
 @end
 
 

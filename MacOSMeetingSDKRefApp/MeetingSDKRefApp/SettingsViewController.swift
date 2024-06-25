@@ -51,10 +51,6 @@ class SettingsViewController: NSViewController, MeetingSDKDelegate {
         }
     }
     
-    func participantRemoved(participant: MeetingSDK_macOS.Participant) {
-        print("participantRemvoed");
-    }
-    
     func logMessage(level: Int, message: String) {
         print("(\(level)) -- \(message)")
         
@@ -88,6 +84,8 @@ class SettingsViewController: NSViewController, MeetingSDKDelegate {
         contentView.layer?.backgroundColor = NSColor.blue.cgColor
         
         MeetingSDK.shared.delegate = self
+//        MeetingSDK.shared.enableInlineAudioVideoLogging(true)
+        
         // First, get an array of video devices
         let videoDevices = MeetingSDK.shared.getVideoDevices()
         let audioInputDevices = MeetingSDK.shared.getAudioInputDevices()
@@ -176,8 +174,6 @@ class SettingsViewController: NSViewController, MeetingSDKDelegate {
         if let documentView = scrollView.documentView {
                 documentView.scroll(NSPoint(x: 0, y: documentView.bounds.size.height))
         }
-        
-
     }
     
     @IBAction func doSave(_ sender: Any) {

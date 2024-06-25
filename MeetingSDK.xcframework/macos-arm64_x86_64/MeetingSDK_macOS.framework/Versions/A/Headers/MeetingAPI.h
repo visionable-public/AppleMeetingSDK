@@ -40,9 +40,11 @@ NS_ASSUME_NONNULL_BEGIN
 //- Callbacks
 
 
--(void)enableInlineAudioVideoLogging:(BOOL) enable;
+
 
 //- Functions
+
+- (void)authenticate:(NSString *)server userID:(NSString *) userID  password:(NSString*) password handler:(void (^)(NSData *))handler;
 
 /*! @discussion Basic join a meeting call. Return false if error. Timeout after 60 seconds if no response.
     @param name  user name.
@@ -50,7 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
     @param handler  success callback
  */
 - (void)joinMeeting:(NSString *)server meetingUUID:(NSString *) meetingUUID key:(NSString *)key
-           userUUID:(NSString *)userUUID name:(NSString *)name handler:(void(^)(bool))handler;
+           userUUID:(NSString *)userUUID name:(NSString *)name handler:(void(^)(bool,NSString *))handler;
 
 /*! @discussion Initializes a meeting. Timeout after 60 seconds if no response.
     @param guid  meeting guid
@@ -115,7 +117,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (bool)disableVideoCapture:(NSString*)deviceID;
 
-- (void)enableVideoPreview:(NSString *)deviceID withMode:(NSString *)mode handler:(void(^)(bool))handler;
+- (void)enableVideoPreview:(NSString *)deviceID withMode:(NSString *)mode andBlurring: (Boolean)enableBlurring handler:(void(^)(bool))handler;
 - (bool)disableVideoPreview:(NSString *)deviceID;
 
 - (bool)enableWindowSharing:(NSString*)windowID withMode:(NSString *)mode;
@@ -216,10 +218,15 @@ NS_ASSUME_NONNULL_BEGIN
 -(uint64_t)playSound:(NSData *)wavdata;
 -(bool)stopSound:(uint64_t) data;
 
+-(bool)meetingFeaturesPTZ;
+
 -(CMParticipant *_Nullable) findParticipantByVideoStreamId:(NSString *)streamId;
 -(CMParticipant *_Nullable) findParticipantByAudioStreamId:(NSString *)streamId;
 -(CMVideoInfo *_Nullable) findVideoInfoByStreamId:(NSString *)streamId;
 
+-(NSString *) getDeviceListJSONWithPTZAllowed: (Boolean) allowPTZ;
+
+-(bool) sendLocalPTZCommand:(NSString *) command device:(NSString *)device;
 @end
 
 NS_ASSUME_NONNULL_END

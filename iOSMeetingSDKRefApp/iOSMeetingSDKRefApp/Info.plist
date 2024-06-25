@@ -22,7 +22,7 @@
 	<true/>
     <key>UIFileSharingEnabled</key>
     <true/>
-	<key>NSCameraUsageDescription</key>
+    <key>NSCameraUsageDescription</key>
 	<string>To access the camera for video conferences</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>To access the microphone for video conferences</string>

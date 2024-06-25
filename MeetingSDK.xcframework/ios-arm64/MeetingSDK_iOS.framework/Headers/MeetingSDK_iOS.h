@@ -16,7 +16,6 @@ FOUNDATION_EXPORT const unsigned char MeetingSDK_iOSVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <MeetingSDK_iOS/PublicHeader.h>
 
 #import <MeetingSDK_iOS/MeetingAPI.h>
-#import <MeetingSDK_iOS/Utils.h>
 #import <MeetingSDK_iOS/MeetingSDKScreenSharing.h>
 #import <MeetingSDK_iOS/CMParticipant.h>
 #import <MeetingSDK_iOS/CMAudioInfo.h>

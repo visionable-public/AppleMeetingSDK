@@ -306,58 +306,66 @@ class SettingsTableViewController: UITableViewController, UITextFieldDelegate {
             
             return
         }
-        
-    
+                
         joinMeetingButton.isHidden = true
         activityIndicator.startAnimating()
+/*
+        // Use this code when you want to authenticate with hard coded id/password
+        VisionableAPI.shared.authenticate(server: serverName, id: "userID", password: "password") { jwt in
+            
+            // First, we need to initialize the meeting
+            VisionableAPI.shared.initializeMeetingWithToken(server: serverName, meetingUUID: meetingUUID, token: jwt) { (success, mjwt) in
+            */
         
-        // First, we need to initialize the meeting
-        MeetingSDK.shared.initializeMeetingWithToken(meetingUUID: meetingUUID, server: serverName, token: nil) { (success, mjwt) in
-            
-            DispatchQueue.main.async {
-                self.joinMeetingButton.isHidden = false
-                self.activityIndicator.stopAnimating()
-            }
-            
-            if !success {
-                // There was a problem initializing the meeting
-                let lastError = MeetingAPI.sharedInstance().lastError
-                print("Initialize Meeting Failure, last error: \(lastError)")
+        VisionableAPI.shared.initializeMeetingWithToken(server: serverName, meetingUUID: meetingUUID, token: nil) { (success, mjwt) in
                 DispatchQueue.main.async {
-                    print("Meeting Initializaion Failure: \(lastError)")
+                    self.joinMeetingButton.isHidden = false
+                    self.activityIndicator.stopAnimating()
+                }
+                
+                if !success {
+                    // There was a problem initializing the meeting
+                    let lastError = MeetingAPI.sharedInstance().lastError
+                    print("Initialize Meeting Failure, last error: \(lastError)")
+                    DispatchQueue.main.async {
+                        print("Meeting Initializaion Failure: \(lastError)")
+                        
+                        // Alert the user of the error
+                        let alert = UIAlertController(title: "Meeting Initializaion Failure", message: lastError, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Okay", style: .default))
+                        self.present(alert, animated: true)
+                    }
+                } else {
+                    //  Proceed with joining the meeting.
                     
-                    // Alert the user of the error
-                    let alert = UIAlertController(title: "Meeting Initializaion Failure", message: lastError, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Okay", style: .default))
-                    self.present(alert, animated: true)
-                }
-            } else {
-                //  Proceed with joining the meeting.
-                
-                // First, move to the VideoGalleryView to make sure delegate is set in time
-                DispatchQueue.main.async {
-                    button.setTitle("Exit Meeting", for: .normal)
-                    self.tabBarController?.selectedIndex = 2
-                }
-                
-                // Then, proceed with the joinMeeting call
-                DispatchQueue.main.async {
-                    MeetingSDK.shared.joinMeetingWithToken(server: serverName, meetingUUID: meetingUUID, token: mjwt, userUUID: "", name: (self.userNameTextField?.text)!) { (success) in
-                        if success {
-                            print("join command succeeded, enabling local audio/video")
-                            
-                            // Since our application might need to share the screen, we have to initialize
-                            // the iOS screen sharing parameters
-                            MeetingAPI.sharedInstance().initializeScreenCaptureExtension("com.visionable.iOSMeetingSDKRefApp.ScreenShareExtension", withAppGroup: "group.com.visionable.sdk.screensharing")
-                            self.enableOutgoingAudioVideo()
-                            MeetingState.shared.meetingIsActive = true
-                        } else {
-                            print("join command failed: \(MeetingAPI.sharedInstance().lastError)")
+                    // First, move to the VideoGalleryView to make sure delegate is set in time
+                    DispatchQueue.main.async {
+                        button.setTitle("Exit Meeting", for: .normal)
+                        self.tabBarController?.selectedIndex = 2
+                    }
+                    
+                    // Then, proceed with the joinMeeting call
+                    DispatchQueue.main.async {
+                        print("Joining meeting with token:\n\(mjwt)")
+                     // Use the following line (commented out) when joining with a jwt as opposed to a guest
+                        //MeetingSDK.shared.joinMeetingWithToken(server: serverName, meetingUUID: meetingUUID, token: mjwt, jwt: jwt, name: (self.userNameTextField?.text)!) { success in
+                        MeetingSDK.shared.joinMeetingWithToken(server: serverName, meetingUUID: meetingUUID, token: mjwt, userUUID: "", name: (self.userNameTextField?.text)!) { (success) in
+                            if success {
+                                print("join command succeeded, enabling local audio/video")
+                                
+                                // Since our application might need to share the screen, we have to initialize
+                                // the iOS screen sharing parameters
+                                MeetingAPI.sharedInstance().initializeScreenCaptureExtension("com.visionable.iOSMeetingSDKRefApp.ScreenShareExtension", withAppGroup: "group.com.visionable.sdk.screensharing")
+                                self.enableOutgoingAudioVideo()
+                                MeetingState.shared.meetingIsActive = true
+                            } else {
+                                print("join command failed: \(MeetingAPI.sharedInstance().lastError)")
+                            }
                         }
                     }
                 }
             }
-        }
+         /*}  */
     }
     
     
@@ -424,7 +432,7 @@ class SettingsTableViewController: UITableViewController, UITextFieldDelegate {
         activityIndicator.startAnimating()
         
         // First, we need to initialize the meeting
-        MeetingSDK.shared.initializeMeeting(meetingUUID: meetingUUID, server: serverName) { (success, key) in
+        VisionableAPI.shared.initializeMeeting(server: serverName, meetingUUID: meetingUUID) { (success, key) in
             
             DispatchQueue.main.async {
                 self.joinMeetingButton.isHidden = false
