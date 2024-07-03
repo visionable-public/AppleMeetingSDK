@@ -15677,55 +15677,55 @@
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "FloatLiteral",
       "offset": 10496,
-      "length": 3,
-      "value": "0.1"
+      "length": 4,
+      "value": "0.01"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10714,
+      "offset": 10715,
       "length": 30,
       "value": "\"ModeratorSDK::send:  \""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "StringLiteral",
-      "offset": 10743,
+      "offset": 10744,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "StringLiteral",
-      "offset": 11029,
+      "offset": 11030,
       "length": 37,
       "value": "\"ModeratorSDK::send: error: \""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "StringLiteral",
-      "offset": 11065,
+      "offset": 11066,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 11182,
+      "offset": 11183,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "StringLiteral",
-      "offset": 11370,
+      "offset": 11371,
       "length": 33,
       "value": "\"ModeratorSDK: web socket closed\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "StringLiteral",
-      "offset": 11457,
+      "offset": 11458,
       "length": 30,
       "value": "\"You've Closed The Connection\""
     },

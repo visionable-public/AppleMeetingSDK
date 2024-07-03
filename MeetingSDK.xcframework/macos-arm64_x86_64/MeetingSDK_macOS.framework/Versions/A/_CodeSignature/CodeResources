@@ -77,7 +77,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AW3kQdxCTSdZbuF9YHfQwwo6V9psikdGYACmFH5SUto=
+			PpHCGii0PeV09nGjlhK/G0jtysKtusCnEUUSLde+uL0=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
@@ -112,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AW3kQdxCTSdZbuF9YHfQwwo6V9psikdGYACmFH5SUto=
+			PpHCGii0PeV09nGjlhK/G0jtysKtusCnEUUSLde+uL0=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
@@ -196,7 +196,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			hsGhy0cAtBnd2mVZQj0WaQW05K8=
+			0LsfdJuUGW9qOTyqLPerfNhqNAA=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libCoreMeeting-macOS" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -250,19 +250,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			lR8iU9IJcQJ0q+ZkVm6EGLAP9o4=
+			WoihIejYrVq5D+9LsqiCMqygq3k=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigaudio-mac-55554944b45e99aa8790340db1a6c56d3f70517e" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigaudio-mac-555549444f9d2777651c3c6ca0535fff0430d1b4" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libigvideo-mac.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			SIvizJ6VcMigXIT382/uv29d3oE=
+			Y/huRuGM2TWRwfqL1X54fTfSeRQ=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigvideo-mac-5555494462f6c3adaa27306c990a2e45db731071" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigvideo-mac-55554944584e50b449063935a405cfe5827f6474" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_core.3.4.dylib</key>
 		<dict>
