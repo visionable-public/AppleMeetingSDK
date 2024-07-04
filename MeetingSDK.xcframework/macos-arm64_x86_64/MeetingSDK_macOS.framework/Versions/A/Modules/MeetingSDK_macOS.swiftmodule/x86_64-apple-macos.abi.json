@@ -16815,22 +16815,22 @@
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
-      "kind": "IntegerLiteral",
+      "kind": "FloatLiteral",
       "offset": 11183,
-      "length": 1,
-      "value": "3"
+      "length": 4,
+      "value": "0.01"
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "StringLiteral",
-      "offset": 11371,
+      "offset": 11374,
       "length": 33,
       "value": "\"ModeratorSDK: web socket closed\""
     },
     {
       "filePath": "\/Users\/visionable\/jenkins\/workspace\/Apple-MeetingSDK_master\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "StringLiteral",
-      "offset": 11458,
+      "offset": 11461,
       "length": 30,
       "value": "\"You've Closed The Connection\""
     }
