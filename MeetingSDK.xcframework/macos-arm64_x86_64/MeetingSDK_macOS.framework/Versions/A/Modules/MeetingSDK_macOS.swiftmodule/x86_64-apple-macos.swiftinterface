@@ -1,14 +1,16 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target x86_64-apple-macos10.15 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MeetingSDK_macOS
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-macos10.15 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MeetingSDK_macOS
 import AppKit
 import Foundation
+import IOKit
+import IOKit.usb.IOUSBLib
 @_exported import MeetingSDK_macOS
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import IOKit.usb
 public protocol MeetingSDKDelegate : AnyObject {
   func meetingToken(decodedToken: Swift.String)
   func participantAdded(participant: MeetingSDK_macOS.Participant)
@@ -523,7 +525,7 @@ extension MeetingSDK_macOS.XML {
   @objc public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
   @objc public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: any Swift.Error)
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ModeratorSDK : ObjectiveC.NSObject, Foundation.URLSessionWebSocketDelegate {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ModeratorSDK : ObjectiveC.NSObject, Foundation.URLSessionWebSocketDelegate, MeetingSDK_macOS.USBWatcherDelegate {
   public var delegate: (any MeetingSDK_macOS.ModeratorSDKDelegate)?
   public static let shared: MeetingSDK_macOS.ModeratorSDK
   public func isLocalUser(_ userUUID: Swift.String) -> Swift.Bool
@@ -536,6 +538,16 @@ extension MeetingSDK_macOS.XML {
   @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didOpenWithProtocol protocol: Swift.String?)
   @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didCloseWith closeCode: Foundation.URLSessionWebSocketTask.CloseCode, reason: Foundation.Data?)
   public func closeSession()
+  public func usbDeviceAdded(_ device: IOKit.io_object_t)
+  public func usbDeviceRemoved(_ device: IOKit.io_object_t)
+  @objc deinit
+}
+public protocol USBWatcherDelegate : AnyObject {
+  func usbDeviceAdded(_ device: IOKit.io_object_t)
+  func usbDeviceRemoved(_ device: IOKit.io_object_t)
+}
+public class USBWatcher {
+  public init(delegate: any MeetingSDK_macOS.USBWatcherDelegate)
   @objc deinit
 }
 extension MeetingSDK_macOS.iOSCamera : Swift.Equatable {}

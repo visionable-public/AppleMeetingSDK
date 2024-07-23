@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MeetingSDK_iOS
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MeetingSDK_iOS
 import Foundation
 @_exported import MeetingSDK_iOS
 import Swift
@@ -393,7 +392,7 @@ extension MeetingSDK_iOS.MeetingSDKDelegate {
   @objc public func connectionStatus(status: Swift.Int32)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ModeratorSDK : ObjectiveC.NSObject, Foundation.URLSessionWebSocketDelegate {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ModeratorSDK : ObjectiveC.NSObject, Foundation.URLSessionWebSocketDelegate, MeetingSDK_iOS.USBWatcherDelegate {
   public var delegate: (any MeetingSDK_iOS.ModeratorSDKDelegate)?
   public static let shared: MeetingSDK_iOS.ModeratorSDK
   public func isLocalUser(_ userUUID: Swift.String) -> Swift.Bool
@@ -407,6 +406,8 @@ extension MeetingSDK_iOS.MeetingSDKDelegate {
   @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didCloseWith closeCode: Foundation.URLSessionWebSocketTask.CloseCode, reason: Foundation.Data?)
   public func closeSession()
   @objc deinit
+}
+public protocol USBWatcherDelegate : AnyObject {
 }
 public enum iOSCamera : Swift.String {
   case front
