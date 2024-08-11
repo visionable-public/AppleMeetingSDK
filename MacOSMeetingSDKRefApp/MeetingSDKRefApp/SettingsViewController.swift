@@ -205,6 +205,8 @@ class SettingsViewController: NSViewController, MeetingSDKDelegate {
     }
     
     @IBAction func doCancel(_ sender: Any) {
+        //let version = MeetingSDK.shared.getVersionInfo()
+        //print("Version: \(version)")
         // Simple dismiss without saving if cancel button clicked
         self.dismiss(self)
     }
