@@ -196,7 +196,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			rwwkNCSMN8EjUPJTAukqq4LWqJk=
+			IpaBBs0fgSWGeGJiWRDDErpEa6Y=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libCoreMeeting-macOS" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -205,7 +205,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			WRYel7Xn2sKjGTOpYrfdAFH1XT8=
+			et2fSOPtSZZHmzApX5DgDkvCbyM=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libavcodec.58" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -214,7 +214,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			fF75zv5AQqOhPFGjtl661nYa0b4=
+			0/sFKf2rpS/PGpJ5E5Wg9d746PY=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libavdevice.58" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -223,7 +223,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			3X8Vhs97r9j/cgiAW4aHqHFY5NI=
+			CK/QJxgixCrRS0rWGG0LTD3bMFk=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libavfilter.7" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -232,7 +232,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			69l90kjAnqhmiH//irUSBIe1cCc=
+			3fojGjpi5N++UTJM7kVRbV6bWNc=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libavformat.58" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -241,7 +241,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			LLtpcY5Ly0GWlx4CQSRaItQyNB4=
+			otv1KV20SztyKS9LPbJZ9F9TrAg=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libavutil.56" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -250,25 +250,25 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			07skwqjYvHuTp/pd1TjApmh2iEg=
+			T9QfK8hV+ZSui33Bs+GBW2xkXtA=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigaudio-mac-555549445cb5289e24b03b38a8a2c181eb1a8a63" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigaudio-mac-55554944ddd5c140e809386aa8be466649c2f357" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libigvideo-mac.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			OO2M3XpqJ1mKY665uZAY+DjKGaw=
+			LeoGUsi/myFRyjggsMj1u4HDK6s=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigvideo-mac-555549442b12074b265535e08201923bfe2bc5d6" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigvideo-mac-55554944ac1a45898ede331287759d5957279f5f" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_core.3.4.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			PKyam2nC5RFDUhBfgqwdgNJTCKk=
+			THUIpwQbmEJQHsIT2/u5px0zYAk=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libopencv_core.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -277,7 +277,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			nETLDqeJIuNfRoRBUENrbWjc8fw=
+			PpPd1aoAXnkdZ+WAtIDZXICLleE=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libopencv_highgui.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -286,7 +286,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			YQcdNnsuzkXbmPjCxou8dzHEAeo=
+			HHMqE85NqZRcrOVWus8gVkQb3J4=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libopencv_imgcodecs.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -295,7 +295,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			HMgbu3N29h6tWGFUbJoRebUdhq8=
+			BFyKbsEa2rSrh6Z4I4jaNpj3sGA=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libopencv_imgproc.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -304,7 +304,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			/iBuN0gJjhKwy8YmAyEVxi1Apu8=
+			AgNEdPi/pZjr3nGOyqwY3VmUkos=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libopencv_ml.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -313,7 +313,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			LHavEdNydvHMWHyjGZSiCtoTvRg=
+			ON/ltnTsAKFe3oBoOESWrMeEcww=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libopencv_photo.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -322,7 +322,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			3CPU7BIQnBpGDEq7u4aCQlgsdCM=
+			anwqPv4v1/uz8Z28e/EL0yw/vzI=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libopencv_video.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -331,7 +331,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			EvTN1L8bzUQGMwhuhcGdljAjNBA=
+			6ZGH9XEfeoB8XbZcvDOU31DVZRI=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libopencv_videoio.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -340,7 +340,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			9W49eOQk0kYAgOdXu00gbYhJ2u0=
+			KotBm1LJgdB04gFrbJtHVnL2wpw=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libpostproc.55" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -349,7 +349,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			nvhLGpBv6enySZKlsjrKUuCa+Fk=
+			hBlimi26V4dk4xiFE+ELqRkXfKg=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libswresample.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -358,7 +358,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			zTJ9X82YD5/NCSmm4fany66mYz4=
+			oa+SoUmX7DNLrjFqkWCC2rcZ4FQ=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libswscale.5" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
