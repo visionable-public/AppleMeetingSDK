@@ -497,6 +497,9 @@ public enum ConnectionStatus : Swift.Int {
   public func enableVideoCapture(camera: Swift.String, withMode: Swift.String, blurring: Swift.Bool = false, completion: @escaping (Swift.Bool) -> ())
   public func initializeScreenCaptureExtension(bundleId: Swift.String, appGroupId: Swift.String)
   public func disableVideoCapture(camera: Swift.String)
+  public func enableImageCapture(displayName: Swift.String, directory: Swift.String, mode: Swift.String) -> Swift.Int32
+  public func disableImageCapture(deviceId: Swift.Int32) -> Swift.Bool
+  public func imageCapturePutImage(deviceId: Swift.Int32, data: Foundation.Data, width: Swift.Int32, height: Swift.Int32, size: Swift.Int32) -> Swift.Bool
   public func enableVideoPreview(camera: Swift.String, withMode: Swift.String, andBlurring: Swift.Bool = false, lowLevel: Swift.Bool, completion: @escaping (Swift.Bool) -> ())
   public func disableVideoPreview(camera: Swift.String)
   public func enableWindowSharing(windowId: Swift.String, mode: Swift.String) -> Swift.Bool

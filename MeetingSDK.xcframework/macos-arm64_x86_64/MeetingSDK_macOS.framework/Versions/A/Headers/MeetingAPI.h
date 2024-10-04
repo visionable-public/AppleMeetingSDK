@@ -117,6 +117,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (bool)disableVideoCapture:(NSString*)deviceID;
 
+- (int)enableImageCapture:(NSString *)displayName usingDirectory:(NSString *)directory andMode:(NSString *)mode;
+- (bool)disableImageCapture:(int)deviceId;
+- (bool)imageCapturePutImage:(int)deviceId usingData:(NSData *)yuv420p_data withWidth:(int) width andHeight:(int)height andSize:(int)size;
+
 - (void)enableVideoPreview:(NSString *)deviceID withMode:(NSString *)mode andBlurring: (Boolean)enableBlurring handler:(void(^)(bool))handler;
 - (bool)disableVideoPreview:(NSString *)deviceID;
 
