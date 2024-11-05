@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MeetingSDK_iOS
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 @_exported import MeetingSDK_iOS
 import Swift
@@ -8,14 +9,18 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class VideoView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public var frameView: UIKit.UIImageView?
-  @objc @_Concurrency.MainActor(unsafe) dynamic public var imageData: Foundation.Data
-  @objc @_Concurrency.MainActor(unsafe) public var streamId: Swift.String
-  @_Concurrency.MainActor(unsafe) public var isEnabled: Swift.Bool {
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class VideoView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public var frameView: UIKit.UIImageView?
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var imageData: Foundation.Data
+  @objc @_Concurrency.MainActor @preconcurrency public var streamId: Swift.String
+  @_Concurrency.MainActor @preconcurrency public var isEnabled: Swift.Bool {
     get
     set(newValue)
   }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class AudioCondition : MeetingSDK_iOS.CMAudioCondition {
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public class Participant : MeetingSDK_iOS.CMParticipant {
@@ -335,6 +340,8 @@ public protocol MeetingSDKDelegate : AnyObject {
   func participantNetworkQuality(participant: MeetingSDK_iOS.Participant, streamId: Swift.String, quality: MeetingSDK_iOS.NetworkQuality)
   func networkQuality(quality: MeetingSDK_iOS.NetworkQuality)
   func connectionStatus(status: MeetingSDK_iOS.ConnectionStatus)
+  func audioConditionUpdate(audioCondition: MeetingSDK_iOS.AudioCondition)
+  func videoConditionUpdate(videoCondition: MeetingSDK_iOS.VideoCondition)
 }
 extension MeetingSDK_iOS.MeetingSDKDelegate {
   public func meetingToken(decodedToken: Swift.String)
@@ -362,6 +369,8 @@ extension MeetingSDK_iOS.MeetingSDKDelegate {
   public func participantNetworkQuality(participant: MeetingSDK_iOS.Participant, streamId: Swift.String, quality: MeetingSDK_iOS.NetworkQuality)
   public func networkQuality(quality: MeetingSDK_iOS.NetworkQuality)
   public func connectionStatus(status: MeetingSDK_iOS.ConnectionStatus)
+  public func audioConditionUpdate(audioCondition: MeetingSDK_iOS.AudioCondition)
+  public func videoConditionUpdate(videoCondition: MeetingSDK_iOS.VideoCondition)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MeetingSDKDelegateBridge : ObjectiveC.NSObject {
   @objc public func meetingToken(decodedToken: Swift.String)
@@ -390,6 +399,8 @@ extension MeetingSDK_iOS.MeetingSDKDelegate {
   @objc public func participantNetworkQuality(participant: MeetingSDK_iOS.Participant, streamId: Swift.String, bars: Swift.Int32)
   @objc public func networkQuality(bars: Swift.Int32)
   @objc public func connectionStatus(status: Swift.Int32)
+  @objc public func audioConditionUpdate(audioCondition: MeetingSDK_iOS.AudioCondition)
+  @objc public func videoConditionUpdate(videoCondition: MeetingSDK_iOS.VideoCondition)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ModeratorSDK : ObjectiveC.NSObject, Foundation.URLSessionWebSocketDelegate, MeetingSDK_iOS.USBWatcherDelegate {
@@ -408,6 +419,10 @@ extension MeetingSDK_iOS.MeetingSDKDelegate {
   @objc deinit
 }
 public protocol USBWatcherDelegate : AnyObject {
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class VideoCondition : MeetingSDK_iOS.CMVideoCondition {
+  @objc override dynamic public init()
+  @objc deinit
 }
 public enum iOSCamera : Swift.String {
   case front

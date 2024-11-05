@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CMAUdioInfo.h"
+#import "CMAudioInfo.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
