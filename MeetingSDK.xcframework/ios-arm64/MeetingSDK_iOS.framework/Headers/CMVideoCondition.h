@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CMVideoStreamCondition.h>
+#import "CMVideoStreamCondition.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

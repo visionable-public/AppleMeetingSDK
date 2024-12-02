@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CMAudioStreamCondition.h>
+#import "CMAudioStreamCondition.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
