@@ -17,17 +17,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property(strong, nonatomic)NSString * userUUID;
 @property(strong, nonatomic)NSString * protocol;
 @property(strong, nonatomic)NSString * codec;
-@property(nonatomic)uint32_t  framerate;
-@property(nonatomic)uint32_t  kbps;
-@property(nonatomic)uint32_t  droppedCtrl;
-@property(nonatomic)uint32_t  droppedData;
-@property(nonatomic)uint32_t  upstreamLatency;
-@property(nonatomic)uint32_t  upstreamLoss;
-@property(nonatomic)uint32_t  upstreamJitter;
-@property(nonatomic)uint32_t  downstreamLatency;
-@property(nonatomic)uint32_t  downstreamLoss;
-@property(nonatomic)uint32_t  downstreamJitter;
-@property(nonatomic)uint32_t  bars;
+@property(nonatomic)uint64_t  droppedCtrl;
+@property(nonatomic)uint64_t  droppedData;
+@property(nonatomic)int32_t  framerate;
+@property(nonatomic)int32_t  kbps;
+@property(nonatomic)int32_t  upstreamLatency;
+@property(nonatomic)int32_t  upstreamLoss;
+@property(nonatomic)int32_t  upstreamJitter;
+@property(nonatomic)int32_t  downstreamLatency;
+@property(nonatomic)int32_t  downstreamLoss;
+@property(nonatomic)int32_t  downstreamJitter;
+@property(nonatomic)int32_t  bars;
 
 @end
 

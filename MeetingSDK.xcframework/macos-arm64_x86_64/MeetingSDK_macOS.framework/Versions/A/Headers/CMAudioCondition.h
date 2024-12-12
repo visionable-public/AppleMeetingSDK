@@ -19,19 +19,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) uint64_t kBytesSent;
 @property (nonatomic) uint64_t dataBytesDropped;
 @property (nonatomic) uint64_t ctrlBytesDropped;
-@property (nonatomic) uint32_t bars;
-@property (nonatomic) uint32_t connectionStatus;
-@property (nonatomic) uint32_t upstreamFps;
-@property (nonatomic) uint32_t upstreamKbps;
-@property (nonatomic) uint32_t upstreamLoss;
-@property (nonatomic) uint32_t upstreamLatency;
-@property (nonatomic) uint32_t upstreamJitter;
-@property (nonatomic) uint32_t downstreamFps;
-@property (nonatomic) uint32_t downstreamKbps;
-@property (nonatomic) uint32_t downstreamLoss;
-@property (nonatomic) uint32_t downstreamLatency;
-@property (nonatomic) uint32_t downstreamJitter;
-@property (nonatomic) uint32_t lastNatArrival;
+@property (nonatomic) int32_t bars;
+@property (nonatomic) int32_t connectionStatus;
+@property (nonatomic) int32_t upstreamFps;
+@property (nonatomic) int32_t upstreamKbps;
+@property (nonatomic) int32_t upstreamLoss;
+@property (nonatomic) int32_t upstreamLatency;
+@property (nonatomic) int32_t upstreamJitter;
+@property (nonatomic) int32_t downstreamFps;
+@property (nonatomic) int32_t downstreamKbps;
+@property (nonatomic) int32_t downstreamLoss;
+@property (nonatomic) int32_t downstreamLatency;
+@property (nonatomic) int32_t downstreamJitter;
+@property (nonatomic) int32_t lastNatArrival;
 
 @end
 

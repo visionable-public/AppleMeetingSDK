@@ -17,10 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) uint64_t kBytesSent;
 @property (nonatomic) uint64_t dataBytesDropped;
 @property (nonatomic) uint64_t ctrlBytesDropped;
-@property (nonatomic) uint32_t cpuUsage;
-@property (nonatomic) uint32_t bars;
-@property (nonatomic) uint32_t lastNatArrival;
-@property (nonatomic) uint32_t connectionStatus;
+@property (nonatomic) int32_t cpuUsage;
+@property (nonatomic) int32_t bars;
+@property (nonatomic) int32_t lastNatArrival;
+@property (nonatomic) int32_t connectionStatus;
 
 @end
 
