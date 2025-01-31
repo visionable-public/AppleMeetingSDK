@@ -8037,6 +8037,80 @@
           },
           {
             "kind": "Function",
+            "name": "enableCurrentWindowAreaSharing",
+            "printedName": "enableCurrentWindowAreaSharing(mode:x:y:width:height:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0aB0C30enableCurrentWindowAreaSharing4mode1x1y5width6heightSbSS_s5Int32VA3KtF",
+            "mangledName": "$s16MeetingSDK_macOS0aB0C30enableCurrentWindowAreaSharing4mode1x1y5width6heightSbSS_s5Int32VA3KtF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableCurrentWindowAreaSharing",
+            "printedName": "disableCurrentWindowAreaSharing()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0aB0C31disableCurrentWindowAreaSharingSbyF",
+            "mangledName": "$s16MeetingSDK_macOS0aB0C31disableCurrentWindowAreaSharingSbyF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "enableNetworkVideo",
             "printedName": "enableNetworkVideo(url:mode:name:completion:)",
             "children": [
@@ -15184,7 +15258,7 @@
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 26395,
+      "offset": 27211,
       "length": 5,
       "value": "false"
     },

@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) NSString* mtgKey;
 @property (readonly) NSString* audioStreamID;
 @property (readonly) NSString* currentVideoStreamID;
+@property (readonly) NSString* currentlySharedAreaWindowId;
+@property (readonly) NSString* currentlySharedAreaEncoding;
 @property (readonly) NSMutableDictionary* videoStreamIDS;
 
 @property(assign)BOOL autoEnableVideoStream;
@@ -125,7 +127,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (bool)disableVideoPreview:(NSString *)deviceID;
 
 - (bool)enableWindowSharing:(NSString*)windowID withMode:(NSString *)mode;
+- (bool)enableCurrentWindowAreaSharing:(NSString *)mode x:(int) x y:(int) y width:(int) width height:(int) height;
+- (bool)updateCurrentWindowAreaSharing:(int) x y:(int) y width:(int) width height:(int) height;
 - (bool)disableWindowSharing:(NSString*)windowID;
+- (bool)disableCurrentWindowAreaSharing;
 
 /*! @discussion Start video capture from specified URL
     @param url  URL of video source
