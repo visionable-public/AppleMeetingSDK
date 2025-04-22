@@ -5,6 +5,584 @@
     "printedName": "MeetingSDK_macOS",
     "children": [
       {
+        "kind": "TypeDecl",
+        "name": "ModeratorSDKRequestType",
+        "printedName": "ModeratorSDKRequestType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enable",
+            "printedName": "enable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ModeratorSDKRequestType.Type) -> MeetingSDK_macOS.ModeratorSDKRequestType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModeratorSDKRequestType",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType",
+                    "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModeratorSDKRequestType",
+                        "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType",
+                        "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO6enableyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS23ModeratorSDKRequestTypeO6enableyA2CmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Var",
+            "name": "disable",
+            "printedName": "disable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ModeratorSDKRequestType.Type) -> MeetingSDK_macOS.ModeratorSDKRequestType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModeratorSDKRequestType",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType",
+                    "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModeratorSDKRequestType",
+                        "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType",
+                        "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO7disableyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS23ModeratorSDKRequestTypeO7disableyA2CmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Var",
+            "name": "set",
+            "printedName": "set",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ModeratorSDKRequestType.Type) -> MeetingSDK_macOS.ModeratorSDKRequestType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModeratorSDKRequestType",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType",
+                    "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModeratorSDKRequestType",
+                        "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType",
+                        "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO3setyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS23ModeratorSDKRequestTypeO3setyA2CmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Var",
+            "name": "submitEReport",
+            "printedName": "submitEReport",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ModeratorSDKRequestType.Type) -> MeetingSDK_macOS.ModeratorSDKRequestType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModeratorSDKRequestType",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType",
+                    "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModeratorSDKRequestType",
+                        "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType",
+                        "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO13submitEReportyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS23ModeratorSDKRequestTypeO13submitEReportyA2CmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorSDKRequestType",
+                "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType",
+                "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorSDKRequestType",
+                "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType",
+                "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s16MeetingSDK_macOS23ModeratorSDKRequestTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "MeetingSDK_macOS",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO9hashValueSivp",
+            "mangledName": "$s16MeetingSDK_macOS23ModeratorSDKRequestTypeO9hashValueSivp",
+            "moduleName": "MeetingSDK_macOS",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO9hashValueSivg",
+                "mangledName": "$s16MeetingSDK_macOS23ModeratorSDKRequestTypeO9hashValueSivg",
+                "moduleName": "MeetingSDK_macOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s16MeetingSDK_macOS23ModeratorSDKRequestTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO",
+        "mangledName": "$s16MeetingSDK_macOS23ModeratorSDKRequestTypeO",
+        "moduleName": "MeetingSDK_macOS",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ModeratorSDKDeviceType",
+        "printedName": "ModeratorSDKDeviceType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "audio",
+            "printedName": "audio",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ModeratorSDKDeviceType.Type) -> MeetingSDK_macOS.ModeratorSDKDeviceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModeratorSDKDeviceType",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                    "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModeratorSDKDeviceType",
+                        "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                        "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO5audioyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS22ModeratorSDKDeviceTypeO5audioyA2CmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Var",
+            "name": "microphone",
+            "printedName": "microphone",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ModeratorSDKDeviceType.Type) -> MeetingSDK_macOS.ModeratorSDKDeviceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModeratorSDKDeviceType",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                    "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModeratorSDKDeviceType",
+                        "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                        "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO10microphoneyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS22ModeratorSDKDeviceTypeO10microphoneyA2CmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Var",
+            "name": "video",
+            "printedName": "video",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ModeratorSDKDeviceType.Type) -> MeetingSDK_macOS.ModeratorSDKDeviceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModeratorSDKDeviceType",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                    "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModeratorSDKDeviceType",
+                        "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                        "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO5videoyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS22ModeratorSDKDeviceTypeO5videoyA2CmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Var",
+            "name": "desktop",
+            "printedName": "desktop",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ModeratorSDKDeviceType.Type) -> MeetingSDK_macOS.ModeratorSDKDeviceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModeratorSDKDeviceType",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                    "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModeratorSDKDeviceType",
+                        "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                        "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO7desktopyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS22ModeratorSDKDeviceTypeO7desktopyA2CmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorSDKDeviceType",
+                "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorSDKDeviceType",
+                "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s16MeetingSDK_macOS22ModeratorSDKDeviceTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "MeetingSDK_macOS",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO9hashValueSivp",
+            "mangledName": "$s16MeetingSDK_macOS22ModeratorSDKDeviceTypeO9hashValueSivp",
+            "moduleName": "MeetingSDK_macOS",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO9hashValueSivg",
+                "mangledName": "$s16MeetingSDK_macOS22ModeratorSDKDeviceTypeO9hashValueSivg",
+                "moduleName": "MeetingSDK_macOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s16MeetingSDK_macOS22ModeratorSDKDeviceTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO",
+        "mangledName": "$s16MeetingSDK_macOS22ModeratorSDKDeviceTypeO",
+        "moduleName": "MeetingSDK_macOS",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -3127,6 +3705,151 @@
         "moduleName": "MeetingSDK_macOS",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ModeratorUtilsError",
+        "printedName": "ModeratorUtilsError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidRequestType",
+            "printedName": "invalidRequestType",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ModeratorUtilsError.Type) -> (Swift.String) -> MeetingSDK_macOS.ModeratorUtilsError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> MeetingSDK_macOS.ModeratorUtilsError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModeratorUtilsError",
+                        "printedName": "MeetingSDK_macOS.ModeratorUtilsError",
+                        "usr": "s:16MeetingSDK_macOS19ModeratorUtilsErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ModeratorUtilsError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModeratorUtilsError",
+                        "printedName": "MeetingSDK_macOS.ModeratorUtilsError",
+                        "usr": "s:16MeetingSDK_macOS19ModeratorUtilsErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS19ModeratorUtilsErrorO18invalidRequestTypeyACSScACmF",
+            "mangledName": "$s16MeetingSDK_macOS19ModeratorUtilsErrorO18invalidRequestTypeyACSScACmF",
+            "moduleName": "MeetingSDK_macOS"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidDeviceType",
+            "printedName": "invalidDeviceType",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.ModeratorUtilsError.Type) -> (Swift.String) -> MeetingSDK_macOS.ModeratorUtilsError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> MeetingSDK_macOS.ModeratorUtilsError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModeratorUtilsError",
+                        "printedName": "MeetingSDK_macOS.ModeratorUtilsError",
+                        "usr": "s:16MeetingSDK_macOS19ModeratorUtilsErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.ModeratorUtilsError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModeratorUtilsError",
+                        "printedName": "MeetingSDK_macOS.ModeratorUtilsError",
+                        "usr": "s:16MeetingSDK_macOS19ModeratorUtilsErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS19ModeratorUtilsErrorO17invalidDeviceTypeyACSScACmF",
+            "mangledName": "$s16MeetingSDK_macOS19ModeratorUtilsErrorO17invalidDeviceTypeyACSScACmF",
+            "moduleName": "MeetingSDK_macOS"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16MeetingSDK_macOS19ModeratorUtilsErrorO",
+        "mangledName": "$s16MeetingSDK_macOS19ModeratorUtilsErrorO",
+        "moduleName": "MeetingSDK_macOS",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
         ]
       },
       {
@@ -7395,6 +8118,35 @@
           },
           {
             "kind": "Function",
+            "name": "getCurrentAudioInputDevice",
+            "printedName": "getCurrentAudioInputDevice()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0aB0C26getCurrentAudioInputDeviceSSSgyF",
+            "mangledName": "$s16MeetingSDK_macOS0aB0C26getCurrentAudioInputDeviceSSSgyF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "enableAudioOutput",
             "printedName": "enableAudioOutput(device:)",
             "children": [
@@ -9264,6 +10016,258 @@
             "declKind": "Func",
             "usr": "s:16MeetingSDK_macOS20ModeratorSDKDelegateP17deviceListUpdatedyySSF",
             "mangledName": "$s16MeetingSDK_macOS20ModeratorSDKDelegateP17deviceListUpdatedyySSF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.ModeratorSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.ModeratorSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onCurrentDeviceChangeRequested",
+            "printedName": "onCurrentDeviceChangeRequested(deviceType:nextDeviceId:resolution:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorSDKDeviceType",
+                "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.Bool)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS20ModeratorSDKDelegateP30onCurrentDeviceChangeRequested10deviceType04nextI2Id10resolution8callbackyAA0e9SDKDeviceM0O_S2SSgySS_SbtctF",
+            "mangledName": "$s16MeetingSDK_macOS20ModeratorSDKDelegateP30onCurrentDeviceChangeRequested10deviceType04nextI2Id10resolution8callbackyAA0e9SDKDeviceM0O_S2SSgySS_SbtctF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.ModeratorSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.ModeratorSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDeviceEnableRequested",
+            "printedName": "onDeviceEnableRequested(deviceType:nextDeviceId:resolution:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorSDKDeviceType",
+                "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String, Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String, Swift.Bool)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS20ModeratorSDKDelegateP23onDeviceEnableRequested10deviceType04nextH2Id10resolution8callbackyAA0e9SDKDeviceL0O_S2SSgySS_SSSbtctF",
+            "mangledName": "$s16MeetingSDK_macOS20ModeratorSDKDelegateP23onDeviceEnableRequested10deviceType04nextH2Id10resolution8callbackyAA0e9SDKDeviceL0O_S2SSgySS_SSSbtctF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.ModeratorSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.ModeratorSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onEReportSubmitRequested",
+            "printedName": "onEReportSubmitRequested(description:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS20ModeratorSDKDelegateP24onEReportSubmitRequested11description8callbackySS_ySbctF",
+            "mangledName": "$s16MeetingSDK_macOS20ModeratorSDKDelegateP24onEReportSubmitRequested11description8callbackySS_ySbctF",
+            "moduleName": "MeetingSDK_macOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.ModeratorSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.ModeratorSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onModeratorRequestFailed",
+            "printedName": "onModeratorRequestFailed(participantId:requestType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorSDKRequestType",
+                "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType",
+                "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS20ModeratorSDKDelegateP02onE13RequestFailed13participantId11requestTypeySS_AA0e10SDKRequestM0OtF",
+            "mangledName": "$s16MeetingSDK_macOS20ModeratorSDKDelegateP02onE13RequestFailed13participantId11requestTypeySS_AA0e10SDKRequestM0OtF",
             "moduleName": "MeetingSDK_macOS",
             "genericSig": "<τ_0_0 where τ_0_0 : MeetingSDK_macOS.ModeratorSDKDelegate>",
             "sugared_genericSig": "<Self where Self : MeetingSDK_macOS.ModeratorSDKDelegate>",
@@ -14583,6 +15587,134 @@
           },
           {
             "kind": "Function",
+            "name": "sendModeratorRequestToParticipant",
+            "printedName": "sendModeratorRequestToParticipant(participantId:requestType:deviceType:deviceId:resolution:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorSDKRequestType",
+                "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType",
+                "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorSDKDeviceType",
+                "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS09ModeratorB0C04sendE20RequestToParticipant13participantId11requestType06deviceM00nK010resolutionSbSS_AA0e10SDKRequestM0OAA0e9SDKDeviceM0OS2SSgtF",
+            "mangledName": "$s16MeetingSDK_macOS09ModeratorB0C04sendE20RequestToParticipant13participantId11requestType06deviceM00nK010resolutionSbSS_AA0e10SDKRequestM0OAA0e9SDKDeviceM0OS2SSgtF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendModeratorRequestToMeeting",
+            "printedName": "sendModeratorRequestToMeeting(requestType:deviceType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorSDKRequestType",
+                "printedName": "MeetingSDK_macOS.ModeratorSDKRequestType",
+                "usr": "s:16MeetingSDK_macOS23ModeratorSDKRequestTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorSDKDeviceType",
+                "printedName": "MeetingSDK_macOS.ModeratorSDKDeviceType",
+                "usr": "s:16MeetingSDK_macOS22ModeratorSDKDeviceTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS09ModeratorB0C04sende9RequestToA011requestType06deviceJ0SbAA0e10SDKRequestJ0O_AA0e9SDKDeviceJ0OtF",
+            "mangledName": "$s16MeetingSDK_macOS09ModeratorB0C04sende9RequestToA011requestType06deviceJ0SbAA0e10SDKRequestJ0O_AA0e9SDKDeviceJ0OtF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendSubmitEReportToParticipant",
+            "printedName": "sendSubmitEReportToParticipant(participantId:description:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS09ModeratorB0C30sendSubmitEReportToParticipant13participantId11descriptionSbSS_SStF",
+            "mangledName": "$s16MeetingSDK_macOS09ModeratorB0C30sendSubmitEReportToParticipant13participantId11descriptionSbSS_SStF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "urlSession",
             "printedName": "urlSession(_:webSocketTask:didCloseWith:reason:)",
             "children": [
@@ -14997,6 +16129,27 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK\/ModeratorRequestProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 404,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK\/ModeratorRequestProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 462,
+      "length": 23,
+      "value": "\"com.ModeratorSDKQueue\""
+    },
+    {
+      "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK\/ModeratorRequestProcessor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 531,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/VideoView.swift",
       "kind": "BooleanLiteral",
       "offset": 4376,
@@ -15244,21 +16397,21 @@
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 18987,
+      "offset": 19095,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 23004,
+      "offset": 23112,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 27211,
+      "offset": 27319,
       "length": 5,
       "value": "false"
     },
@@ -15293,49 +16446,49 @@
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1506,
+      "offset": 1559,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1635,
+      "offset": 1688,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "Array",
-      "offset": 8704,
+      "offset": 14836,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "Array",
-      "offset": 8758,
+      "offset": 14890,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "Array",
-      "offset": 8806,
+      "offset": 14938,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 15942,
+      "offset": 25283,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 15993,
+      "offset": 25334,
       "length": 1,
       "value": "0"
     }

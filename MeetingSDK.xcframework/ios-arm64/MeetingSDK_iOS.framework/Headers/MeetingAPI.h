@@ -228,6 +228,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(bool)stopSound:(uint64_t) data;
 
 -(bool)meetingFeaturesPTZ;
+-(bool)isModerator:(NSString *)participantId;
 
 -(CMParticipant *_Nullable) findParticipantByVideoStreamId:(NSString *)streamId;
 -(CMParticipant *_Nullable) findParticipantByAudioStreamId:(NSString *)streamId;
