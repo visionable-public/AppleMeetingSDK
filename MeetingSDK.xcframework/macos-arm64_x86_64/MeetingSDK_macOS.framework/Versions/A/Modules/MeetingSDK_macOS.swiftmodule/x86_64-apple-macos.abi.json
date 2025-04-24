@@ -8841,6 +8841,52 @@
           },
           {
             "kind": "Function",
+            "name": "updateCurrentWindowAreaSharing",
+            "printedName": "updateCurrentWindowAreaSharing(x:y:width:height:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS0aB0C30updateCurrentWindowAreaSharing1x1y5width6heightSbs5Int32V_A3JtF",
+            "mangledName": "$s16MeetingSDK_macOS0aB0C30updateCurrentWindowAreaSharing1x1y5width6heightSbs5Int32V_A3JtF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "disableCurrentWindowAreaSharing",
             "printedName": "disableCurrentWindowAreaSharing()",
             "children": [
@@ -16411,7 +16457,7 @@
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 27319,
+      "offset": 27866,
       "length": 5,
       "value": "false"
     },

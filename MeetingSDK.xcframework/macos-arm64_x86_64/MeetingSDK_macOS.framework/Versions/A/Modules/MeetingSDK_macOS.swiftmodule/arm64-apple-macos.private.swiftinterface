@@ -312,6 +312,7 @@ public enum ConnectionStatus : Swift.Int {
   public func enableWindowSharing(windowId: Swift.String, mode: Swift.String) -> Swift.Bool
   public func disableWindowSharing(windowId: Swift.String) -> Swift.Bool
   public func enableCurrentWindowAreaSharing(mode: Swift.String, x: Swift.Int32, y: Swift.Int32, width: Swift.Int32, height: Swift.Int32) -> Swift.Bool
+  public func updateCurrentWindowAreaSharing(x: Swift.Int32, y: Swift.Int32, width: Swift.Int32, height: Swift.Int32) -> Swift.Bool
   public func disableCurrentWindowAreaSharing() -> Swift.Bool
   public func enableNetworkVideo(url: Swift.String, mode: Swift.String, name: Swift.String, completion: @escaping (Swift.Bool) -> ())
   public func disableNetworkVideo(url: Swift.String)
