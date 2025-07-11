@@ -3322,6 +3322,34 @@
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "audioInputStatus",
+            "printedName": "audioInputStatus(isMuted:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MeetingSDK_macOS@objc(cs)MeetingSDKDelegateBridge(im)audioInputStatusWithIsMuted:",
+            "mangledName": "$s16MeetingSDK_macOS0A17SDKDelegateBridgeC16audioInputStatus7isMutedySb_tF",
+            "moduleName": "MeetingSDK_macOS",
+            "objc_name": "audioInputStatusWithIsMuted:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -16492,49 +16520,49 @@
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1559,
+      "offset": 1593,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1688,
+      "offset": 1722,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "Array",
-      "offset": 14836,
+      "offset": 14907,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "Array",
-      "offset": 14890,
+      "offset": 14961,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "Array",
-      "offset": 14938,
+      "offset": 15009,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 25283,
+      "offset": 25231,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/ModeratorSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 25334,
+      "offset": 25282,
       "length": 1,
       "value": "0"
     }

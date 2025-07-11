@@ -485,6 +485,7 @@ SWIFT_CLASS("_TtC16MeetingSDK_macOS24MeetingSDKDelegateBridge")
 - (void)connectionStatusWithStatus:(int32_t)status;
 - (void)audioConditionUpdateWithAudioCondition:(AudioCondition * _Nonnull)audioCondition;
 - (void)videoConditionUpdateWithVideoCondition:(VideoCondition * _Nonnull)videoCondition;
+- (void)audioInputStatusWithIsMuted:(BOOL)isMuted;
 @end
 
 @class NSURLSession;
@@ -1047,6 +1048,7 @@ SWIFT_CLASS("_TtC16MeetingSDK_macOS24MeetingSDKDelegateBridge")
 - (void)connectionStatusWithStatus:(int32_t)status;
 - (void)audioConditionUpdateWithAudioCondition:(AudioCondition * _Nonnull)audioCondition;
 - (void)videoConditionUpdateWithVideoCondition:(VideoCondition * _Nonnull)videoCondition;
+- (void)audioInputStatusWithIsMuted:(BOOL)isMuted;
 @end
 
 @class NSURLSession;

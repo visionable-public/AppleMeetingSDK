@@ -427,6 +427,7 @@ extension MeetingSDK_iOS.MeetingSDKDelegate {
   @objc public func connectionStatus(status: Swift.Int32)
   @objc public func audioConditionUpdate(audioCondition: MeetingSDK_iOS.AudioCondition)
   @objc public func videoConditionUpdate(videoCondition: MeetingSDK_iOS.VideoCondition)
+  @objc public func audioInputStatus(isMuted: Swift.Bool)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ModeratorSDK : ObjectiveC.NSObject, Foundation.URLSessionWebSocketDelegate, MeetingSDK_iOS.USBWatcherDelegate {

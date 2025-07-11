@@ -125,6 +125,7 @@ extension MeetingSDK_macOS.MeetingSDKDelegate {
   @objc public func connectionStatus(status: Swift.Int32)
   @objc public func audioConditionUpdate(audioCondition: MeetingSDK_macOS.AudioCondition)
   @objc public func videoConditionUpdate(videoCondition: MeetingSDK_macOS.VideoCondition)
+  @objc public func audioInputStatus(isMuted: Swift.Bool)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class VisionableAPI {
