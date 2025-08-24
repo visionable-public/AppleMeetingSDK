@@ -23,10 +23,6 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-public enum ModeratorUtilsError : Swift.Error {
-  case invalidRequestType(Swift.String)
-  case invalidDeviceType(Swift.String)
-}
 public enum ModeratorSDKRequestType {
   case enable
   case disable
@@ -340,6 +336,11 @@ extension MeetingSDK_iOS.XML {
   @objc public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
   @objc public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: any Swift.Error)
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DeviceControlResponse : MeetingSDK_iOS.ModeratorResponse {
+  public var prevDeviceId: Swift.String
+  public var prevResolution: Swift.String
+  @objc deinit
+}
 public protocol MeetingSDKDelegate : AnyObject {
   func meetingToken(decodedToken: Swift.String)
   func participantAdded(participant: MeetingSDK_iOS.Participant)
@@ -368,6 +369,7 @@ public protocol MeetingSDKDelegate : AnyObject {
   func connectionStatus(status: MeetingSDK_iOS.ConnectionStatus)
   func audioConditionUpdate(audioCondition: MeetingSDK_iOS.AudioCondition)
   func videoConditionUpdate(videoCondition: MeetingSDK_iOS.VideoCondition)
+  func localParticipantAudioStateChanged(participant: MeetingSDK_iOS.Participant, isMuted: Swift.Bool)
 }
 extension MeetingSDK_iOS.MeetingSDKDelegate {
   public func meetingToken(decodedToken: Swift.String)
@@ -397,6 +399,7 @@ extension MeetingSDK_iOS.MeetingSDKDelegate {
   public func connectionStatus(status: MeetingSDK_iOS.ConnectionStatus)
   public func audioConditionUpdate(audioCondition: MeetingSDK_iOS.AudioCondition)
   public func videoConditionUpdate(videoCondition: MeetingSDK_iOS.VideoCondition)
+  public func localParticipantAudioStateChanged(participant: MeetingSDK_iOS.Participant, isMuted: Swift.Bool)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MeetingSDKDelegateBridge : ObjectiveC.NSObject {
   @objc public func meetingToken(decodedToken: Swift.String)
@@ -444,11 +447,20 @@ extension MeetingSDK_iOS.MeetingSDKDelegate {
   public func sendModeratorRequestToParticipant(participantId: Swift.String, requestType: MeetingSDK_iOS.ModeratorSDKRequestType, deviceType: MeetingSDK_iOS.ModeratorSDKDeviceType, deviceId: Swift.String, resolution: Swift.String?) -> Swift.Bool
   public func sendModeratorRequestToMeeting(requestType: MeetingSDK_iOS.ModeratorSDKRequestType, deviceType: MeetingSDK_iOS.ModeratorSDKDeviceType) -> Swift.Bool
   public func sendSubmitEReportToParticipant(participantId: Swift.String, description: Swift.String) -> Swift.Bool
+  public func sendModeratorResponse(requestId: Swift.Int, response: MeetingSDK_iOS.ModeratorResponse) -> Swift.Bool
   @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didCloseWith closeCode: Foundation.URLSessionWebSocketTask.CloseCode, reason: Foundation.Data?)
   public func closeSession()
   @objc deinit
 }
 public protocol USBWatcherDelegate : AnyObject {
+}
+public enum ModeratorUtilsError : Swift.Error {
+  case invalidRequestType(Swift.String)
+  case invalidDeviceType(Swift.String)
+}
+@_hasMissingDesignatedInitializers public class ModeratorResponse {
+  public var granted: Swift.Bool
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class VideoCondition : MeetingSDK_iOS.CMVideoCondition {
   @objc override dynamic public init()
@@ -587,12 +599,17 @@ public enum ConnectionStatus : Swift.Int {
   public func getLocalParticipant() -> MeetingSDK_iOS.Participant?
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DeviceSelectionResponse : MeetingSDK_iOS.ModeratorResponse {
+  public var prevDeviceId: Swift.String
+  @objc deinit
+}
 public protocol ModeratorSDKDelegate : AnyObject {
   func deviceListUpdated(_ deviceJSON: Swift.String)
-  func onCurrentDeviceChangeRequested(deviceType: MeetingSDK_iOS.ModeratorSDKDeviceType, nextDeviceId: Swift.String, resolution: Swift.String?, callback: @escaping (Swift.String, Swift.Bool) -> ())
-  func onDeviceEnableRequested(deviceType: MeetingSDK_iOS.ModeratorSDKDeviceType, nextDeviceId: Swift.String, resolution: Swift.String?, callback: @escaping (Swift.String, Swift.String, Swift.Bool) -> ())
-  func onEReportSubmitRequested(description: Swift.String, callback: @escaping (Swift.Bool) -> ())
-  func onModeratorRequestFailed(participantId: Swift.String, requestType: MeetingSDK_iOS.ModeratorSDKRequestType)
+  func onCurrentDeviceChangeRequested(deviceType: MeetingSDK_iOS.ModeratorSDKDeviceType, nextDeviceId: Swift.String, resolution: Swift.String?, requestId: Swift.Int)
+  func onDeviceEnableRequested(deviceType: MeetingSDK_iOS.ModeratorSDKDeviceType, nextDeviceId: Swift.String, resolution: Swift.String?, requestId: Swift.Int)
+  func onEReportSubmitRequested(description: Swift.String, requestId: Swift.Int)
+  func onModeratorRequestStatus(participantId: Swift.String, requestType: MeetingSDK_iOS.ModeratorSDKRequestType, status: Swift.Bool)
+  func onModeratorDisabledDevice(deviceType: MeetingSDK_iOS.ModeratorSDKDeviceType)
 }
 extension MeetingSDK_iOS.ModeratorSDKRequestType : Swift.Equatable {}
 extension MeetingSDK_iOS.ModeratorSDKRequestType : Swift.Hashable {}
