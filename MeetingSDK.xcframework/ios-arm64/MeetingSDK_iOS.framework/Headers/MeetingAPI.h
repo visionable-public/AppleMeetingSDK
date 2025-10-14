@@ -123,6 +123,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (bool)disableImageCapture:(int)deviceId;
 - (bool)imageCapturePutImage:(int)deviceId usingData:(NSData *)yuv420p_data withWidth:(int) width andHeight:(int)height andSize:(int)size;
 
+- (int)enableExternalImageSharing:(NSString *)title withColorspace: (NSString *)colorspace;
+- (bool)disableExternalImageSharing:(int)deviceId;
+- (bool)pushExternalImageBuffer:(int)deviceId usingData:(NSData *)contentBuffer withWidth:(uint32_t) width andHeight:(uint32_t)height andSize:(uint64_t)size;
+
 - (void)enableVideoPreview:(NSString *)deviceID withMode:(NSString *)mode andBlurring: (Boolean)enableBlurring handler:(void(^)(bool))handler;
 - (bool)disableVideoPreview:(NSString *)deviceID;
 

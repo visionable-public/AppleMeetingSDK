@@ -14741,6 +14741,120 @@
           },
           {
             "kind": "Function",
+            "name": "enableExternalImageSharing",
+            "printedName": "enableExternalImageSharing(title:colorspace:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MeetingSDK_iOS0aB0C26enableExternalImageSharing5title10colorspaces5Int32VSS_SStF",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C26enableExternalImageSharing5title10colorspaces5Int32VSS_SStF",
+            "moduleName": "MeetingSDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableExternalImageSharing",
+            "printedName": "disableExternalImageSharing(deviceId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MeetingSDK_iOS0aB0C27disableExternalImageSharing8deviceIdSbs5Int32V_tF",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C27disableExternalImageSharing8deviceIdSbs5Int32V_tF",
+            "moduleName": "MeetingSDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pushExternalImageBuffer",
+            "printedName": "pushExternalImageBuffer(deviceId:contentBuffer:width:height:size:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14MeetingSDK_iOS0aB0C23pushExternalImageBuffer8deviceId07contentG05width6height4sizeSbs5Int32V_10Foundation4DataVs6UInt32VAPs6UInt64VtF",
+            "mangledName": "$s14MeetingSDK_iOS0aB0C23pushExternalImageBuffer8deviceId07contentG05width6height4sizeSbs5Int32V_10Foundation4DataVs6UInt32VAPs6UInt64VtF",
+            "moduleName": "MeetingSDK_iOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "enableVideoPreview",
             "printedName": "enableVideoPreview(camera:withMode:andBlurring:lowLevel:completion:)",
             "children": [
@@ -16873,14 +16987,14 @@
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 23112,
+      "offset": 25196,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 27866,
+      "offset": 29950,
       "length": 5,
       "value": "false"
     },
