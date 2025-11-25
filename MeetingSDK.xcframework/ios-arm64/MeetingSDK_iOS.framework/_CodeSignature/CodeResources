@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/MeetingAPI.h</key>
 		<data>
-		TCLS103T6uud/qi9vhW4fCVzP/w=
+		q08ol+RB9uefuPtRyJtZjv7ukLc=
 		</data>
 		<key>Headers/MeetingSDKScreenSharing.h</key>
 		<data>
@@ -54,23 +54,23 @@
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		th59JLLPFYTWG/YlJddFWUxqLW0=
+		1vjnbB8O13RHz5OnOAgDDLSAcI0=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		eHnnQW400rMD4JzpmKjRgk9uQQc=
+		SBtaVyfCpm1qqOhqilVYjRSx0Pg=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		FqGVIfjZGLjde9EYqGacfbfA5Sc=
+		4Kgqg4SJvfs1p6WjED1QFbGS/oA=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		eHnnQW400rMD4JzpmKjRgk9uQQc=
+		SBtaVyfCpm1qqOhqilVYjRSx0Pg=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		2xm5994fr/zdetKlSBY636/A5LI=
+		gHWuPe+ujuDFD7YRKCzGqS20a2Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lHYzUyVqPhCPjR9+nsC/ElgJga5aInGH+DN0gHrhp6k=
+			1RSL3pFzqXwVMwatNx+7yEN6GXm8TmtB0wDAy39+o2Y=
 			</data>
 		</dict>
 		<key>Headers/MeetingSDKScreenSharing.h</key>
@@ -180,35 +180,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w/+j4wDDy/bWKoiflXu7IKdZ/OHedoqAUO6+JAVhEtk=
+			8XIw9ucaweU0Fo6ab2U9FaH1HHJuw8z/kM7fhQnLSOc=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jxmTfP0ibF/UCXuP8AtEIqCPWiT39N1HGfL4QsXOlQw=
+			1/L5tTEXDRkv8whRd/jSdczAdWeNl7JObGYHBCt6mPo=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ke5OLwRgkmqglJ70IbZnf4fHDy8pHhjmhzBYrDXmzfA=
+			mSQD4CD1Wf/gXVcK4ESn6f0o9rAA/jk4FB9mxcLQuoQ=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jxmTfP0ibF/UCXuP8AtEIqCPWiT39N1HGfL4QsXOlQw=
+			1/L5tTEXDRkv8whRd/jSdczAdWeNl7JObGYHBCt6mPo=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yQqWy0PXl6NM64monmBa4zSTthUjdP4tkqOlzsLDg/Q=
+			KHifsqUu0HrEnj6YIeWJNhkkEfqtRLzrkxXo+OY/aVg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

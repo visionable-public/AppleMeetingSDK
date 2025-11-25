@@ -28,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) NSString* currentVideoStreamID;
 @property (readonly) NSString* currentlySharedAreaWindowId;
 @property (readonly) NSString* currentlySharedAreaEncoding;
+@property (readonly) NSString* userAgent;
 @property (readonly) NSMutableDictionary* videoStreamIDS;
 
 @property(assign)BOOL autoEnableVideoStream;
@@ -64,6 +65,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)initializeMeeting:(NSString*)guid server:(NSString*)server handler:(void(^)(bool,NSString *))handler;
 - (void)initializeMeetingWithToken:(NSString * _Nullable)token server:(NSString *)server uuid:(NSString *)meetingUUID handler:(void (^)(bool,NSString *))handler;
 - (void)resolveUCSServer:(NSString *)server uuid:(NSString *)meetingUUID handler:(void (^)(NSString *))handler;
+- (void)setUserAgent:(NSString*)userAgent;
 
 /*! @discussion Exits a meeting
  */

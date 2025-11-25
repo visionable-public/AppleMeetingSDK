@@ -143,6 +143,7 @@ extension MeetingSDK_macOS.MeetingSDKDelegate {
   public func authenticate(server: Swift.String, id: Swift.String, password: Swift.String, completion: @escaping (Swift.String) -> ())
   public func initializeMeeting(server: Swift.String, meetingUUID: Swift.String, completion: @escaping (Swift.Bool, Swift.String) -> ())
   public func initializeMeetingWithToken(server: Swift.String, meetingUUID: Swift.String, token: Swift.String?, completion: @escaping (Swift.Bool, Swift.String) -> ())
+  public func setUserAgent(_ userAgent: Swift.String)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DeviceControlResponse : MeetingSDK_macOS.ModeratorResponse {
@@ -251,6 +252,15 @@ public enum CameraMode : Swift.String {
     get
   }
 }
+public enum Colorspace : Swift.String {
+  case yuv420p
+  case rgb888
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public enum DebugLevel : Swift.Int {
   case none
   case err
@@ -319,7 +329,7 @@ public enum ConnectionStatus : Swift.Int {
   public func enableImageCapture(displayName: Swift.String, directory: Swift.String, mode: Swift.String) -> Swift.Int32
   public func disableImageCapture(deviceId: Swift.Int32) -> Swift.Bool
   public func imageCapturePutImage(deviceId: Swift.Int32, data: Foundation.Data, width: Swift.Int32, height: Swift.Int32, size: Swift.Int32) -> Swift.Bool
-  public func enableExternalImageSharing(title: Swift.String, colorspace: Swift.String) -> Swift.Int32
+  public func enableExternalImageSharing(title: Swift.String, colorspace: MeetingSDK_macOS.Colorspace) -> Swift.Int32
   public func disableExternalImageSharing(deviceId: Swift.Int32) -> Swift.Bool
   public func pushExternalImageBuffer(deviceId: Swift.Int32, contentBuffer: Foundation.Data, width: Swift.UInt32, height: Swift.UInt32, size: Swift.UInt64) -> Swift.Bool
   public func enableVideoPreview(camera: Swift.String, withMode: Swift.String, andBlurring: Swift.Bool = false, lowLevel: Swift.Bool, completion: @escaping (Swift.Bool) -> ())
@@ -636,6 +646,9 @@ extension MeetingSDK_macOS.iOSCamera : Swift.RawRepresentable {}
 extension MeetingSDK_macOS.CameraMode : Swift.Equatable {}
 extension MeetingSDK_macOS.CameraMode : Swift.Hashable {}
 extension MeetingSDK_macOS.CameraMode : Swift.RawRepresentable {}
+extension MeetingSDK_macOS.Colorspace : Swift.Equatable {}
+extension MeetingSDK_macOS.Colorspace : Swift.Hashable {}
+extension MeetingSDK_macOS.Colorspace : Swift.RawRepresentable {}
 extension MeetingSDK_macOS.DebugLevel : Swift.Equatable {}
 extension MeetingSDK_macOS.DebugLevel : Swift.Hashable {}
 extension MeetingSDK_macOS.DebugLevel : Swift.RawRepresentable {}

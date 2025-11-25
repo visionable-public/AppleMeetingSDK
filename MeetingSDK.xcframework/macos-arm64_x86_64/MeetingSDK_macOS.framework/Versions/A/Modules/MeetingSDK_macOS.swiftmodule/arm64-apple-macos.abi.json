@@ -4029,6 +4029,33 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserAgent",
+            "printedName": "setUserAgent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16MeetingSDK_macOS13VisionableAPIC12setUserAgentyySSF",
+            "mangledName": "$s16MeetingSDK_macOS13VisionableAPIC12setUserAgentyySSF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -6843,6 +6870,225 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Colorspace",
+        "printedName": "Colorspace",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "yuv420p",
+            "printedName": "yuv420p",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.Colorspace.Type) -> MeetingSDK_macOS.Colorspace",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Colorspace",
+                    "printedName": "MeetingSDK_macOS.Colorspace",
+                    "usr": "s:16MeetingSDK_macOS10ColorspaceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.Colorspace.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Colorspace",
+                        "printedName": "MeetingSDK_macOS.Colorspace",
+                        "usr": "s:16MeetingSDK_macOS10ColorspaceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS10ColorspaceO7yuv420pyA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS10ColorspaceO7yuv420pyA2CmF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rgb888",
+            "printedName": "rgb888",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeetingSDK_macOS.Colorspace.Type) -> MeetingSDK_macOS.Colorspace",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Colorspace",
+                    "printedName": "MeetingSDK_macOS.Colorspace",
+                    "usr": "s:16MeetingSDK_macOS10ColorspaceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeetingSDK_macOS.Colorspace.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Colorspace",
+                        "printedName": "MeetingSDK_macOS.Colorspace",
+                        "usr": "s:16MeetingSDK_macOS10ColorspaceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16MeetingSDK_macOS10ColorspaceO6rgb888yA2CmF",
+            "mangledName": "$s16MeetingSDK_macOS10ColorspaceO6rgb888yA2CmF",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MeetingSDK_macOS.Colorspace?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Colorspace",
+                    "printedName": "MeetingSDK_macOS.Colorspace",
+                    "usr": "s:16MeetingSDK_macOS10ColorspaceO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16MeetingSDK_macOS10ColorspaceO8rawValueACSgSS_tcfc",
+            "mangledName": "$s16MeetingSDK_macOS10ColorspaceO8rawValueACSgSS_tcfc",
+            "moduleName": "MeetingSDK_macOS",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16MeetingSDK_macOS10ColorspaceO8rawValueSSvp",
+            "mangledName": "$s16MeetingSDK_macOS10ColorspaceO8rawValueSSvp",
+            "moduleName": "MeetingSDK_macOS",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16MeetingSDK_macOS10ColorspaceO8rawValueSSvg",
+                "mangledName": "$s16MeetingSDK_macOS10ColorspaceO8rawValueSSvg",
+                "moduleName": "MeetingSDK_macOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16MeetingSDK_macOS10ColorspaceO",
+        "mangledName": "$s16MeetingSDK_macOS10ColorspaceO",
+        "moduleName": "MeetingSDK_macOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "DebugLevel",
         "printedName": "DebugLevel",
         "children": [
@@ -9076,14 +9322,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Colorspace",
+                "printedName": "MeetingSDK_macOS.Colorspace",
+                "usr": "s:16MeetingSDK_macOS10ColorspaceO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16MeetingSDK_macOS0aB0C26enableExternalImageSharing5title10colorspaces5Int32VSS_SStF",
-            "mangledName": "$s16MeetingSDK_macOS0aB0C26enableExternalImageSharing5title10colorspaces5Int32VSS_SStF",
+            "usr": "s:16MeetingSDK_macOS0aB0C26enableExternalImageSharing5title10colorspaces5Int32VSS_AA10ColorspaceOtF",
+            "mangledName": "$s16MeetingSDK_macOS0aB0C26enableExternalImageSharing5title10colorspaces5Int32VSS_AA10ColorspaceOtF",
             "moduleName": "MeetingSDK_macOS",
             "declAttributes": [
               "AccessControl",
@@ -16985,197 +17231,211 @@
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1019,
+      "length": 9,
+      "value": "\"YUV420P\""
+    },
+    {
+      "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1074,
+      "length": 8,
+      "value": "\"RGB888\""
+    },
+    {
+      "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1023,
+      "offset": 1170,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1073,
+      "offset": 1220,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1125,
+      "offset": 1272,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1175,
+      "offset": 1322,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1237,
+      "offset": 1384,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1299,
+      "offset": 1446,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1369,
+      "offset": 1516,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1443,
+      "offset": 1590,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1535,
+      "offset": 1682,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1601,
+      "offset": 1748,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1656,
+      "offset": 1803,
       "length": 1,
       "value": "2"
-    },
-    {
-      "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1716,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1787,
-      "length": 1,
-      "value": "4"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
       "offset": 1863,
       "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1934,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2010,
+      "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1926,
+      "offset": 2073,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1950,
+      "offset": 2097,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1976,
+      "offset": 2123,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1996,
+      "offset": 2143,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2022,
+      "offset": 2169,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Dictionary",
-      "offset": 2922,
+      "offset": 3069,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Dictionary",
-      "offset": 3425,
+      "offset": 3572,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Dictionary",
-      "offset": 3483,
+      "offset": 3630,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 4061,
+      "offset": 4208,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6130,
+      "offset": 6277,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7699,
+      "offset": 7846,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 19095,
+      "offset": 19242,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 25196,
+      "offset": 25356,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 29950,
+      "offset": 30110,
       "length": 5,
       "value": "false"
     },
