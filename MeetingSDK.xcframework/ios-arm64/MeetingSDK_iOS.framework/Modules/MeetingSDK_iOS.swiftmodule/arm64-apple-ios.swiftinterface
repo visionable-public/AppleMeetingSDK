@@ -337,9 +337,10 @@ extension MeetingSDK_iOS.XML {
   @objc public func parser(_ parser: Foundation.XMLParser, didEndElement elementName: Swift.String, namespaceURI: Swift.String?, qualifiedName qName: Swift.String?)
   @objc public func parser(_ parser: Foundation.XMLParser, parseErrorOccurred parseError: any Swift.Error)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DeviceControlResponse : MeetingSDK_iOS.ModeratorResponse {
+public class DeviceControlResponse : MeetingSDK_iOS.ModeratorResponse {
   public var prevDeviceId: Swift.String
   public var prevResolution: Swift.String
+  public init(prevDeviceId: Swift.String, prevResolution: Swift.String, granted: Swift.Bool)
   @objc deinit
 }
 public protocol MeetingSDKDelegate : AnyObject {
@@ -459,8 +460,9 @@ public enum ModeratorUtilsError : Swift.Error {
   case invalidRequestType(Swift.String)
   case invalidDeviceType(Swift.String)
 }
-@_hasMissingDesignatedInitializers public class ModeratorResponse {
+public class ModeratorResponse {
   public var granted: Swift.Bool
+  public init(granted: Swift.Bool)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class VideoCondition : MeetingSDK_iOS.CMVideoCondition {
@@ -612,8 +614,9 @@ public enum ConnectionStatus : Swift.Int {
   public func getLocalParticipant() -> MeetingSDK_iOS.Participant?
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DeviceSelectionResponse : MeetingSDK_iOS.ModeratorResponse {
+public class DeviceSelectionResponse : MeetingSDK_iOS.ModeratorResponse {
   public var prevDeviceId: Swift.String
+  public init(prevDeviceId: Swift.String, granted: Swift.Bool)
   @objc deinit
 }
 public protocol ModeratorSDKDelegate : AnyObject {

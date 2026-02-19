@@ -42,8 +42,9 @@ public enum ModeratorSDKDeviceType {
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class ModeratorResponse {
+public class ModeratorResponse {
   public var granted: Swift.Bool
+  public init(granted: Swift.Bool)
   @objc deinit
 }
 public protocol MeetingSDKDelegate : AnyObject {
@@ -146,9 +147,10 @@ extension MeetingSDK_macOS.MeetingSDKDelegate {
   public func setUserAgent(_ userAgent: Swift.String)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DeviceControlResponse : MeetingSDK_macOS.ModeratorResponse {
+public class DeviceControlResponse : MeetingSDK_macOS.ModeratorResponse {
   public var prevDeviceId: Swift.String
   public var prevResolution: Swift.String
+  public init(prevDeviceId: Swift.String, prevResolution: Swift.String, granted: Swift.Bool)
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class VideoView : AppKit.NSView {
@@ -632,8 +634,9 @@ public class USBWatcher {
   public init(delegate: any MeetingSDK_macOS.USBWatcherDelegate)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DeviceSelectionResponse : MeetingSDK_macOS.ModeratorResponse {
+public class DeviceSelectionResponse : MeetingSDK_macOS.ModeratorResponse {
   public var prevDeviceId: Swift.String
+  public init(prevDeviceId: Swift.String, granted: Swift.Bool)
   @objc deinit
 }
 extension MeetingSDK_macOS.ModeratorSDKRequestType : Swift.Equatable {}

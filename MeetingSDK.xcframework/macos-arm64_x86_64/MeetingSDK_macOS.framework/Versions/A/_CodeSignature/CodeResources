@@ -105,14 +105,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wAWK4Q+y1jGxXxBRYa6PR/88eaLV32IpJ3OXv/kvvEQ=
+			LuErL/4QHIPu39+WQEItGU6cOCimuQQECNq4B0YLm+4=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c4u+BeulqB75mlhX4D0Ujz673hweZufaRcLSDtmXHhk=
+			mxvp9c6XCnjjcrkcPOqYgxb+PQKxfhFivXHIFbbTJBA=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/arm64-apple-macos.swiftdoc</key>
@@ -126,28 +126,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c4u+BeulqB75mlhX4D0Ujz673hweZufaRcLSDtmXHhk=
+			mxvp9c6XCnjjcrkcPOqYgxb+PQKxfhFivXHIFbbTJBA=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cCVxkxDPUjlrFCnQ0bh4ZXf4SoxiiZgZVMUdNT0JPX0=
+			x3j2LgIfsXWvpRhC9wN76TO3SNMqp4jaioEojx5ZU8U=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wAWK4Q+y1jGxXxBRYa6PR/88eaLV32IpJ3OXv/kvvEQ=
+			LuErL/4QHIPu39+WQEItGU6cOCimuQQECNq4B0YLm+4=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P852vtnE6+gSekP1C/HYZ74wRyGXumQnweKosIO6pFs=
+			DyjCD1ASjn4sNXMULPOBMKos8tn+mKRetfF2N++wD98=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.swiftdoc</key>
@@ -161,14 +161,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P852vtnE6+gSekP1C/HYZ74wRyGXumQnweKosIO6pFs=
+			DyjCD1ASjn4sNXMULPOBMKos8tn+mKRetfF2N++wD98=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_macOS.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RHdHcBeDXyvIrmvcXdjwxLEvZFXSZg67w57X2F2ZLVM=
+			7jvAqLjNbHmDIdoHxg5AuySLe5NfNvUpG1bBnYIROiU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

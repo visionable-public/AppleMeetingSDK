@@ -940,6 +940,33 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(granted:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorResponse",
+                "printedName": "MeetingSDK_macOS.ModeratorResponse",
+                "usr": "s:16MeetingSDK_macOS17ModeratorResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16MeetingSDK_macOS17ModeratorResponseC7grantedACSb_tcfc",
+            "mangledName": "$s16MeetingSDK_macOS17ModeratorResponseC7grantedACSb_tcfc",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -950,7 +977,6 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -4259,6 +4285,74 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(prevDeviceId:prevResolution:granted:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceControlResponse",
+                "printedName": "MeetingSDK_macOS.DeviceControlResponse",
+                "usr": "s:16MeetingSDK_macOS21DeviceControlResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16MeetingSDK_macOS21DeviceControlResponseC04prevE2Id0H10Resolution7grantedACSS_SSSbtcfc",
+            "mangledName": "$s16MeetingSDK_macOS21DeviceControlResponseC04prevE2Id0H10Resolution7grantedACSS_SSSbtcfc",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(granted:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceControlResponse",
+                "printedName": "MeetingSDK_macOS.DeviceControlResponse",
+                "usr": "s:16MeetingSDK_macOS21DeviceControlResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16MeetingSDK_macOS21DeviceControlResponseC7grantedACSb_tcfc",
+            "mangledName": "$s16MeetingSDK_macOS21DeviceControlResponseC7grantedACSb_tcfc",
+            "moduleName": "MeetingSDK_macOS",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -4270,8 +4364,6 @@
           "RawDocComment"
         ],
         "superclassUsr": "s:16MeetingSDK_macOS17ModeratorResponseC",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "MeetingSDK_macOS.ModeratorResponse"
         ],
@@ -17031,6 +17123,68 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(prevDeviceId:granted:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceSelectionResponse",
+                "printedName": "MeetingSDK_macOS.DeviceSelectionResponse",
+                "usr": "s:16MeetingSDK_macOS23DeviceSelectionResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16MeetingSDK_macOS23DeviceSelectionResponseC04prevE2Id7grantedACSS_Sbtcfc",
+            "mangledName": "$s16MeetingSDK_macOS23DeviceSelectionResponseC04prevE2Id7grantedACSS_Sbtcfc",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(granted:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeviceSelectionResponse",
+                "printedName": "MeetingSDK_macOS.DeviceSelectionResponse",
+                "usr": "s:16MeetingSDK_macOS23DeviceSelectionResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16MeetingSDK_macOS23DeviceSelectionResponseC7grantedACSb_tcfc",
+            "mangledName": "$s16MeetingSDK_macOS23DeviceSelectionResponseC7grantedACSb_tcfc",
+            "moduleName": "MeetingSDK_macOS",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -17042,8 +17196,6 @@
           "RawDocComment"
         ],
         "superclassUsr": "s:16MeetingSDK_macOS17ModeratorResponseC",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "MeetingSDK_macOS.ModeratorResponse"
         ],
