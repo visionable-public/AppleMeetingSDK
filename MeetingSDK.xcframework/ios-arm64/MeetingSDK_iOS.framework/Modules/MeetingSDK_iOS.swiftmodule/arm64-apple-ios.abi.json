@@ -17211,202 +17211,202 @@
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
       "offset": 1074,
-      "length": 8,
-      "value": "\"RGB888\""
+      "length": 9,
+      "value": "\"RGB888 \""
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1170,
+      "offset": 1171,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1220,
+      "offset": 1221,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1272,
+      "offset": 1273,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1322,
+      "offset": 1323,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1384,
+      "offset": 1385,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1446,
+      "offset": 1447,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1516,
+      "offset": 1517,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1590,
+      "offset": 1591,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1682,
+      "offset": 1683,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1748,
+      "offset": 1749,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1803,
+      "offset": 1804,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1863,
+      "offset": 1864,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1934,
+      "offset": 1935,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2010,
+      "offset": 2011,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2073,
+      "offset": 2074,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2097,
+      "offset": 2098,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2123,
+      "offset": 2124,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2143,
+      "offset": 2144,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2169,
+      "offset": 2170,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Dictionary",
-      "offset": 3069,
+      "offset": 3070,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Dictionary",
-      "offset": 3572,
+      "offset": 3573,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "Dictionary",
-      "offset": 3630,
+      "offset": 3631,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 4208,
+      "offset": 4209,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6277,
+      "offset": 6278,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "StringLiteral",
-      "offset": 7846,
+      "offset": 7847,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 19242,
+      "offset": 19243,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 25356,
+      "offset": 25357,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/visionable\/bitbucket-runner\/temp\/14ef2ece-6c36-58df-82f8-9c6873a20375\/build\/Meeting\/Apple\/MeetingSDK\/HighLevel\/MeetingSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 30110,
+      "offset": 30111,
       "length": 5,
       "value": "false"
     },
