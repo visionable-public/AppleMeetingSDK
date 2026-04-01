@@ -242,7 +242,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(NSString *) getDeviceListJSONWithPTZAllowed: (Boolean) allowPTZ;
 
--(bool) sendLocalPTZCommand:(NSString *) command device:(NSString *)device;
+-(bool) sendLocalPTZCommand:(int32_t)type withDevice:(NSString *)device withStep:(int32_t)step withMoveTime:(int32_t)moveTime isFast:(bool)fastAction;
 @end
 
 NS_ASSUME_NONNULL_END

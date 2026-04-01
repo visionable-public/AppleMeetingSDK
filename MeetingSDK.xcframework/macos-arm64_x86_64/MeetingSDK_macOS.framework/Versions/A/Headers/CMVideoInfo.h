@@ -6,6 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CMPTZControlInfo.h"
+
 @class VideoView;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -13,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CMVideoInfo : NSObject
 
 @property(strong)NSString *_streamId;
+@property(nonatomic, nullable)CMPTZControlInfo * _ptzInfo;
 
 // Initializer
 -(id) initWithStreamId:(NSString *)streamId;
@@ -27,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(uint8_t)_layout;
 -(uint32_t)_width;
 -(uint32_t)_height;
+-(CMPTZControlInfo * _Nullable)_controllableInfo;
 
 -(bool)isScreenShare;
 @end

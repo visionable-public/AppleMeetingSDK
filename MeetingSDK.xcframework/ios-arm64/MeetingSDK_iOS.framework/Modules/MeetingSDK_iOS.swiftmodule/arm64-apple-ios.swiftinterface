@@ -45,6 +45,26 @@ public enum ModeratorSDKDeviceType {
     get
   }
 }
+public enum ModeratorSDKPTZCommandType {
+  case unknownPTZType
+  case panLeft
+  case panRight
+  case tiltUp
+  case tiltDown
+  case zoomIn
+  case zoomOut
+  case stopMove
+  case stopZoom
+  public static func == (a: MeetingSDK_iOS.ModeratorSDKPTZCommandType, b: MeetingSDK_iOS.ModeratorSDKPTZCommandType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ModeratorUtilsError : Swift.Error {
+  case invalidRequestType(Swift.String)
+  case invalidDeviceType(Swift.String)
+}
 @objc public class Participant : MeetingSDK_iOS.CMParticipant {
   @objc public init(_ userUUID: Swift.String)
   public var audioInfo: MeetingSDK_iOS.AudioInfo? {
@@ -444,7 +464,7 @@ extension MeetingSDK_iOS.MeetingSDKDelegate {
   public func sendMessage(_ destination: Swift.String, _ message: Swift.String)
   public func setRemotePTZAllowed(_ value: Swift.Bool)
   public func getRemotePTZAllowed() -> Swift.Bool
-  public func sendPTZCommand(user: Swift.String, device: Swift.String, command: Swift.String) -> Swift.Bool
+  public func sendPTZCommand(user: Swift.String, command: MeetingSDK_iOS.ModeratorPTZCommand) -> Swift.Bool
   @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didOpenWithProtocol protocol: Swift.String?)
   public func sendModeratorRequestToParticipant(participantId: Swift.String, requestType: MeetingSDK_iOS.ModeratorSDKRequestType, deviceType: MeetingSDK_iOS.ModeratorSDKDeviceType, deviceId: Swift.String, resolution: Swift.String?) -> Swift.Bool
   public func sendModeratorRequestToMeeting(requestType: MeetingSDK_iOS.ModeratorSDKRequestType, deviceType: MeetingSDK_iOS.ModeratorSDKDeviceType) -> Swift.Bool
@@ -456,13 +476,17 @@ extension MeetingSDK_iOS.MeetingSDKDelegate {
 }
 public protocol USBWatcherDelegate : AnyObject {
 }
-public enum ModeratorUtilsError : Swift.Error {
-  case invalidRequestType(Swift.String)
-  case invalidDeviceType(Swift.String)
-}
 public class ModeratorResponse {
   public var granted: Swift.Bool
   public init(granted: Swift.Bool)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ModeratorPTZCommand {
+  public var deviceId: Swift.String?
+  public var commandType: MeetingSDK_iOS.ModeratorSDKPTZCommandType
+  public var step: Swift.Int32
+  public var moveTime: Swift.Int32
+  public var fastAction: Swift.Bool
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class VideoCondition : MeetingSDK_iOS.CMVideoCondition {
@@ -631,6 +655,8 @@ extension MeetingSDK_iOS.ModeratorSDKRequestType : Swift.Equatable {}
 extension MeetingSDK_iOS.ModeratorSDKRequestType : Swift.Hashable {}
 extension MeetingSDK_iOS.ModeratorSDKDeviceType : Swift.Equatable {}
 extension MeetingSDK_iOS.ModeratorSDKDeviceType : Swift.Hashable {}
+extension MeetingSDK_iOS.ModeratorSDKPTZCommandType : Swift.Equatable {}
+extension MeetingSDK_iOS.ModeratorSDKPTZCommandType : Swift.Hashable {}
 extension MeetingSDK_iOS.iOSCamera : Swift.Equatable {}
 extension MeetingSDK_iOS.iOSCamera : Swift.Hashable {}
 extension MeetingSDK_iOS.iOSCamera : Swift.RawRepresentable {}
