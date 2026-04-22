@@ -16,6 +16,10 @@
 		<data>
 		am72HO6TtY8gTz2bNKKb73Jqunc=
 		</data>
+		<key>Headers/CMPTZControlInfo.h</key>
+		<data>
+		8EkZNp1mrXUSDkYfPMKtAru+77E=
+		</data>
 		<key>Headers/CMParticipant.h</key>
 		<data>
 		alFuKjBy9YpKbA79euStZCybWEw=
@@ -118,6 +122,13 @@
 			<key>hash2</key>
 			<data>
 			alLJW4lBr1ONfYLxyutIK7zsApRDgj8dB8KRvH6WkN8=
+			</data>
+		</dict>
+		<key>Headers/CMPTZControlInfo.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/lzy9HpJUmC/JoPMk65qoz32uUo3xVd4o0rG0HxnmAU=
 			</data>
 		</dict>
 		<key>Headers/CMParticipant.h</key>

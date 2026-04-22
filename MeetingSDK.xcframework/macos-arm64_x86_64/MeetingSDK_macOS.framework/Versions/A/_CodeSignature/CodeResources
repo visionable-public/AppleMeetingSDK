@@ -52,6 +52,13 @@
 			alLJW4lBr1ONfYLxyutIK7zsApRDgj8dB8KRvH6WkN8=
 			</data>
 		</dict>
+		<key>Headers/CMPTZControlInfo.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/lzy9HpJUmC/JoPMk65qoz32uUo3xVd4o0rG0HxnmAU=
+			</data>
+		</dict>
 		<key>Headers/CMParticipant.h</key>
 		<dict>
 			<key>hash2</key>
@@ -224,163 +231,163 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			iQ6nRiZEsjy45nMlu64X1aJspgI=
+			mGkV2UggfhClOsW0urH9zJCep7Y=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libCoreMeeting-macOS" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libCoreMeeting-macOS" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libavcodec.62.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			GNaJ5JsdGlAKvck/NS5upKwI0Ps=
+			wTuPd82VNg2kavBLQcC+c2BydDc=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libavcodec.62" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libavcodec.62" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libavdevice.62.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			BAIYvHKVwjFvoJ/gHTKu3pnjiS0=
+			owAJ+G0s4sz6OBa727W0uD6SgqU=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libavdevice.62" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libavdevice.62" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libavfilter.11.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			qBpAA+3jUmNsWBg6WB+plUjFe3w=
+			mE70g+bAxudbaGP8mjlUIuKwElk=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libavfilter.11" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libavfilter.11" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libavformat.62.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			dx+Ff2ytPTQo5eZUTILZlT2+f8I=
+			tMU+Ii/S2Ewkhl4h4TgTCI6HJuA=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libavformat.62" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libavformat.62" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libavutil.60.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			efEEvCsHblbcRwQDZynAcTJ2HiA=
+			GwQvKecaKrjvO58Wmvhz7lnTRrk=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libavutil.60" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libavutil.60" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libigaudio-mac.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			ElFi3Q1aRFqHLtY3OSsQBdLszqg=
+			StC+jDQzhr3lXD1ah7PcJd5fgzY=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigaudio-mac-555549447c00b236e4e13df3a5349e51c76f6909" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigaudio-mac-555549447c00b236e4e13df3a5349e51c76f6909" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libigvideo-mac.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			b55atdAJhfaxzPNnRFtU2SCZiKA=
+			H7sOiXlHPM64Pg7zoEcSXqfKWAc=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigvideo-mac-55554944bffee5e5697535febebace93f0e30800" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigvideo-mac-55554944bffee5e5697535febebace93f0e30800" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_core.3.4.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			PKyam2nC5RFDUhBfgqwdgNJTCKk=
+			VsfaIdw/ff2igIyUtOp2r9sgeBc=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libopencv_core.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libopencv_core.3" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_highgui.3.4.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			nETLDqeJIuNfRoRBUENrbWjc8fw=
+			F7dEJ2VHIf4966MUuxX1PyMcGCA=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libopencv_highgui.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libopencv_highgui.3" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_imgcodecs.3.4.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			YQcdNnsuzkXbmPjCxou8dzHEAeo=
+			x44o3N1upi3bVQ86BQ5z84L0+9s=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libopencv_imgcodecs.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libopencv_imgcodecs.3" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_imgproc.3.4.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			HMgbu3N29h6tWGFUbJoRebUdhq8=
+			HKhdkDACyHRqVXEMqyU2WVxB7Iw=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libopencv_imgproc.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libopencv_imgproc.3" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_ml.3.4.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			/iBuN0gJjhKwy8YmAyEVxi1Apu8=
+			qzLPGMYeCXWSVnWcofRUq6MnFKg=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libopencv_ml.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libopencv_ml.3" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_photo.3.4.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			LHavEdNydvHMWHyjGZSiCtoTvRg=
+			nT2yjhN5h5VTlBYyc6D6mabDZD0=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libopencv_photo.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libopencv_photo.3" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_video.3.4.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			3CPU7BIQnBpGDEq7u4aCQlgsdCM=
+			3jeakGkRENOyRNL9lFbDD49VlM4=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libopencv_video.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libopencv_video.3" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_videoio.3.4.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			EvTN1L8bzUQGMwhuhcGdljAjNBA=
+			6MWKDA2gosELOYjPH59ZlqIFS6k=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libopencv_videoio.3" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libopencv_videoio.3" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libswresample.6.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			l3zsSEAQP4Yot7KFO/r9H0c6sSY=
+			QGnYqdjAlCNVTQk7EmtcTo7YZ5c=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libswresample.6" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libswresample.6" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libswscale.9.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			gljt/4ueoGO+qLhatZoNA+nxg3Y=
+			Bq5S9+SNSPAOqZRyuCVts5p8r5E=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libswscale.9" and anchor apple generic and certificate leaf[subject.CN] = "Apple Distribution: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libswscale.9" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 	</dict>
 	<key>rules</key>
