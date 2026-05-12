@@ -481,12 +481,13 @@ public class ModeratorResponse {
   public init(granted: Swift.Bool)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class ModeratorPTZCommand {
+public class ModeratorPTZCommand {
   public var deviceId: Swift.String?
   public var commandType: MeetingSDK_iOS.ModeratorSDKPTZCommandType
   public var step: Swift.Int32
   public var moveTime: Swift.Int32
   public var fastAction: Swift.Bool
+  public init(deviceId: Swift.String?, commandType: MeetingSDK_iOS.ModeratorSDKPTZCommandType, step: Swift.Int32, moveTime: Swift.Int32, fastAction: Swift.Bool)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class VideoCondition : MeetingSDK_iOS.CMVideoCondition {

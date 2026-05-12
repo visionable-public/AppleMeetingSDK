@@ -12137,6 +12137,65 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(deviceId:commandType:step:moveTime:fastAction:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorPTZCommand",
+                "printedName": "MeetingSDK_macOS.ModeratorPTZCommand",
+                "usr": "s:16MeetingSDK_macOS19ModeratorPTZCommandC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModeratorSDKPTZCommandType",
+                "printedName": "MeetingSDK_macOS.ModeratorSDKPTZCommandType",
+                "usr": "s:16MeetingSDK_macOS26ModeratorSDKPTZCommandTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16MeetingSDK_macOS19ModeratorPTZCommandC8deviceId11commandType4step8moveTime10fastActionACSSSg_AA0e13SDKPTZCommandJ0Os5Int32VAMSbtcfc",
+            "mangledName": "$s16MeetingSDK_macOS19ModeratorPTZCommandC8deviceId11commandType4step8moveTime10fastActionACSSSg_AA0e13SDKPTZCommandJ0Os5Int32VAMSbtcfc",
+            "moduleName": "MeetingSDK_macOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -12146,7 +12205,6 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",

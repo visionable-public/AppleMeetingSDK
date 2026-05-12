@@ -401,12 +401,13 @@ public protocol ModeratorSDKDelegate : AnyObject {
   func onModeratorRequestStatus(participantId: Swift.String, requestType: MeetingSDK_macOS.ModeratorSDKRequestType, status: Swift.Bool)
   func onModeratorDisabledDevice(deviceType: MeetingSDK_macOS.ModeratorSDKDeviceType)
 }
-@_hasMissingDesignatedInitializers public class ModeratorPTZCommand {
+public class ModeratorPTZCommand {
   public var deviceId: Swift.String?
   public var commandType: MeetingSDK_macOS.ModeratorSDKPTZCommandType
   public var step: Swift.Int32
   public var moveTime: Swift.Int32
   public var fastAction: Swift.Bool
+  public init(deviceId: Swift.String?, commandType: MeetingSDK_macOS.ModeratorSDKPTZCommandType, step: Swift.Int32, moveTime: Swift.Int32, fastAction: Swift.Bool)
   @objc deinit
 }
 public enum XMLSubscriptKey {
