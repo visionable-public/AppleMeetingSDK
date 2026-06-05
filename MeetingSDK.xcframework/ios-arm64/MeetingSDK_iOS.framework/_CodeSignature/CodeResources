@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		BE9S9Lud9DY2WKbGtlc5VjH3T/w=
+		7AIXrOB+JOgMoZR7oGWKU1AGyIM=
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		zce97rqCZ2QvQ8V0ZSSGRW46SLk=
+		MlCYIi6JgshAFZ0uCmf5eLcmRWs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -191,7 +191,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			56WbHi8vNjO/yw9y+GJggtzKoWb7n0KPZgjd1vweaCY=
+			HLOCC/ku5XYwSquUnygEIK6k+f3VDWKX0hsQ4ir/FVM=
 			</data>
 		</dict>
 		<key>Modules/MeetingSDK_iOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -219,7 +219,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J6jVu7A9zNd3Yh/UMFHSQ7ZO2hyAGaCJzyhBb2XVQhY=
+			iAOHRavSTdMEL/LkGpANM328RDTn0il8AWp1owq8Lg4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
