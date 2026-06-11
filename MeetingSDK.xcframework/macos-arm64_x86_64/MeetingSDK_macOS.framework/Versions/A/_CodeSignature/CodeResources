@@ -231,7 +231,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			Z0IADdmFJUmb3uBIRbgQr8CFY2A=
+			o6MeqkD6+IbdHAruXpNSDjOoXSw=
 			</data>
 			<key>requirement</key>
 			<string>identifier "libCoreMeeting-macOS" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -285,19 +285,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			sQRLLH6jKQzqNrez9rRvgDwc7pI=
+			r8RTHV+WtJszA1TVDboCo0O6+2U=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigaudio-mac-555549442fabc83ea6df3ee0bfd6d218e464f09b" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigaudio-mac-555549449f0c1fca937731d08eca60b0b73f904a" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libigvideo-mac.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			sW7QnA2nVCyTKhheaHG1Jh2GQ2k=
+			VI1bTjlWDD8Cp6Au0f7qKiDvFRs=
 			</data>
 			<key>requirement</key>
-			<string>identifier "libigvideo-mac-555549447865d514c1a232079f086ccdb5024acb" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "libigvideo-mac-5555494409080875950e30e1baae839a8fae6d45" and anchor apple generic and certificate leaf[subject.CN] = "3rd Party Mac Developer Application: Visionable Ltd (BJ3Z2U35QT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>libopencv_core.3.4.dylib</key>
 		<dict>
