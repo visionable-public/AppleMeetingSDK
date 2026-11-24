@@ -481,10 +481,10 @@ SWIFT_CLASS("_TtC14MeetingSDK_iOS24MeetingSDKDelegateBridge")
 /// \param local Boolean to know if this participant is the local video stream
 ///
 - (void)participantVideoViewCreatedWithParticipant:(Participant * _Nonnull)participant videoView:(VideoView * _Nonnull)videoView local:(BOOL)local;
-- (void)videoFrameReadyWithStreamId:(NSString * _Nonnull)streamId frame:(NSData * _Nonnull)frame;
+- (void)videoFrameReadyWithStreamId:(NSString * _Nonnull)streamId frame:(NSData * _Nonnull)frame width:(NSInteger)width height:(NSInteger)height;
 - (void)videoPreviewReadyWithStreamId:(NSString * _Nonnull)streamId name:(NSString * _Nonnull)name width:(int32_t)width height:(int32_t)height;
 - (void)previewVideoUpdatedWithStreamId:(NSString * _Nonnull)streamId;
-- (void)previewFrameReadyWithStreamId:(NSString * _Nonnull)streamId frame:(NSData * _Nonnull)frame;
+- (void)previewFrameReadyWithStreamId:(NSString * _Nonnull)streamId frame:(NSData * _Nonnull)frame width:(NSInteger)width height:(NSInteger)height;
 /// Called when a participant’s video is removed, on the video_stream_removed callback
 /// \param participant Current information of the corresponding participant
 ///
@@ -587,6 +587,17 @@ SWIFT_CLASS("_TtC14MeetingSDK_iOS14VideoCondition")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+/// A video frame’s raw image data together with its dimensions.  Currently RGB888, so <code>data</code> holds at least
+/// <code>width * height * 3</code> bytes.  Width and height are 0 when unknown (a frame stored through the <code>imageData</code> setter).
+SWIFT_CLASS("_TtC14MeetingSDK_iOS10VideoImage")
+@interface VideoImage : NSObject
+@property (nonatomic, readonly, copy) NSData * _Nonnull data;
+@property (nonatomic, readonly) NSInteger width;
+@property (nonatomic, readonly) NSInteger height;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// Information about one of the Participant’s video sources
 SWIFT_CLASS("_TtC14MeetingSDK_iOS9VideoInfo")
 @interface VideoInfo : CMVideoInfo
@@ -603,7 +614,15 @@ SWIFT_CLASS("_TtC14MeetingSDK_iOS9VideoView")
 /// The actual UIImageView used to render each frame of the video stream.   This is created automatically by the SDK.
 @property (nonatomic, strong) UIImageView * _Nullable frameView;
 /// A low level object containing the raw image data.  Only populated if enableVideoStream in the MeetingSDK singleton is called with an optional third argument (lowLevel) of true.   Currently this data will be in RGB888 format, but in future versions of the SDK will allow this format to be specified.
+/// The setter is called on the main thread while readers (e.g. a Flutter texture on the raster thread) may call the
+/// getter concurrently, so access to the backing storage is serialized.  Keeping it <code>dynamic</code> preserves KVO notifications.
+/// Prefer <code>currentImage</code>, which also returns the frame’s width and height.
 @property (nonatomic, copy) NSData * _Nonnull imageData;
+/// The most recent frame together with its width and height.  Read atomically, so the bytes and the size always
+/// belong to the same frame; use it instead of <code>imageData</code> plus the stream’s VideoInfo size, which can disagree.
+@property (nonatomic, readonly, strong) VideoImage * _Nonnull currentImage;
+/// Store a frame with its dimensions.  Posts the same <code>imageData</code> KVO notification as the <code>imageData</code> setter.
+- (void)setImage:(NSData * _Nonnull)data width:(NSInteger)width height:(NSInteger)height;
 /// The streamId associated with this video view
 @property (nonatomic, copy) NSString * _Nonnull streamId;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;

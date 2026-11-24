@@ -127,10 +127,10 @@ extension MeetingSDK_macOS.MeetingSDKDelegate {
   @objc public func participantVideoAdded(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   @objc public func participantVideoUpdated(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   @objc public func participantVideoViewCreated(participant: MeetingSDK_macOS.Participant, videoView: MeetingSDK_macOS.VideoView, local: Swift.Bool)
-  @objc public func videoFrameReady(streamId: Swift.String, frame: Foundation.Data)
+  @objc public func videoFrameReady(streamId: Swift.String, frame: Foundation.Data, width: Swift.Int, height: Swift.Int)
   @objc public func videoPreviewReady(streamId: Swift.String, name: Swift.String, width: Swift.Int32, height: Swift.Int32)
   @objc public func previewVideoUpdated(streamId: Swift.String)
-  @objc public func previewFrameReady(streamId: Swift.String, frame: Foundation.Data)
+  @objc public func previewFrameReady(streamId: Swift.String, frame: Foundation.Data, width: Swift.Int, height: Swift.Int)
   @objc public func participantVideoRemoved(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   @objc public func particpantVideoRemoteLayoutChanged(participant: MeetingSDK_macOS.Participant, streamId: Swift.String)
   @objc public func participantRemoved(participant: MeetingSDK_macOS.Participant)
@@ -167,12 +167,25 @@ public class DeviceControlResponse : MeetingSDK_macOS.ModeratorResponse {
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class VideoView : AppKit.NSView {
   @objc @_Concurrency.MainActor @preconcurrency public var frameView: AppKit.NSImageView?
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public var imageData: Foundation.Data
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var imageData: Foundation.Data {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public var currentImage: MeetingSDK_macOS.VideoImage {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public func setImage(_ data: Foundation.Data, width: Swift.Int, height: Swift.Int)
   @objc @_Concurrency.MainActor @preconcurrency public var streamId: Swift.String
   @_Concurrency.MainActor @preconcurrency public var isEnabled: Swift.Bool {
     get
     set(newValue)
   }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class VideoImage : ObjectiveC.NSObject {
+  @objc final public let data: Foundation.Data
+  @objc final public let width: Swift.Int
+  @objc final public let height: Swift.Int
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class AudioCondition : MeetingSDK_macOS.CMAudioCondition {
